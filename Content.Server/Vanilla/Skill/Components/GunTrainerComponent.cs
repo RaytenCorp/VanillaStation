@@ -10,8 +10,8 @@ public sealed partial class GunTrainerComponent : Component
     [DataField("ExpPerShot")]
     public int ExpPerShot { get; set; } = 1;
 
-    [DataField("SkillType")]
-    public skillType SkillType { get; set; }
+    [DataField("skillType")]
+    public skillType SkillType { get; set; } = skillType.RangeWeapon;
 
 }
 

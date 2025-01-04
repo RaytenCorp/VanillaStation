@@ -26,7 +26,7 @@
       - type: Skill
         PilotingLevel: 1
         RangeWeaponLevel: 0
-        MeleeWeaponLevel: 1
+        MeleeWeaponLevel: 0
         MedicineLevel: 0
         ChemistryLevel: 0
         EngineeringLevel: 2

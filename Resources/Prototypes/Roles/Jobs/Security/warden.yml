@@ -39,7 +39,7 @@
           params:
             volume: -4
       - type: Skill
-        PilotingLevel: 3
+        PilotingLevel: 2
         RangeWeaponLevel: 3
         MeleeWeaponLevel: 3
         MedicineLevel: 1
