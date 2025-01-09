@@ -84,6 +84,9 @@ maximum_width = 29
 [server]
 rules_file = "VanillaRulset"
 
+[rules]
+time = 1
+
 [replay]
 auto_record = true
 
