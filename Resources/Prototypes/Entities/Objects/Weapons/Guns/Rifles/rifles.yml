@@ -199,6 +199,7 @@
   id: WeaponRifleFoam
   description: A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
   components:
+  - type: GunIgnoreSkill
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
   - type: Clothing

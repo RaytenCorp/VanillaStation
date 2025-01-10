@@ -26,6 +26,8 @@
   - type: GuideHelp
     guides:
     - Radio
+  - type: RequiresSkill
+    RequiresInstrumentationLevel: 2
 
 - type: entity
   parent: ClothingHeadset
