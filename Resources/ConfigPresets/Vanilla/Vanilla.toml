@@ -45,6 +45,7 @@ timermap = 45
 [chat]
 rate_limit_count = 3
 rate_limit_period = 3
+max_announcement_length = 850
 
 [shuttle]
 auto_call_time = 100
