@@ -34,7 +34,19 @@ internal sealed partial class ChatManager : IChatManager
         { "syndicate_agent", "#aa00ff" },
         { "revolutionary", "#aa00ff" }
     };
-
+    private static readonly Dictionary<string, string> AdminOOCColors = new()
+    {
+        { "Хост", "#2ECC71" },
+        { "Администратор", "#FF0000" },
+        { "Младший администратор", "#E91E63" },
+        { "Старший модератор", "#005AFD" },
+        { "Главный гейм-мастер", "#9C27B0" },
+        { "Смотритель", "#2C7CF0" },
+        { "Гейм-мастер", "#9B59B6" },
+        { "Модератор", "#5D93D1" },
+        { "Младший модератор", "#93BFE6" },
+        { "Младший гейм-мастер", "#71368A" }
+    };
     [Dependency] private readonly IReplayRecordingManager _replay = default!;
     [Dependency] private readonly IServerNetManager _netManager = default!;
     [Dependency] private readonly IMoMMILink _mommiLink = default!;
@@ -65,7 +77,6 @@ internal sealed partial class ChatManager : IChatManager
 
         _configurationManager.OnValueChanged(CCVars.OocEnabled, OnOocEnabledChanged, true);
         _configurationManager.OnValueChanged(CCVars.AdminOocEnabled, OnAdminOocEnabledChanged, true);
-
         RegisterRateLimits();
     }
 
@@ -253,6 +264,15 @@ internal sealed partial class ChatManager : IChatManager
         {
             var prefs = _preferencesManager.GetPreferences(player.UserId);
             colorOverride = prefs.AdminOOCColor;
+
+            //vanilla-station-start
+            var senderAdmin = _adminManager.GetAdminData(player);
+            if (senderAdmin != null && senderAdmin.Title != null && AdminOOCColors.TryGetValue(senderAdmin.Title, out var AdminOOCColor))
+            {
+                if (Color.TryParse(AdminOOCColor, out var parsedColor)) colorOverride = parsedColor;
+                wrappedMessage = Loc.GetString("chat-manager-send-ooc-admin-wrap-message", ("AdminOocColor", AdminOOCColor),("AdminOOCPrefix", FormattedMessage.EscapeText(senderAdmin.Title)),("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
+            }
+            //vanilla-station-end
         }
         if (  _netConfigManager.GetClientCVar(player.Channel, CCVars.ShowOocPatronColor) && player.Channel.UserData.PatronTier is { } patron && PatronOocColors.TryGetValue(patron, out var patronColor))
         {

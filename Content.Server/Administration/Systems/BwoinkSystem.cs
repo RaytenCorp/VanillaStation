@@ -32,7 +32,19 @@ namespace Content.Server.Administration.Systems
     public sealed partial class BwoinkSystem : SharedBwoinkSystem
     {
         private const string RateLimitKey = "AdminHelp";
-
+        private static readonly Dictionary<string, string> AdminOOCColors = new()
+        {
+            { "Хост", "#2ECC71" },
+            { "Администратор", "#FF0000" },
+            { "Младший администратор", "#E91E63" },
+            { "Старший модератор", "#005AFD" },
+            { "Главный гейм-мастер", "#9C27B0" },
+            { "Смотритель", "#2C7CF0" },
+            { "Гейм-мастер", "#9B59B6" },
+            { "Модератор", "#5D93D1" },
+            { "Младший модератор", "#93BFE6" },
+            { "Младший гейм-мастер", "#71368A" }
+        };
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly IConfigurationManager _config = default!;
@@ -660,7 +672,6 @@ namespace Content.Server.Administration.Systems
             {
                 adminPrefix = $"[bold]\\[{senderAdmin.Title}\\][/bold] ";
             }
-
             if (senderAdmin is not null &&
                 senderAdmin.Flags ==
                 AdminFlags.Adminhelp) // Mentor. Not full admin. That's why it's colored differently.
@@ -669,13 +680,22 @@ namespace Content.Server.Administration.Systems
             }
             else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))
             {
-                bwoinkText = $"[color=red]{adminPrefix}{senderSession.Name}[/color]";
+                //vanilla-station-start
+                string adminOOCColor = "red";
+                if (senderAdmin?.Title != null && AdminOOCColors.ContainsKey(senderAdmin.Title))
+                    adminOOCColor = AdminOOCColors[senderAdmin.Title];
+
+                bwoinkText = $"[color={adminOOCColor}]{adminPrefix}{senderSession.Name}[/color]";
+                //vanilla-station-end
             }
             else
             {
                 bwoinkText = $"{senderSession.Name}";
             }
+            
 
+
+            
             bwoinkText = $"{(message.PlaySound ? "" : "(S) ")}{bwoinkText}: {escapedText}";
 
             // If it's not an admin / admin chooses to keep the sound then play it.
