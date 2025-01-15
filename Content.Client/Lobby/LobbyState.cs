@@ -7,6 +7,7 @@ using Content.Client.Message;
 using Content.Client.Parallax.Managers; // Vanilla-edit
 using Content.Client.UserInterface.Systems.Chat;
 using Content.Client.Voting;
+using Content.Shared.CCVar;
 using Robust.Client;
 using Robust.Client.Console;
 using Robust.Client.ResourceManagement;
@@ -64,7 +65,17 @@ namespace Content.Client.Lobby
 
             _voteManager.SetPopupContainer(Lobby.VoteContainer);
             LayoutContainer.SetAnchorPreset(Lobby, LayoutContainer.LayoutPreset.Wide);
+
+            var lobbyNameCvar = _cfg.GetCVar(CCVars.ServerLobbyName);
+            var serverName = _baseClient.GameInfo?.ServerName ?? string.Empty;
+
+            Lobby.ServerName.Text = string.IsNullOrEmpty(lobbyNameCvar)
+                ? Loc.GetString("ui-lobby-title", ("serverName", serverName))
+                : lobbyNameCvar;
             Lobby.ServerName.Text = "Добро пожаловать на Vanilla Station!"; // Vanilla-edit
+            var width = _cfg.GetCVar(CCVars.ServerLobbyRightPanelWidth);
+            //Lobby.RightSide.SetWidth = width;
+
             UpdateLobbyUi();
 
             // Vanilla-start
