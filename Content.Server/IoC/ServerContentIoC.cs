@@ -77,6 +77,7 @@ namespace Content.Server.IoC
             IoCManager.Register<WebhookBans>();// Vanilla station
             IoCManager.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             IoCManager.Register<MappingManager>();
+            IoCManager.Register<IWatchlistWebhookManager, WatchlistWebhookManager>();
             IoCManager.Register<ConnectionManager>();
         }
     }
