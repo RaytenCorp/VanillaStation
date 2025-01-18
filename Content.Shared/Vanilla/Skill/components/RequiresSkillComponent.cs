@@ -9,14 +9,10 @@ namespace Content.Shared.Vanilla.Skill
         //Химия
         [DataField("RequiresChemistryLevel"), AutoNetworkedField]
         public int RequiresChemistryLevel { get; set; } = 0;
-        [DataField("SkillDiffChemistryLevel"), AutoNetworkedField]
-        public int SkillDiffChemistryLevel { get; set; } = 0;
 
         //Медицина
         [DataField("RequiresMedicineLevel"), AutoNetworkedField]
         public int RequiresMedicineLevel { get; set; } = 0;
-        [DataField("SkillDiffMedicineLevel"), AutoNetworkedField]
-        public int SkillDiffMedicineLevel { get; set; } = 0;
 
         //Пилотирование
         [DataField("RequiresPilotingLevel"), AutoNetworkedField]
@@ -29,8 +25,6 @@ namespace Content.Shared.Vanilla.Skill
         //Исследования
         [DataField("RequiresResearchLevel"), AutoNetworkedField]
         public int RequiresResearchLevel { get; set; } = 0;
-        [DataField("SkillDiffResearchLevel"), AutoNetworkedField]
-        public int SkillDiffResearchLevel { get; set; } = 0;
 
         //Приборостроение
         [DataField("RequiresInstrumentationLevel"), AutoNetworkedField]
