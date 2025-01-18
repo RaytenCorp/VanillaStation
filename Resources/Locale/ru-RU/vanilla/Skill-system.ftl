@@ -19,8 +19,8 @@ Skill-train-overtrain-building = Ваш навык строительства б
 Skill-train-overtrain-engineering = Ваш навык инженерии больше, чем может дать эта книга.
 
 ui-vote-type-ezmode = Дополнительные очки навыков
-ui-vote-ezmode-title = Голосование за выдачу дополнительных очков навыков
-ui-vote-ezmode-succeeded = NanoTrasen отправили на данную станцию настоящих мастероов на все руки! Все получили 36 очков навыков. Главы получили все навыки.
+ui-vote-ezmode-title = Голосование за выдачу дополнительных ( { $skillpoints } ) очков навыков
+ui-vote-ezmode-succeeded = Все получили { $skillpoints } очков навыков.
 ui-vote-ezmode-failed = Голосование отклонено.
 ui-vote-ezmode-yes = Да
 ui-vote-ezmode-no = Нет
