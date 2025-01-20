@@ -1,4 +1,5 @@
 using Robust.Shared.GameStates;
+using Content.Shared.Vanilla.Skill;
 
 namespace Content.Server.Vanilla.Skill
 {
@@ -6,7 +7,7 @@ namespace Content.Server.Vanilla.Skill
     public sealed partial class GunCanBeFallComponent : Component
     {
         [DataField("RequiresRangeWeaponLevel")]
-        public int RequiresRangeWeaponLevel { get; set; } = 1;
+        public SkillLevel RequiresRangeWeaponLevel { get; set; } = SkillLevel.Basic;
 
         [DataField("Recoil")]
         public float Recoil { get; set; } = 10f;
