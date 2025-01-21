@@ -1,0 +1,35 @@
+- type: departmentgoal
+  id: SRVWedding
+  text: station-goal-SRV-Wedding
+  weight: 0.05 #super-rare
+  department: 5
+
+- type: departmentgoal
+  id: SRVFuneral
+  text: station-goal-SRV-Funeral
+  department: 5
+
+- type: departmentgoal
+  id: SRVCakeCook
+  text: station-goal-SRV-CakeCook
+  department: 5
+
+- type: departmentgoal
+  id: SRVGoldenApple
+  text: station-goal-SRV-GoldenApple
+  department: 5
+
+- type: departmentgoal
+  id: SRVCow
+  text: station-goal-SRV-Cow
+  department: 5
+
+- type: departmentgoal
+  id: SRVMenuBar
+  text: station-goal-SRV-Menu-Bar
+  department: 5
+
+- type: departmentgoal
+  id: SRVMenuKitchen
+  text: station-goal-SRV-Menu-Kitchen
+  department: 5

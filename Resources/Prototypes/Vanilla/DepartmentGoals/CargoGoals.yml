@@ -1,0 +1,24 @@
+- type: departmentgoal
+  id: CargoRequests
+  text: station-goal-cargo-requests
+  department: 2
+
+- type: departmentgoal
+  id: CargoGetPlasma
+  text: station-goal-cargo-getplasma
+  department: 2
+
+- type: departmentgoal
+  id: CargoGetUranium
+  text: station-goal-cargo-geturanium
+  department: 2
+
+- type: departmentgoal
+  id: CargoMelting
+  text: station-goal-cargo-melting
+  department: 2
+
+- type: departmentgoal
+  id: CargoRefillWend
+  text: station-goal-cargo-refillwend
+  department: 2

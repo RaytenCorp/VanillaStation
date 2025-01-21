@@ -1,0 +1,35 @@
+- type: departmentgoal
+  id: MedBlueSky
+  text: station-goal-med-bluesky
+  department: 1
+
+- type: departmentgoal
+  id: MedNoGib
+  text: station-goal-Med-nogib
+  department: 1
+
+- type: departmentgoal
+  id: MedFuneral
+  text: station-goal-Med-funeral
+  department: 1
+
+- type: departmentgoal
+  id: MedMedAllSensors
+  text: station-goal-Med-allsensors
+  department: 1
+
+- type: departmentgoal
+  id: MedImplantTracker
+  text: station-goal-Med-ImplantTracker
+  department: 1
+
+- type: departmentgoal
+  id: MedImplantLightning
+  text: station-goal-Med-ImplantLightning
+  department: 1
+
+- type: departmentgoal
+  id: MedImplantMemoryShield
+  text: station-goal-Med-ImplantMemoryShield
+  weight: 0.4 # hard
+  department: 1

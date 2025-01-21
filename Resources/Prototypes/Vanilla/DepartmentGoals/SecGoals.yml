@@ -1,0 +1,19 @@
+- type: departmentgoal
+  id: SecNoGib
+  text: station-goal-sec-NoGib
+  department: 4
+
+- type: departmentgoal
+  id: SecNoReports
+  text: station-goal-sec-NoReports
+  department: 4
+
+- type: departmentgoal
+  id: SecNoRedCode
+  text: station-goal-sec-NoRedCode
+  department: 4
+
+- type: departmentgoal
+  id: SecNoBlueCode 
+  text: station-goal-sec-NoBlueCode 
+  department: 4 
