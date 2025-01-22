@@ -19,15 +19,15 @@
   weight: 0.05 #super-rare couse syndie
   department: 3
 
-# - type: departmentgoal
-#   id: ENGTritium
-#   text: station-goal-ENG-Tritium
-#   department: 3
+- type: departmentgoal
+  id: ENGTritium
+  text: station-goal-ENG-Tritium
+  department: 3
 
-# - type: departmentgoal
-#   id: ENGFrezon
-#   text: station-goal-ENG-Frezon
-#   department: 3
+- type: departmentgoal
+  id: ENGFrezon
+  text: station-goal-ENG-Frezon
+  department: 3
 
 - type: departmentgoal
   id: ENGTesla
