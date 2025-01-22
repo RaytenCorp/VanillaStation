@@ -1,6 +1,6 @@
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.Vanilla.StationGoal;
+namespace Content.Server.Vanilla.DepartmentGoal;
 
 [Serializable, Prototype("departmentgoal")]
 public sealed class DepartmentGoalPrototype : IPrototype

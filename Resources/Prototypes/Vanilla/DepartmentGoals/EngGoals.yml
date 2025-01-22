@@ -13,21 +13,21 @@
   text: station-goal-ENG-Clownstatue
   department: 3
 
+- type: departmentgoal
+  id: ENGSyndieRoom
+  text: station-goal-ENG-SyndieRoom
+  weight: 0.05 #super-rare couse syndie
+  department: 3
+
 # - type: departmentgoal
-#   id: ENGSyndieRoom
-#   text: station-goal-ENG-SyndieRoom
-#   weight: 0.05 #super-rare couse syndie
+#   id: ENGTritium
+#   text: station-goal-ENG-Tritium
 #   department: 3
 
-- type: departmentgoal
-  id: ENGTritium
-  text: station-goal-ENG-Tritium
-  department: 3
-
-- type: departmentgoal
-  id: ENGFrezon
-  text: station-goal-ENG-Frezon
-  department: 3
+# - type: departmentgoal
+#   id: ENGFrezon
+#   text: station-goal-ENG-Frezon
+#   department: 3
 
 - type: departmentgoal
   id: ENGTesla
@@ -37,4 +37,9 @@
 - type: departmentgoal
   id: ENGSingulo
   text: station-goal-ENG-Singulo
+  department: 3
+
+- type: departmentgoal
+  id: ENGDisposal
+  text: station-goal-ENG-Disposal
   department: 3

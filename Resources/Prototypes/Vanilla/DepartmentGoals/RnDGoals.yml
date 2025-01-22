@@ -26,7 +26,7 @@
 - type: departmentgoal
   id: RnDDevelopAllBranch
   text: station-goal-RnD-DevelopAllBranch
-  weight: 0.4 # hard
+  weight: 0.2 # hard
   department: 0
 
 - type: departmentgoal

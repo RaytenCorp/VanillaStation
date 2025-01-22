@@ -17,3 +17,15 @@
   id: SecNoBlueCode 
   text: station-goal-sec-NoBlueCode 
   department: 4 
+
+- type: departmentgoal
+  id: SecFreeSyndie
+  text: station-goal-sec-FreeSyndie
+  weight: 0.05 #Ultra-super-rare 
+  department: 4 
+
+- type: departmentgoal
+  id: SecHardCore
+  text: station-goal-sec-HardCore
+  weight: 0.1 #Ultra-super-rare 
+  department: 4 
