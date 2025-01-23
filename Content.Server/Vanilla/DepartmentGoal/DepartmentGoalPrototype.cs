@@ -16,16 +16,14 @@ public sealed class DepartmentGoalPrototype : IPrototype
 
     [DataField("weight")]
     public float Weight { get; set; } = 1.0f;
-    // [DataField("benefits")] TODO
-    // public List<BenefitPrototype> Benefits { get; set; } = new();
+
+    [DataField("itemBenefits")]
+    public List<EntProtoId> ItemBenefits { get; set; } = new();
+
+    [DataField("researcBenefits")]
+    public int ResearchBenefit { get; set; } = 0;
 }
 
-[Serializable, Prototype("benefit")]
-public abstract class BenefitPrototype
-{
-    [DataField("type", required: true)]
-    public string Type { get; set; } = default!;
-}
 
 [Serializable]
 public enum department
