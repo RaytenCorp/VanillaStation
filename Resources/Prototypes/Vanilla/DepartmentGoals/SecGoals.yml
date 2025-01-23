@@ -2,30 +2,77 @@
   id: SecNoGib
   text: station-goal-sec-NoGib
   department: 4
+  itemBenefits:
+  - BenefitSecSecond
 
 - type: departmentgoal
   id: SecNoReports
   text: station-goal-sec-NoReports
   department: 4
+  itemBenefits:
+  - BenefitSecSecond
 
 - type: departmentgoal
   id: SecNoRedCode
   text: station-goal-sec-NoRedCode
   department: 4
+  itemBenefits:
+  - BenefitSecfirst
 
 - type: departmentgoal
   id: SecNoBlueCode 
   text: station-goal-sec-NoBlueCode 
   department: 4 
-
+  itemBenefits:
+  - BenefitSecfirst
+     
 - type: departmentgoal
   id: SecFreeSyndie
   text: station-goal-sec-FreeSyndie
   weight: 0.05 #Ultra-super-rare 
-  department: 4 
+  department: 4
+  itemBenefits:
+  - BenefitSecfirst
 
 - type: departmentgoal
   id: SecHardCore
   text: station-goal-sec-HardCore
   weight: 0.1 #Ultra-super-rare 
   department: 4 
+  itemBenefits:
+  - BenefitSecfirst
+
+#### Награды
+- type: entity
+  id: BenefitSecfirst
+  parent: CrateBaseBenefit
+  components:
+  - type: AccessReader
+    access: [["Armory"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckSecuritymedal
+        amount: 4
+      - id: ClothingMaskClownSecurity
+        amount: 4
+      - id: ClothingHeadHelmetJustice
+        amount: 4
+      - id: ClothingShoesTacticalBoots
+        amount: 1
+
+- type: entity
+  id: BenefitSecSecond
+  parent: CrateBaseBenefit
+  components:
+  - type: AccessReader
+    access: [["Armory"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckSecuritymedal
+        amount: 4
+      - id: ClothingMaskClownSecurity
+        amount: 4
+      - id: ClothingHeadHelmetJustice
+        amount: 4
+      - id: MemoryShieldImplanter
+        amount: 2

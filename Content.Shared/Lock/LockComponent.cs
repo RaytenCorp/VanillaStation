@@ -14,6 +14,22 @@ namespace Content.Shared.Lock;
 public sealed partial class LockComponent : Component
 {
     /// <summary>
+    /// Vanill-station
+    /// only one unlock and never lock again
+    /// </summary>
+    [DataField("onlyoneuse"), ViewVariables(VVAccess.ReadWrite)]
+    [AutoNetworkedField]
+    public bool onlyoneuse  = false;
+
+    /// <summary>
+    /// Vanill-station
+    /// unlocked?
+    /// </summary>
+    [DataField("used"), ViewVariables(VVAccess.ReadWrite)]
+    [AutoNetworkedField]
+    public bool used  = false;
+
+    /// <summary>
     /// Whether or not the lock is locked.
     /// </summary>
     [DataField("locked"), ViewVariables(VVAccess.ReadWrite)]
