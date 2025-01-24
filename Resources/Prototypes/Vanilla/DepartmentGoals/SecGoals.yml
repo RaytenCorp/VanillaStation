@@ -43,8 +43,8 @@
   - BenefitSecfirst
 
 - type: departmentgoal
-  id: SecСallSigns
-  text: station-goal-sec-СallSigns
+  id: SecCallSigns
+  text: station-goal-sec-CallSigns
   department: 4 
   itemBenefits:
   - BenefitSecEasy
