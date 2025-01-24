@@ -160,9 +160,8 @@
         amount: 2
       - id: FoodBreadVolcanic
         amount: 10        
-      - id: VendingMachineRestockChefvend
-        amount: 3   
-
+      - id: OmnizineChemistryBottle
+        amount: 2
 
 - type: entity
   id: BenefitSRVBar
