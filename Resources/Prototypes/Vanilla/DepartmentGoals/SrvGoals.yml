@@ -48,9 +48,62 @@
   itemBenefits:
   - BenefitSRVBar
 
+- type: departmentgoal
+  id: SRVDrawing
+  text: station-goal-SRV-Drawing
+  department: 5
+  itemBenefits:
+  - BenefitSRVClown
 
+- type: departmentgoal
+  id: SRVAnekdot
+  text: station-goal-SRV-Anekdot
+  weight: 0.5 #hard
+  department: 5
+  itemBenefits:
+  - BenefitSRVClown
+
+- type: departmentgoal
+  id: SRVTheatre
+  text: station-goal-SRV-Theatre
+  weight: 0.5 #hard
+  department: 5
+  itemBenefits:
+  - BenefitSRVClown
+
+- type: departmentgoal
+  id: SRVInterview
+  text: station-goal-SRV-Interview
+  department: 5
+  itemBenefits:
+  - BenefitSRVClown
 
 ## Предметные-Награды
+- type: entity
+  id: BenefitSRVClown
+  parent: CrateBaseBenefit
+  components:
+  - type: AccessReader
+    access: [["Service"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckGoldmedal
+        amount: 2
+      - id: WeaponWaterPistol
+        amount: 4
+      - id: WeaponWaterBlaster
+        amount: 4
+      - id: WeaponWaterBlaster
+        amount: 4
+      - id: BalloonNT
+        amount: 4
+      - id: WhoopieCushion
+        amount: 6
+      - id: MrChips
+        amount: 1
+      - id: MrDips
+        amount: 1
+        
 - type: entity
   id: BenefitSRVChaplain
   parent: CrateBaseBenefit

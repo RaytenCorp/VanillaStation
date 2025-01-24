@@ -3,7 +3,15 @@
   text: station-goal-med-bluesky
   department: 1
   itemBenefits:
-  - BenefitMedLauncherSyringe
+  - BenefitMedChemistry
+
+
+- type: departmentgoal
+  id: MedKognizine
+  text: station-goal-med-Kognizine
+  department: 1
+  itemBenefits:
+  - BenefitMedChemistry
 
 - type: departmentgoal
   id: MedNoGib
@@ -48,7 +56,29 @@
   itemBenefits:
   - BenefitMedImplantAdvanced
 
+- type: departmentgoal
+  id: MedPsyho
+  text: station-goal-Med-Psyho
+  department: 1
+  itemBenefits:
+  - BenefitPsyho
+
 ## Предметные-Награды
+
+- type: entity
+  id: BenefitMedChemistry
+  parent: CrateBaseBenefit
+  components:
+  - type: AccessReader
+    access: [["Medical"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckMedicalmedal
+        amount: 2
+      - id: OmnizineChemistryBottle
+        amount: 5
+      - id: OpporozidoneBeakerSmall
+        amount: 5
 
 - type: entity
   id: BenefitMedLauncherSyringe
@@ -93,4 +123,22 @@
       - id: BluespaceBeaker
         amount: 5
 
+- type: entity
+  id: BenefitPsyho
+  parent: CrateBaseBenefit
+  components:
+  - type: AccessReader
+    access: [["Medical"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckMedicalmedal
+        amount: 2
+      - id: Joint
+        amount: 25
+      - id: PillSpaceDrugs
+        amount: 25
+      - id: PaxChemistryBottle
+        amount: 10
+      - id: CognizineChemistryBottle
+        amount: 1
         

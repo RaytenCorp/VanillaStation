@@ -33,6 +33,20 @@
   itemBenefits:
   - BenefitSalvage
 
+- type: departmentgoal
+  id: CargoGoliath
+  text: station-goal-cargo-Goliath
+  department: 2
+  itemBenefits:
+  - BenefitSalvage
+
+- type: departmentgoal
+  id: CargoClone
+  text: station-goal-cargo-Clone
+  department: 2
+  itemBenefits:
+  - BenefitSalvage
+
 ## Предметные-Награды
 - type: entity
   id: BenefitSalvage

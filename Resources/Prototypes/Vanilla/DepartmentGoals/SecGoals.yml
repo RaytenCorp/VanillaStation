@@ -29,7 +29,7 @@
 - type: departmentgoal
   id: SecFreeSyndie
   text: station-goal-sec-FreeSyndie
-  weight: 0.05 #Ultra-super-rare 
+  weight: 0.15 #Ultra-super-rare 
   department: 4
   itemBenefits:
   - BenefitSecfirst
@@ -42,6 +42,47 @@
   itemBenefits:
   - BenefitSecfirst
 
+- type: departmentgoal
+  id: SecСallSigns
+  text: station-goal-sec-СallSigns
+  department: 4 
+  itemBenefits:
+  - BenefitSecEasy
+
+- type: departmentgoal
+  id: SecWarmup
+  text: station-goal-sec-Warmup
+  department: 4 
+  itemBenefits:
+  - BenefitSecEasy
+
+- type: departmentgoal
+  id: SecSafetyRules
+  text: station-goal-sec-SafetyRulesSlime
+  weight: 0.5 #HARD
+  department: 4 
+  itemBenefits:
+  - BenefitSecSecond 
+  - BenefitSecfirst 
+
+- type: departmentgoal
+  id: SecSafetyRules
+  text: station-goal-sec-SafetyRulesNuke
+  weight: 0.5 #HARD
+  department: 4 
+  itemBenefits:
+  - BenefitSecSecond 
+  - BenefitSecfirst 
+
+- type: departmentgoal
+  id: SecSafetyRules
+  text: station-goal-sec-SafetyRulesDragon
+  weight: 0.5 #HARD
+  department: 4 
+  itemBenefits:
+  - BenefitSecSecond 
+  - BenefitSecfirst 
+
 #### Награды
 - type: entity
   id: BenefitSecfirst
@@ -52,11 +93,11 @@
   - type: StorageFill
     contents:
       - id: ClothingNeckSecuritymedal
-        amount: 4
+        amount: 2
       - id: ClothingMaskClownSecurity
-        amount: 4
+        amount: 2
       - id: ClothingHeadHelmetJustice
-        amount: 4
+        amount: 2
       - id: ClothingShoesTacticalBoots
         amount: 1
 
@@ -69,10 +110,29 @@
   - type: StorageFill
     contents:
       - id: ClothingNeckSecuritymedal
-        amount: 4
+        amount: 2
       - id: ClothingMaskClownSecurity
-        amount: 4
+        amount: 2
       - id: ClothingHeadHelmetJustice
-        amount: 4
+        amount: 2
       - id: MemoryShieldImplanter
         amount: 2
+
+- type: entity
+  id: BenefitSecEasy
+  parent: CrateBaseBenefit
+  components:
+  - type: AccessReader
+    access: [["Armory"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckSecuritymedal
+        amount: 2
+      - id: ClothingMaskClownSecurity
+        amount: 2
+      - id: ClothingHeadHelmetJustice
+        amount: 2
+      - id: WeaponDisablerSMG
+        amount: 2
+
+        

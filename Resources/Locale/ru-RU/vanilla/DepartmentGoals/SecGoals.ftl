@@ -34,3 +34,33 @@ station-goal-sec-HardCore =
     Цель смены службы безопасности:[/bold] продать всё вооружение из оружейной комнаты, демонстрируя, что для настоящих профессионалов не требуется никаких дополнительных вещей!
     
     { department-goal-end }
+station-goal-sec-СallSigns=
+    { department-goal-start }[bold]
+    
+    Цель смены службы безопасности:[/bold] придумать позывные для всех сотрудников СБ. Для обеспечения дополнительного уровня шифрования отдела.
+    
+    { department-goal-end }
+station-goal-sec-Warmup=
+    { department-goal-start }[bold]
+    
+    Цель смены службы безопасности:[/bold] провести разминку для сотрудиков СБ. Она должна включать не менее 30 приседаний, 30 отжимай и тренировку стрельбы для каждого сотрудника службы безпоасности.
+    
+    { department-goal-end }
+station-goal-sec-SafetyRulesSlime=
+    { department-goal-start }[bold]
+    
+    Цель смены службы безопасности:[/bold] провести инструктаж для всего экипажа по технике безопасности при нападении слаймов.
+    
+    { department-goal-end }
+station-goal-sec-SafetyRulesNuke=
+    { department-goal-start }[bold]
+    
+    Цель смены службы безопасности:[/bold] провести инструктаж для всего экипажа по технике безопасности при нападении ядерных оперативников.
+    
+    { department-goal-end }
+station-goal-sec-SafetyRulesDragon=
+    { department-goal-start }[bold]
+    
+    Цель смены службы безопасности:[/bold] провести инструктаж для всего экипажа по технике безопасности при нападении космического дракона.
+    
+    { department-goal-end }

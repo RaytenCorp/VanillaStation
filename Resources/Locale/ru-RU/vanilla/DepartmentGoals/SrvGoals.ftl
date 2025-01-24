@@ -40,3 +40,27 @@ station-goal-SRV-Menu-Kitchen =
     Цель смены сервисного отдела:[/bold] составить меню для кухни, учитывая предпочтения экипажа и создавая разнообразие блюд.
 
     { department-goal-end }
+station-goal-SRV-Drawing =
+    { department-goal-start }[bold]
+
+    Цель смены сервисного отдела:[/bold] разукрасить пол в одном из отсеков станции, поддерживая радостную обстановку на станции.
+
+    { department-goal-end }
+station-goal-SRV-Anekdot =
+    { department-goal-start }[bold]
+
+    Цель смены сервисного отдела:[/bold] написать сборник анекдотов состоящий из хотя бы 3 анекдотов на тематику космической станции.
+
+    { department-goal-end }
+station-goal-SRV-Theatre =
+    { department-goal-start }[bold]
+
+    Цель смены сервисного отдела:[/bold] провести театральную постановку перед всем экипажем. Позитивно влияя на досуг персонала.
+
+    { department-goal-end }
+station-goal-SRV-Interview =
+    { department-goal-start }[bold]
+
+    Цель смены сервисного отдела:[/bold] провести интервью для одного из сотрудинков отдела. Повышая осведомлённость о проблемах и интересах экипажа.
+
+    { department-goal-end }

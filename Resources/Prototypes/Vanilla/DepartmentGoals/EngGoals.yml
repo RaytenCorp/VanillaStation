@@ -6,6 +6,20 @@
   - BenefitENGBuilder
 
 - type: departmentgoal
+  id: ENGToiletRoom
+  text: station-goal-ENG-ToiletRoom
+  department: 3
+  itemBenefits:
+  - BenefitENGBuilder
+
+- type: departmentgoal
+  id: ENGBombShelter
+  text: station-goal-ENG-BombShelter
+  department: 3
+  itemBenefits:
+  - BenefitENGBuilder
+
+- type: departmentgoal
   id: ENGClownstatue
   text: station-goal-ENG-Clownstatue
   department: 3
@@ -114,6 +128,8 @@
       - id: HellfireHeaterMachineCircuitBoard
         amount: 1
       - id: HellfireFreezerMachineCircuitBoard
+        amount: 1
+      - id: SheetPlasma
         amount: 1
 
 - type: entity

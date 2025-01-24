@@ -4,6 +4,12 @@ station-goal-med-bluesky =
     Цель смены медицинского отдела:[/bold] синтезировать 60 единиц эфедронекса, обеспечивая своевременное лечение и поддержку здоровья экипажа.
 
     { department-goal-end }
+station-goal-med-Kognizine =
+    { department-goal-start }[bold]
+
+    Цель смены медицинского отдела:[/bold] синтезировать 60 единиц когнизина, обеспечивая своевременное лечение и поддержку здоровья экипажа.
+
+    { department-goal-end }
 station-goal-Med-nogib =
     { department-goal-start }[bold]
 
@@ -25,7 +31,7 @@ station-goal-Med-allsensors =
 station-goal-Med-ImplantTracker =
     { department-goal-start }[bold]
 
-    Цель смены медицинского отдела:[/bold] установить имплант "трекер" 5 сотрудникам, укрепляя систему мониторинга передвижений и безопасности на станции.
+    Цель смены медицинского отдела:[/bold] установить имплант "трекер" 3 сотрудникам, укрепляя систему мониторинга передвижений и безопасности на станции.
 
     { department-goal-end }
 station-goal-Med-ImplantLightning =
@@ -38,5 +44,11 @@ station-goal-Med-ImplantMemoryShield =
     { department-goal-start }[bold]
 
     Цель смены медицинского отдела:[/bold] установить имплант "щит памяти" 2 сотрудникам, защищая их сознание от внешних воздействий и потенциальных угроз.
+
+    { department-goal-end }
+station-goal-Med-Psyho =
+    { department-goal-start }[bold]
+
+    Цель смены медицинского отдела:[/bold] провести психологическое исследование одного из сотрудников станции, удостоверевшись в психологическом здоровье экипажа станции.
 
     { department-goal-end }
