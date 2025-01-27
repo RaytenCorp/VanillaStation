@@ -23,8 +23,8 @@
     proto: EmitterBolt
     fireCost: 200
   - type: Battery
-    maxCharge: 2100
-    startingCharge: 2100
+    maxCharge: 2300
+    startingCharge: 2300
   - type: MagazineVisuals
     magState: mag
     steps: 11
