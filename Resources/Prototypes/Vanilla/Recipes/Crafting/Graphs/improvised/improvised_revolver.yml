@@ -1,0 +1,38 @@
+- type: constructionGraph
+  id: ImprovisedRevolverGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: revolver
+      steps:
+      - tag: Pipe
+        icon:
+          sprite: Structures/Piping/Atmospherics/pipe.rsi
+          state: pipeStraight
+        name: труба
+      - tag: ModularReceiver
+        icon:
+          sprite: Objects/Misc/modular_receiver.rsi
+          state: icon
+        name: модульный ресивер
+      - tag: Handcuffs
+        icon:
+          sprite: Objects/Misc/cablecuffs.rsi
+          state: cuff
+          color: red
+        name: кабельные стяжки
+      - tag: Handcuffs
+        icon:
+          sprite: Objects/Misc/cablecuffs.rsi
+          state: cuff
+          color: red
+        name: кабельные стяжки
+      - material: Steel
+        amount: 8
+        doAfter: 2
+      - material: WoodPlank
+        amount: 3
+        doAfter: 2
+  - node: revolver
+    entity: WeaponRevolverMakeshift

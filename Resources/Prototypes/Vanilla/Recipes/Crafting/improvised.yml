@@ -1,0 +1,65 @@
+- type: construction
+  name: самодельный револьвер
+  id: improvisedrevolver
+  graph: ImprovisedRevolverGraph
+  startNode: start
+  targetNode: revolver
+  category: construction-category-weapons
+  objectType: Item
+  description: Кустарный револьвер, использующий винтовочные .30 патроны.
+  icon:
+    sprite: Vanilla/Objects/Weapons/Makeshift/revolver.rsi
+    state: base
+
+- type: construction
+  name: самодельный винтовочный патрон
+  id: CartridgeRifleImprovised
+  graph: ImprovisedRevolverCartridgeGraph
+  startNode: start
+  targetNode: cartridge
+  category: construction-category-weapons
+  objectType: Item
+  description: Самодельный винтовочный патрон .30 калибра из спичечной серы и металлического стержня.
+  icon:
+    sprite: Vanilla/Objects/Weapons/Guns/Ammunition/Casings/makeshift_casing.rsi
+    state: base
+
+- type: construction
+  name: самодельный плазменный меч
+  id: ImprovisedPlasmaSword
+  graph: ImprovisedPlasmaSwordGraph
+  startNode: start
+  targetNode: sword
+  RequiresInstrumentationLevel: 3
+  category: construction-category-weapons
+  objectType: Item
+  description: Неэкономный кустарный плазменный меч с повышенной температурой сгорания.
+  icon:
+    sprite: Vanilla/Objects/Weapons/Makeshift/makeshift_plasmasword.rsi
+    state: icon
+
+- type: construction
+  name: самодельный двуствольный дробовик
+  id: ImprovisedDoubleBarreledShotgun
+  graph: ImprovisedDoubleBarrelGraph
+  startNode: start
+  targetNode: shotgun
+  category: construction-category-weapons
+  objectType: Item
+  description: Два кустарных дробовика, завязанных стяжками, дёшево..
+  icon:
+    sprite: Vanilla/Objects/Weapons/Makeshift/double_barreled.rsi
+    state: icon
+
+- type: construction
+  name: самодельный бронежилет
+  id: ImprovisedArmorVest
+  graph: ImprovisedArmorVestGraph
+  startNode: start
+  targetNode: vest
+  category: construction-category-clothing
+  objectType: Item
+  description: Два скреплённых между собой кабелями самодельных щита, хорошо защищает от открытого направленного пламени и тупых предметов, а от пуль не очень.
+  icon:
+    sprite: Vanilla/Objects/Clothing/OuterClothing/Armor/Makeshift.rsi
+    state: icon

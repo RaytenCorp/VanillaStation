@@ -1,0 +1,12 @@
+- type: entity
+  id: CartridgeMakeshiftRifle
+  name: makeshift rifle cartridge (.30 rifle)
+  parent: BaseCartridgeLightRifle
+  components:
+  - type: CartridgeAmmo
+    proto: BulletLightRifle
+  - type: Sprite
+    sprite: Vanilla/Objects/Weapons/Guns/Ammunition/Casings/makeshift_casing.rsi
+  - type: Construction
+    graph: ImprovisedRevolverCartridgeGraph
+    node: cartridge

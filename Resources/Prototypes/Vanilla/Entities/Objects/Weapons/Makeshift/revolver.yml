@@ -1,0 +1,48 @@
+- type: entity
+  name: makeshift revolver
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverMakeshift
+  description: A makeshift revolver that looks very unreliable.
+  components:
+  - type: GunCanBeFall
+    ChanceToFallPerLevel: 0.7
+  - type: Sprite
+    sprite: Vanilla/Objects/Weapons/Makeshift/revolver.rsi
+    state: base
+  - type: Clothing
+    sprite: Vanilla/Objects/Weapons/Makeshift/revolver.rsi
+    quickEquip: false
+    slots:
+    - Neck
+  - type: Gun
+    fireRate: 2
+  - type: ContainerContainer
+    containers:
+      revolver-ammo: !type:Container
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: null
+    capacity: 4
+    chambers: [ True, True, True, True ]
+    ammoSlots: [ null, null, null, null ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: ImprovisedRevolverGraph
+    node: revolver
+
+- type: entity
+  parent: WeaponRevolverMakeshift
+  id: WeaponRevolverMakeshiftLoaded
+  suffix: Filled
+  components:
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: CartridgeMakeshiftRifle
+    capacity: 4
+    chambers: [ True, True, True, True ]
+    ammoSlots: [ null, null, null, null ]

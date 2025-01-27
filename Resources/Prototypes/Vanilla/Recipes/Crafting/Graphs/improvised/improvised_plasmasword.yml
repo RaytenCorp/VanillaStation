@@ -1,0 +1,44 @@
+- type: constructionGraph
+  id: ImprovisedPlasmaSwordGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: sword
+      steps:
+      - tag: Handcuffs
+        icon:
+          sprite: Objects/Misc/cablecuffs.rsi
+          state: cuff
+          color: red
+        name: кабельные стяжки
+      - tag: Handcuffs
+        icon:
+          sprite: Objects/Misc/cablecuffs.rsi
+          state: cuff
+          color: red
+        name: кабельные стяжки
+      - tag: Handcuffs
+        icon:
+          sprite: Objects/Misc/cablecuffs.rsi
+          state: cuff
+          color: red
+        name: кабельные стяжки
+      - tag: Igniter
+        icon:
+          sprite: Objects/Devices/igniter.rsi
+          state: icon
+        name: воспламенитель
+      - tag: GasTank
+        icon:
+          sprite: Objects/Tanks/plasma.rsi
+          state: icon
+        name: баллон плазмы
+      - material: Steel
+        amount: 2
+        doAfter: 2
+      - material: MetalRod
+        amount: 1
+        doAfter: 2
+  - node: sword
+    entity: MeleeWeaponMakeshiftPlasmaSword
