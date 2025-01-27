@@ -2,3 +2,5 @@
   id: HandmadeShotgun
 - type: Tag
   id: HandmadeShield
+- type: Tag
+  id: HandmadeBomb

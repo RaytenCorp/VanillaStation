@@ -1,0 +1,52 @@
+- type: constructionGraph
+  id: ImprovisedBombPackGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bombpack
+          steps:
+            - material: Cloth
+              amount: 5
+              doAfter: 0.5
+            - tag: HandmadeBomb
+              name: зажигательная бомба
+              icon:
+                sprite: Objects/Weapons/Bombs/ied.rsi
+                state: base
+              doAfter: 0.5
+            - tag: HandmadeBomb
+              name: зажигательная бомба
+              icon:
+                sprite: Objects/Weapons/Bombs/ied.rsi
+                state: base
+              doAfter: 0.5
+            - tag: HandmadeBomb
+              name: зажигательная бомба
+              icon:
+                sprite: Objects/Weapons/Bombs/ied.rsi
+                state: base
+              doAfter: 0.5
+            - tag: HandmadeBomb
+              name: зажигательная бомба
+              icon:
+                sprite: Objects/Weapons/Bombs/ied.rsi
+                state: base
+              doAfter: 0.5
+            - tag: HandmadeBomb
+              name: зажигательная бомба
+              icon:
+                sprite: Objects/Weapons/Bombs/ied.rsi
+                state: base
+              doAfter: 0.5
+            - tag: HandmadeBomb
+              name: зажигательная бомба
+              icon:
+                sprite: Objects/Weapons/Bombs/ied.rsi
+                state: base
+              doAfter: 0.5
+            - material: Cable
+              amount: 15
+              doAfter: 5
+    - node: bombpack
+      entity: FireBombPack

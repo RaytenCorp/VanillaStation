@@ -52,6 +52,19 @@
     state: icon
 
 - type: construction
+  name: самодельный взрывпакет
+  id: ImprovisedBombPack
+  graph: ImprovisedBombPackGraph
+  startNode: start
+  targetNode: bombpack
+  category: construction-category-weapon
+  objectType: Item
+  description: Шесть обмотанных самодельных огненных бомб. Шанс моментального взрыва 4%.
+  icon:
+    sprite: Vanilla/Objects/Weapons/Makeshift/bombpack.rsi
+    state: icon
+
+- type: construction
   name: самодельный бронежилет
   id: ImprovisedArmorVest
   graph: ImprovisedArmorVestGraph
