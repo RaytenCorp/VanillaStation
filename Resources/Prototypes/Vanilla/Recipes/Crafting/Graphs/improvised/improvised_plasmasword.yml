@@ -4,7 +4,7 @@
   graph:
   - node: start
     edges:
-    - to: sword
+    - to: electronics
       steps:
       - tag: Handcuffs
         icon:
@@ -40,5 +40,30 @@
       - material: MetalRod
         amount: 1
         doAfter: 2
+  - node: electronics
+    entity: MakeshiftPlasmaSwordUnfinished
+    edges:
+    - to: sword
+      steps:
+      - material: Capacitor
+        amount: 1
+        doAfter: 2
+      - material: MatterBin
+        amount: 2
+        doAfter: 2
+      - tool: Welding
+        doAfter: 2
+      - material: Cable
+        amount: 5
+        doAfter: 0.5
+      - tool: Cutting
+        doAfter: 0.5
+      - tag: PowerCellSmall
+        name: маленькую батарею
+        icon:
+          sprite: Objects/Power/power_cells.rsi
+          state: small
+      - tool: Anchoring
+        doAfter: 1
   - node: sword
     entity: MeleeWeaponMakeshiftPlasmaSword

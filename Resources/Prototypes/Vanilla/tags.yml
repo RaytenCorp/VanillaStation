@@ -4,3 +4,5 @@
   id: HandmadeShield
 - type: Tag
   id: HandmadeBomb
+- type: Tag
+  id: EmitterCircuitboard

@@ -1,2 +1,2 @@
-ent-BasePlasticExplosive = взрывпакет
+ent-FireBombPack = взрывпакет
     .desc = Довольно опасная штука, особенно для того, кто его держит.

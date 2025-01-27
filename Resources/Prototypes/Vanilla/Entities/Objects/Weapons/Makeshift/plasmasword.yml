@@ -51,8 +51,8 @@
       collection: MetalThud
     activatedDamage:
         types:
-            Heat: 16
-            Structural: 15
+            Heat: 17
+            Structural: 18
   - type: ItemToggleSize
     activatedSize: Large
   - type: ItemToggleHot
@@ -106,9 +106,27 @@
     fuelReagent: Plasma
     fuelSolutionName: Sword
     welderUpdateTimer: 0.1
+  - type: Explosive
+    explosionType: FireBomb
+    totalIntensity: 100
+    intensitySlope: 4
+    maxIntensity: 25
+    canCreateVacuum: false
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
   - type: Construction
     graph: ImprovisedPlasmaSwordGraph
     node: sword
+
 
 - type: entity
   name: makeshift plasma sword
@@ -123,3 +141,42 @@
         - ReagentId: Plasma
           Quantity: 50
         maxVol: 50
+
+- type: entity
+  name: unfinished emitter gun
+  parent: BaseItem
+  id: MakeshiftPlasmaSwordUnfinished
+  description: Just a wrapper.
+  components:
+  - type: Sprite
+    sprite: Vanilla/Objects/Weapons/Makeshift/makeshift_plasmasword.rsi
+    state: unfinished
+  - type: Construction
+    graph: ImprovisedPlasmaSwordGraph
+    node: electronics
+  - type: Explosive
+    explosionType: FireBomb
+    totalIntensity: 100
+    intensitySlope: 4
+    maxIntensity: 25
+    canCreateVacuum: false
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: OnUseTimerTrigger
+    delay: 0.1
+    examinable: false
+    initialBeepDelay: 0
+    beepSound:
+      path: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+      params:
+        volume: 1
+  - type: ExplodeOnTrigger
