@@ -1,0 +1,47 @@
+- type: entity
+  name: plasma cutter
+  parent: BaseWeaponBattery
+  id: WeaponPlasmaCutter
+  description: The instructions on the handle say "SHOOT THE LIMBS".
+  components:
+  - type: GunTrainer
+    ExpPerShot: 30
+  - type: Sprite
+    sprite: Vanilla/Objects/Weapons/Guns/Special/PlasmaCutter.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-unshaded-1
+        map: ["enum.GunVisualLayers.MagUnshaded"]
+  - type: Gun
+    projectileSpeed: 20
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/Vanilla/Weapons/PlasmaCutter/fire.ogg
+      params:
+        variation: 0.2
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: ProjectileBatteryAmmoProvider
+    proto: PlasmaProjectile
+    fireCost: 100
+  - type: Battery
+    maxCharge: 1400
+    startingCharge: 1400
+  - type: MagazineVisuals
+    magState: mag
+    steps: 14
+  - type: Appearance
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: PlasmaProjectile
+      fireCost: 100
+    - proto: PlasmaProjectileBattle
+      fireCost: 125
+  - type: TriggerOnActivate
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Vanilla/Weapons/PlasmaCutter/switch.ogg
+  - type: UseDelay
+    delay: 1.0
