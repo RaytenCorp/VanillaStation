@@ -1,0 +1,23 @@
+- type: entity
+  id: BulletSuicide
+  name: sucuide bullet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: piercing
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+    ignoreResistances: true
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 100
+    intensitySlope: 15
+    maxIntensity: 100
+    canCreateVacuum: false
+  - type: TriggerOnSpawn
+  - type: ExplodeOnTrigger

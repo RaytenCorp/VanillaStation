@@ -10,3 +10,15 @@
   - type: Construction
     graph: ImprovisedRevolverCartridgeGraph
     node: cartridge
+
+- type: entity
+  id: CartridgeMakeshiftRifleSuicide
+  name: makeshift rifle cartridge (.30 rifle)
+  parent: CartridgeMakeshiftRifle
+  suffix: Suicide
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSuicide
+  - type: Construction
+    graph: ImprovisedSuicideCartridgeGraph
+    node: cartridge

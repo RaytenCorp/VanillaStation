@@ -25,6 +25,19 @@
     state: base
 
 - type: construction
+  name: самодельный взрывной суицидный патрон
+  id: CartridgeSuicideImprovised
+  graph: ImprovisedSuicideCartridgeGraph
+  startNode: start
+  targetNode: cartridge
+  category: construction-category-weapons
+  objectType: Item
+  description: Используется для игры в арабскую рулетку.
+  icon:
+    sprite: Vanilla/Objects/Weapons/Guns/Ammunition/Casings/makeshift_casing.rsi
+    state: base
+
+- type: construction
   name: самодельный плазменный меч
   id: ImprovisedPlasmaSword
   graph: ImprovisedPlasmaSwordGraph
