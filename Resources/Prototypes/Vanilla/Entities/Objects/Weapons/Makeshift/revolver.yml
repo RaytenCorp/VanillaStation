@@ -24,9 +24,6 @@
       tags:
         - CartridgeLightRifle
     proto: null
-    capacity: 4
-    chambers: [ True, True, True, True ]
-    ammoSlots: [ null, null, null, null ]
   - type: StaticPrice
     price: 10
   - type: Construction
@@ -43,5 +40,3 @@
       tags:
         - CartridgeLightRifle
     proto: CartridgeMakeshiftRifle
-    chambers: [ True, True, True, True ]
-    ammoSlots: [ null, null, null, null ]
