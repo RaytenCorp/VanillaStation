@@ -25,6 +25,7 @@
         - CartridgeLightRifle
     proto: null
     capacity: 4
+    chambers: [ null, null, null, null ]
     ammoSlots: [ null, null, null, null ]
   - type: StaticPrice
     price: 10
