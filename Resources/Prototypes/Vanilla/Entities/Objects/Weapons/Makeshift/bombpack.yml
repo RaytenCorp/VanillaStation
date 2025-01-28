@@ -35,6 +35,7 @@
         base:
           Primed: { state: icon }
           Unprimed: { state: icon }
+  - type: DeviceLinkSink
   - type: Construction
     graph: ImprovisedBombPackGraph
     node: bombpack
