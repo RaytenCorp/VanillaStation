@@ -15,7 +15,7 @@
     slots:
     - Neck
   - type: Gun
-    fireRate: 2
+    fireRate: 0.8
   - type: ContainerContainer
     containers:
       revolver-ammo: !type:Container
@@ -24,19 +24,11 @@
       tags:
         - CartridgeLightRifle
     proto: null
+    capacity: 4
+    chambers: [ null, null, null, null ]
+    ammoSlots: [ true, true, true, true ]
   - type: StaticPrice
     price: 10
   - type: Construction
     graph: ImprovisedRevolverGraph
     node: revolver
-
-- type: entity
-  parent: WeaponRevolverMakeshift
-  id: WeaponRevolverMakeshiftLoaded
-  suffix: Filled
-  components:
-  - type: RevolverAmmoProvider
-    whitelist:
-      tags:
-        - CartridgeLightRifle
-    proto: CartridgeMakeshiftRifle
