@@ -27,6 +27,13 @@
   - BenefitENGBuilder
 
 - type: departmentgoal
+  id: ENGDisposal
+  text: station-goal-ENG-Disposal
+  department: 3
+  itemBenefits:
+  - BenefitENGBuilder
+  
+- type: departmentgoal
   id: ENGTesla
   text: station-goal-ENG-Tesla
   department: 3
@@ -39,13 +46,6 @@
   department: 3
   itemBenefits:
   - BenefitENGSingulo
-
-- type: departmentgoal
-  id: ENGDisposal
-  text: station-goal-ENG-Disposal
-  department: 3
-  itemBenefits:
-  - BenefitENGBuilder
 
 - type: departmentgoal
   id: ENGTritium
