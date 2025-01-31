@@ -86,12 +86,11 @@
         - NamesLastMilitary
 
 
-## ERT Leader
+## ERT Leader Gamma
 
 - type: entity
-  id: RandomHumanoidSpawnerERTLeader
-  name: ERT leader
-  suffix: ERTRole, Basic
+  id: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР лидер Гамма
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -129,7 +128,6 @@
     - type: AutoImplant
       implants:
       - TrackingImplant
-      - FreedomImplant
     - type: Speech
       speechSounds: Soldier
       soundCooldownTime: 0.1
@@ -156,13 +154,149 @@
       - NamesFirstMilitaryLeader
       - NamesLastMilitary
 
-## ERT Chaplain
+## ERT Leader Red
+
+- type: entity
+  id: RandomHumanoidSpawnerERTLeaderRed
+  name: ОБР лидер Красный
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertleadereva
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTLeaderRed
+
+- type: randomHumanoidSettings
+  id: ERTLeaderRed
+  parent: EventHumanoidMindShielded
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  randomizeName: false
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 3
+      ChemistryLevel: 3
+      EngineeringLevel: 3
+      BuildingLevel: 3
+      ResearchLevel: 3
+      InstrumentationLevel: 3
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-leader-name
+      description: ghost-role-information-ert-leader-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTLeader
+    - type: Loadout
+      prototypes: [ ERTLeaderREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+
+## ERT Leader Amber
+
+- type: entity
+  id: RandomHumanoidSpawnerERTLeaderAmber
+  name: ОБР лидер Эмбер
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertleader
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTLeaderAmber
+
+- type: randomHumanoidSettings
+  id: ERTLeaderAmber
+  parent: EventHumanoidMindShielded
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  randomizeName: false
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 3
+      ChemistryLevel: 3
+      EngineeringLevel: 3
+      BuildingLevel: 3
+      ResearchLevel: 3
+      InstrumentationLevel: 3
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-leader-name
+      description: ghost-role-information-ert-leader-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTLeader
+    - type: Loadout
+      prototypes: [ ERTLeaderAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+
+## ERT Chaplain -
 
 - type: entity
   id: RandomHumanoidSpawnerERTChaplain
-  parent: RandomHumanoidSpawnerERTLeader
+  parent: RandomHumanoidSpawnerERTLeaderGamma
   name: ERT chaplain
-  suffix: ERTRole, Basic
+  suffix: ERTRole
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -212,82 +346,12 @@
       prototypes: [ ERTChaplainGear ]
       roleLoadout: [ RoleSurvivalExtended ]
 
-## ERT Janitor
+## ERT Engineer Gamma
 
 - type: entity
-  id: RandomHumanoidSpawnerERTJanitor
-  parent: RandomHumanoidSpawnerERTLeader
-  name: ERT janitor
-  suffix: ERTRole, Basic
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: ertjanitor
-    - type: RandomMetadata
-      nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
-    - type: RandomHumanoidSpawner
-      settings: ERTJanitor
-
-- type: randomHumanoidSettings
-  id: ERTJanitor
-  parent: ERTLeader
-  speciesBlacklist:
-    - Diona
-    - Moth
-    - Arachnid
-    - Dwarf
-    - Vox
-    - Reptilian
-    - Vulpkanin
-  components:
-    - type: Skill
-      PilotingLevel: 3
-      RangeWeaponLevel: 3
-      MeleeWeaponLevel: 3
-      MedicineLevel: 0
-      ChemistryLevel: 0
-      EngineeringLevel: 0
-      BuildingLevel: 0
-      ResearchLevel: 0
-      InstrumentationLevel: 0
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
-    - type: Speech
-      speechSounds: Soldier
-      soundCooldownTime: 0.1
-    - type: TriggerOnMobstateChange
-      mobState:
-      - Critical
-    - type: EmitSoundOnTrigger
-      sound:
-        collection: SoldierDeath
-        params:
-          volume: -4
-    - type: GhostRole
-      name: ghost-role-information-ert-janitor-name
-      description: ghost-role-information-ert-janitor-description
-      rules: ghost-role-information-nonantagonist-rules
-      raffle:
-        settings: short
-      job: ERTJanitor
-    - type: RandomMetadata
-      nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
-    - type: Loadout
-      prototypes: [ ERTJanitorGear ]
-      roleLoadout: [ RoleSurvivalExtended ]
-
-## ERT Engineer
-
-- type: entity
-  id: RandomHumanoidSpawnerERTEngineer
-  parent: RandomHumanoidSpawnerERTLeader
-  name: ERT engineer
-  suffix: ERTRole, Basic
+  id: RandomHumanoidSpawnerERTEngineerGamma
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР инженер Гамма
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -350,13 +414,352 @@
       prototypes: [ ERTEngineerGear ]
       roleLoadout: [ RoleSurvivalExtended ]
 
-## ERT Security
+## ERT Engineer Red
 
 - type: entity
-  id: RandomHumanoidSpawnerERTSecurity
-  parent: RandomHumanoidSpawnerERTLeader
-  name: ERT security
-  suffix: ERTRole, Basic
+  id: RandomHumanoidSpawnerERTEngineerRed
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР инженер Красный
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertengineereva
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTEngineerRed
+
+- type: randomHumanoidSettings
+  id: ERTEngineerRed
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 0
+      ChemistryLevel: 0
+      EngineeringLevel: 3
+      BuildingLevel: 3
+      ResearchLevel: 0
+      InstrumentationLevel: 2
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-engineer-name
+      description: ghost-role-information-ert-engineer-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTEngineer
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTEngineerREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Engineer Amber
+
+- type: entity
+  id: RandomHumanoidSpawnerERTEngineerAmber
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР инженер Эмбер
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertengineer
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTEngineerAmber
+
+- type: randomHumanoidSettings
+  id: ERTEngineerAmber
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 0
+      ChemistryLevel: 0
+      EngineeringLevel: 3
+      BuildingLevel: 3
+      ResearchLevel: 0
+      InstrumentationLevel: 2
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-engineer-name
+      description: ghost-role-information-ert-engineer-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTEngineer
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTEngineerAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Janitor Gamma
+
+- type: entity
+  id: RandomHumanoidSpawnerERTJanitorGamma
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР уборщик Гамма
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertjanitor
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTJanitor
+
+- type: randomHumanoidSettings
+  id: ERTJanitor
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 0
+      ChemistryLevel: 0
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-janitor-name
+      description: ghost-role-information-ert-janitor-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTJanitor
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTJanitorGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Janitor Red
+
+- type: entity
+  id: RandomHumanoidSpawnerERTJanitorRed
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР уборщик Красный
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertjanitor
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTJanitorRed
+
+- type: randomHumanoidSettings
+  id: ERTJanitorRed
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 0
+      ChemistryLevel: 0
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-janitor-name
+      description: ghost-role-information-ert-janitor-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTJanitor
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTJanitorREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Janitor Amber
+
+- type: entity
+  id: RandomHumanoidSpawnerERTJanitorAmber
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР уборщик Эмбер
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertjanitor
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTJanitorAmber
+
+- type: randomHumanoidSettings
+  id: ERTJanitorAmber
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 0
+      ChemistryLevel: 0
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-janitor-name
+      description: ghost-role-information-ert-janitor-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTJanitor
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTJanitorAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Security Gamma
+
+- type: entity
+  id: RandomHumanoidSpawnerERTSecurityGamma
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР офицер безопасности Гамма
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -393,7 +796,6 @@
     - type: AutoImplant
       implants:
       - TrackingImplant
-      - FreedomImplant
     - type: Speech
       speechSounds: Soldier
       soundCooldownTime: 0.1
@@ -420,13 +822,148 @@
       prototypes: [ ERTSecurityGear ]
       roleLoadout: [ RoleSurvivalExtended ]
 
-## ERT Medic
+## ERT Security Red
 
 - type: entity
-  id: RandomHumanoidSpawnerERTMedical
-  parent: RandomHumanoidSpawnerERTLeader
-  name: ERT medic
-  suffix: ERTRole, Basic
+  id: RandomHumanoidSpawnerERTSecurityRed
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР офицер безопасности Красный
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertsecurityeva
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTSecurityRed
+
+- type: randomHumanoidSettings
+  id: ERTSecurityRed
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 3
+      ChemistryLevel: 0
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-security-name
+      description: ghost-role-information-ert-security-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTSecurity
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTSecurityREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Security Amber
+
+- type: entity
+  id: RandomHumanoidSpawnerERTSecurityAmber
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР офицер безопасности Эмбер
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertsecurity
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTSecurityAmber
+
+- type: randomHumanoidSettings
+  id: ERTSecurityAmber
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 3
+      MeleeWeaponLevel: 3
+      MedicineLevel: 3
+      ChemistryLevel: 0
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: -4
+    - type: GhostRole
+      name: ghost-role-information-ert-security-name
+      description: ghost-role-information-ert-security-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTSecurity
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTSecurityAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Medic Gamma
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMedicalGamma
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР медик Гамма
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -487,6 +1024,142 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTMedicalGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Medic Red
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMedicalRed
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР медик Красный
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertmedicaleva
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTMedicalRed
+
+- type: randomHumanoidSettings
+  id: ERTMedicalRed
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 2
+      MeleeWeaponLevel: 2
+      MedicineLevel: 3
+      ChemistryLevel: 3
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: 3
+    - type: GhostRole
+      name: ghost-role-information-ert-medical-name
+      description: ghost-role-information-ert-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTMedical
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTMedicalREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+## ERT Medic Amber
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMedicalAmber
+  parent: RandomHumanoidSpawnerERTLeaderGamma
+  name: ОБР медик Эмбер
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertmedical
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTMedicalAmber
+
+- type: randomHumanoidSettings
+  id: ERTMedicalAmber
+  parent: ERTLeader
+  speciesBlacklist:
+    - Diona
+    - Moth
+    - Arachnid
+    - Dwarf
+    - Vox
+    - Reptilian
+    - Vulpkanin
+  components:
+    - type: Skill
+      PilotingLevel: 3
+      RangeWeaponLevel: 2
+      MeleeWeaponLevel: 2
+      MedicineLevel: 3
+      ChemistryLevel: 3
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Speech
+      speechSounds: Soldier
+      soundCooldownTime: 0.1
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: EmitSoundOnTrigger
+      sound:
+        collection: SoldierDeath
+        params:
+          volume: 3
+    - type: GhostRole
+      name: ghost-role-information-ert-medical-name
+      description: ghost-role-information-ert-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTMedical
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTMedicalAMBERGear ]
       roleLoadout: [ RoleSurvivalExtended ]
 
 ## CBURN

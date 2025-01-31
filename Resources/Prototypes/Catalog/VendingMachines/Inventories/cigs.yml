@@ -1,6 +1,7 @@
 - type: vendingMachineInventory
   id: CigaretteMachineInventory
   startingInventory:
+    MusicPlayer: 3
     CigPackGreen: 2
     CigPackRed: 2
     CigPackBlue: 2
