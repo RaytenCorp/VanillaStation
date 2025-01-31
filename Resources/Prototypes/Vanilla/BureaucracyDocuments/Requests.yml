@@ -1,0 +1,41 @@
+- type: BureaucracyDocument
+  id: ERTRequest
+  text: Bureaucracy-request-ERT
+  label: "Запрос вызова спецсил ДСО"
+  category: Request
+
+- type: BureaucracyDocument
+  id: SuicideRequest
+  text: Bureaucracy-request-Suicide
+  label: "Запрос на проведение эвтаназии"
+  category: Request
+
+- type: BureaucracyDocument
+  id: VRIORequest
+  text: Bureaucracy-request-VRIO
+  label: "Заявление о назначении ВрИО"
+  category: Request
+
+- type: BureaucracyDocument
+  id: AccessRequest
+  text: Bureaucracy-request-Access
+  label: "Заявление на получение доступа"
+  category: Request
+
+- type: BureaucracyDocument
+  id: familyRequest
+  text: Bureaucracy-request-family
+  label: "Заявление о заключении брака"
+  category: Request
+
+- type: BureaucracyDocument
+  id: SLRequest
+  text: Bureaucracy-request-SL
+  label: "Жалоба на нарушение КЗ"
+  category: Request
+
+- type: BureaucracyDocument
+  id: SOPRequest
+  text: Bureaucracy-request-SOP
+  label: "Жалоба на нарушение СРП"
+  category: Request

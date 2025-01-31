@@ -1,0 +1,53 @@
+- type: BureaucracyDocument
+  id: GunOrder
+  text: Bureaucracy-order-gun
+  label: "Разрешение на ношение оружия"
+  category: Order
+
+- type: BureaucracyDocument
+  id: BuildingOrder
+  text: Bureaucracy-order-build
+  label: "Разрешение на строительство"
+  category: Order
+
+- type: BureaucracyDocument
+  id: MoveOnCodeOrder
+  text: Bureaucracy-order-MoveOnCode
+  label: "Разрешение на передвижение"
+  category: Order
+
+- type: BureaucracyDocument
+  id: StaffOrder
+  text: Bureaucracy-order-Staff
+  label: "Разрешение на препарат"
+  category: Order
+
+- type: BureaucracyDocument
+  id: GIBOrder
+  text: Bureaucracy-order-GIB
+  label: "Разрешение на утилизацию"
+  category: Order
+
+- type: BureaucracyDocument
+  id: dismissalOrder
+  text: Bureaucracy-order-dismissal
+  label: "Приказ об увольнении"
+  category: Order
+
+- type: BureaucracyDocument
+  id: OPRSOrder
+  text: Bureaucracy-order-OPRS
+  label: "Приказ о признании ОПРС"
+  category: Order
+
+- type: BureaucracyDocument
+  id: noimmunityOrder
+  text: Bureaucracy-order-noimmunity
+  label: "Лишение неприкосновенности"
+  category: Order
+
+- type: BureaucracyDocument
+  id: judgmentOrder
+  text: Bureaucracy-order-judgment
+  label: "Приговор"
+  category: Order
