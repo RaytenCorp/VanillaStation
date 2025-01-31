@@ -1,0 +1,41 @@
+- type: constructionGraph
+  id: ImprovisedDoubleBarrelGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: shotgun
+      steps:
+      - tag: Handcuffs
+        icon:
+          sprite: Objects/Misc/cablecuffs.rsi
+          state: cuff
+          color: red
+        name: кабельные стяжки
+      - tag: Handcuffs
+        icon:
+          sprite: Objects/Misc/cablecuffs.rsi
+          state: cuff
+          color: red
+        name: кабельные стяжки
+      - tag: Handcuffs
+        icon:
+          sprite: Objects/Misc/cablecuffs.rsi
+          state: cuff
+          color: red
+        name: кабельные стяжки
+      - tag: HandmadeShotgun
+        icon:
+          sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
+          state: icon
+        name: самодельный дробовик
+      - tag: HandmadeShotgun
+        icon:
+          sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
+          state: icon
+        name: самодельный дробовик
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: shotgun
+    entity: WeaponShotgunDoubleBarreledMakeshift
