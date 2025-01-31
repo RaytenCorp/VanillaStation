@@ -1,7 +1,8 @@
 ﻿- type: soundCollection
   id: NukeMusic
   files:
-    - /Audio/StationEvents/running_out.ogg
-    - /Audio/StationEvents/countdown.ogg
-    - /Audio/StationEvents/sound_station_14.ogg
-    - /Audio/Corvax/StationEvents/level.ogg # Corvax-NukeMusic
+    # - /Audio/StationEvents/running_out.ogg
+    # - /Audio/StationEvents/countdown.ogg
+    # - /Audio/StationEvents/sound_station_14.ogg
+    # - /Audio/Corvax/StationEvents/level.ogg # Corvax-NukeMusic
+    - /Audio/Vanilla/StationEvents/Time-To-Say-Goodbye.ogg #Vanilla-NukeMusic

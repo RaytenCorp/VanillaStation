@@ -1,0 +1,4 @@
+- type: BureaucracyDocument
+  id: BaseBuro
+  label: "Шаблон"
+  text: Bureaucracy-base-base

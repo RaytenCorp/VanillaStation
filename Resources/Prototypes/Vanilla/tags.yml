@@ -1,0 +1,8 @@
+- type: Tag
+  id: HandmadeShotgun
+- type: Tag
+  id: HandmadeShield
+- type: Tag
+  id: HandmadeBomb
+- type: Tag
+  id: EmitterCircuitboard

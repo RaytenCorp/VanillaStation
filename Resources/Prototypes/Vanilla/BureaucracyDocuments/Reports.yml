@@ -1,0 +1,17 @@
+- type: BureaucracyDocument
+  id: SituationReport
+  text: Bureaucracy-Report-Situation
+  label: "Отчёт о ситуации"
+  category: Report
+
+- type: BureaucracyDocument
+  id: DepGoalReport
+  text: Bureaucracy-Report-DepGoal
+  label: "Отчёт о выполнении цели отдела"
+  category: Report
+
+- type: BureaucracyDocument
+  id: MeetingReport
+  text: Bureaucracy-Report-Meeting
+  label: "Отчёт о собрании глав"
+  category: Report

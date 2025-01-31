@@ -1,0 +1,47 @@
+- type: entity
+  name: emitter gun
+  parent: BaseWeaponBattery
+  id: WeaponEmitterGun
+  description: Suitable as an emergency deterrent measure, or as an emergency terrorist attack measure.
+  components:
+  - type: GunTrainer
+    ExpPerShot: 30
+  - type: Sprite
+    sprite: Vanilla/Objects/Weapons/Makeshift/emitter_gun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-unshaded-1
+        map: ["enum.GunVisualLayers.MagUnshaded"]
+  - type: Gun
+    projectileSpeed: 30
+    soundGunshot:
+      path: /Audio/Weapons/emitter.ogg
+      params:
+        variation: 0.2
+  - type: ProjectileBatteryAmmoProvider
+    proto: EmitterBolt
+    fireCost: 200
+  - type: Battery
+    maxCharge: 2300
+    startingCharge: 2300
+  - type: MagazineVisuals
+    magState: mag
+    steps: 11
+  - type: Appearance
+  - type: Construction
+    graph: ImprovisedEmitterGunGraph
+    node: finish
+
+- type: entity
+  name: unfinished emitter gun
+  parent: BaseItem
+  id: EmitterGunUnfinished
+  description: Just a wrapper.
+  components:
+  - type: Sprite
+    sprite: Vanilla/Objects/Weapons/Makeshift/emitter_gun.rsi
+    state: unfinished
+  - type: Construction
+    graph: ImprovisedEmitterGunGraph
+    node: electronics

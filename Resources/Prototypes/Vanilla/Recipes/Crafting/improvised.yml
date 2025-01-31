@@ -1,0 +1,66 @@
+- type: construction
+  name: самодельный плазменный меч
+  id: ImprovisedPlasmaSword
+  graph: ImprovisedPlasmaSwordGraph
+  startNode: start
+  targetNode: sword
+  RequiresInstrumentationLevel: 3
+  category: construction-category-weapons
+  objectType: Item
+  description: Неэкономный кустарный плазменный меч с повышенной температурой сгорания.
+  icon:
+    sprite: Vanilla/Objects/Weapons/Makeshift/makeshift_plasmasword.rsi
+    state: icon
+
+- type: construction
+  name: самодельный двуствольный дробовик
+  id: ImprovisedDoubleBarreledShotgun
+  graph: ImprovisedDoubleBarrelGraph
+  startNode: start
+  targetNode: shotgun
+  category: construction-category-weapons
+  objectType: Item
+  description: Два кустарных дробовика, завязанных стяжками, дёшево..
+  icon:
+    sprite: Vanilla/Objects/Weapons/Makeshift/double_barreled.rsi
+    state: icon
+
+- type: construction
+  name: самодельный взрывпакет
+  id: ImprovisedBombPack
+  graph: ImprovisedBombPackGraph
+  startNode: start
+  targetNode: bombpack
+  category: construction-category-weapons
+  objectType: Item
+  description: Шесть обмотанных самодельных огненных бомб. Шанс моментального взрыва 4%.
+  icon:
+    sprite: Vanilla/Objects/Weapons/Makeshift/bombpack.rsi
+    state: icon
+
+- type: construction
+  name: самодельная эмиттерная пушка
+  id: ImprovisedEmitterGun
+  graph: ImprovisedEmitterGunGraph
+  RequiresInstrumentationLevel: 3
+  startNode: start
+  targetNode: finish
+  category: construction-category-weapons
+  objectType: Item
+  description: Маленький эмиттер, большой крафт.
+  icon:
+    sprite: Vanilla/Objects/Weapons/Makeshift/emitter_gun.rsi
+    state: base
+
+- type: construction
+  name: самодельный бронежилет
+  id: ImprovisedArmorVest
+  graph: ImprovisedArmorVestGraph
+  startNode: start
+  targetNode: vest
+  category: construction-category-clothing
+  objectType: Item
+  description: Два скреплённых между собой кабелями самодельных щита, хорошо защищает от открытого направленного пламени и тупых предметов, а от пуль не очень.
+  icon:
+    sprite: Vanilla/Objects/Clothing/OuterClothing/Armor/Makeshift.rsi
+    state: icon
