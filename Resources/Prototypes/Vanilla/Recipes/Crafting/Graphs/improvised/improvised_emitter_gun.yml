@@ -1,0 +1,65 @@
+- type: constructionGraph
+  id: ImprovisedEmitterGunGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: electronics
+          steps:
+            - material: Plasteel
+              amount: 10
+              doAfter: 0.5
+            - material: MetalRod
+              amount: 6
+              doAfter: 0.5
+            - tag: Pipe
+              icon:
+                sprite: Structures/Piping/Atmospherics/pipe.rsi
+                state: pipeStraight
+              name: труба
+            - tag: Handcuffs
+              icon:
+                sprite: Objects/Misc/cablecuffs.rsi
+                state: cuff
+                color: red
+              name: кабельные стяжки
+    - node: electronics
+      entity: EmitterGunUnfinished
+      edges:
+      - to: finish
+        steps:
+        - tag: PowerCellSmall
+          name: маленькую батарею
+          icon:
+            sprite: Objects/Power/power_cells.rsi
+            state: small
+        - tag: PowerCellSmall
+          name: маленькую батарею
+          icon:
+            sprite: Objects/Power/power_cells.rsi
+            state: small
+        - material: Cable
+          amount: 20
+          doAfter: 0.5
+        - material: CableMV
+          amount: 5
+          doAfter: 0.5
+        - material: CableHV
+          amount: 5
+          doAfter: 0.5
+        - tool: Welding
+          doAfter: 4
+        - material: Capacitor
+          amount: 1
+          doAfter: 0.5
+        - tag: EmitterCircuitboard
+          store: board
+          name: "плату эмиттера"
+          icon:
+            sprite: "Objects/Misc/module.rsi"
+            state: "engineering"
+          doAfter: 0.5
+        - tool: Screwing
+          doAfter: 2
+    - node: finish
+      entity: WeaponEmitterGun

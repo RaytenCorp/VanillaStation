@@ -1,0 +1,28 @@
+- type: entity
+  name: makeshift double-barreled shotgun
+  parent: WeaponShotgunSawnEmpty
+  id: WeaponShotgunDoubleBarreledMakeshift
+  description: Feel like a doomguy, unfortunately without hands..
+  components:
+  - type: GunCanBeFall
+    RequiresRangeWeaponLevel: 2
+    ChanceToFallPerLevel: 0.8
+  - type: Item
+    sprite: Vanilla/Objects/Weapons/Makeshift/double_barreled.rsi
+    size: Ginormous
+  - type: Sprite
+    sprite: Vanilla/Objects/Weapons/Makeshift/double_barreled.rsi
+  - type: Clothing
+    sprite: Vanilla/Objects/Weapons/Makeshift/double_barreled.rsi
+    slots:
+    - Back
+  - type: Gun
+    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+  - type: BallisticAmmoProvider
+    capacity: 2
+  - type: MultiHandedItem

@@ -28,6 +28,12 @@ station-goal-ENG-Clownstatue =
     Цель смены инженерного отдела:[/bold] возвести как минимум 3 статуи клоуна-спасителя, подчёркивая важность юмора и символов, объединяющих экипаж.
 
     { department-goal-end }
+station-goal-ENG-Disposal =
+    { department-goal-start }[bold]
+
+    Цель смены инженерного отдела:[/bold] создать на станции 10 утилизационных блоков, соединённых с общей сетью утилизационных труб.
+
+    { department-goal-end }
 station-goal-ENG-SyndieRoom =
     { department-goal-start }[bold]
 

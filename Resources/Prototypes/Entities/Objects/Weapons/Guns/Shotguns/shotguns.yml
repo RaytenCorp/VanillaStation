@@ -304,6 +304,11 @@
     node: shotgun
   - type: StaticPrice
     price: 20
+# Vanilla Starts
+  - type: Tag
+    tags:
+    - HandmadeShotgun
+# Vanilla Ends
 
 - type: entity
   name: improvised shotgun
