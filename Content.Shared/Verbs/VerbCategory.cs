@@ -28,12 +28,37 @@ namespace Content.Shared.Verbs
         /// </remarks>
         public readonly bool IconsOnly;
 
+
         public VerbCategory(string text, string? icon, bool iconsOnly = false)
         {
             Text = Loc.GetString(text);
             Icon = icon == null ? null : new SpriteSpecifier.Texture(new(icon));
             IconsOnly = iconsOnly;
         }
+
+
+
+
+        //Vanilla-Station-start
+        // Подкатегории
+        public List<VerbCategory> SubCategories { get; set; } = new List<VerbCategory>(); 
+        public bool ShowInHead { get; set; } = true; 
+        // Метод для добавления подкатегории
+        public void AddSubCategory(VerbCategory subCategory)
+        {
+            SubCategories.Add(subCategory);
+            subCategory.ShowInHead = false;
+        }
+        public static readonly VerbCategory Bureaucracy =
+            new VerbCategory("Бюрократия", "/Textures/Vanilla/Interface/VerbIcons/pen.svg.192dpi.png");
+        public static readonly VerbCategory BureaucracyOrder =
+            new VerbCategory("Приказы", null);
+        public static readonly VerbCategory BureaucracyReports =
+            new VerbCategory("Отчёты", null);
+        public static readonly VerbCategory BureaucracyRequest =
+            new VerbCategory("Запросы", null);
+        //Vanilla-Station-end
+
 
         public static readonly VerbCategory Admin =
             new("verb-categories-admin", "/Textures/Interface/character.svg.192dpi.png");
@@ -85,5 +110,7 @@ namespace Content.Shared.Verbs
         public static readonly VerbCategory SelectType = new("verb-categories-select-type", null);
 
         public static readonly VerbCategory PowerLevel = new("verb-categories-power-level", null);
+
+
     }
 }
