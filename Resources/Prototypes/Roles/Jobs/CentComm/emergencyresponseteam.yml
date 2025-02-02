@@ -154,9 +154,6 @@
   storage:
     back:
     - RCDRecharging
-    - CableMVStack
-    - CableHVStack
-    - CableApcStack
     - SheetPlasteel
     - SheetPlasteel
     - AmeJar
@@ -165,6 +162,7 @@
     - SeismicCharge
     - ExGrenade
     - ExGrenade
+    - AirTankFilled
   inhand:
   - WeaponPulseCarbine
 
@@ -217,6 +215,7 @@
     - SmokeGrenade
     - PortableRecharger
     - CombatMedipen
+    - AirTankFilled
   inhand:
   - WeaponPulseCarbine
 
@@ -277,6 +276,7 @@
     - PunctAutoInjector
     - PunctAutoInjector
     - PillCanisterHyronalin
+    - AirTankFilled
   inhand:
   - WeaponPulseCarbine
 
@@ -325,6 +325,7 @@
     - CrowbarRed
     - AdvMopItem
     - TrashBagBlue
+    - AirTankFilled
   inhand:
   - WeaponXrayCannon
 
@@ -362,6 +363,7 @@
     - MagazinePistolSubMachineGunTopMounted
     - MagazinePistolSubMachineGunTopMounted
     - MagazineBoxPistol
+    - AirTankFilled
   inhand:
   - WeaponSubMachineGunWt550
 
@@ -390,6 +392,7 @@
     - CrowbarRed
     - BoxMagazineRifle
     - SmokeGrenade
+    - AirTankFilled
   inhand:
   - WeaponRifleLecter
 
@@ -422,6 +425,7 @@
     - BoxLethalshot
     - WeaponFlareGunSecurity
     - BoxShotgunFlare
+    - AirTankFilled
   inhand:
   - WeaponShotgunKammerer
 
@@ -452,6 +456,7 @@
     - MedkitCombatFilled
     - BoxLethalshot
     - BoxLethalshot
+    - AirTankFilled
   inhand:
   - WeaponShotgunKammerer
 
@@ -477,6 +482,7 @@
     - TrashBagBlue
     - CrowbarRed
     - AdvMopItem
+    - AirTankFilled
   inhand:
   - WeaponLaserCarbine
 

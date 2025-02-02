@@ -39,3 +39,93 @@
   name: PigeonBeans - Sunset
   path:
     path: /Audio/Jukebox/sunset.ogg
+
+- type: jukebox
+  id: InDaClub
+  name: 50 Cent - In da Club
+  path:
+    path: /Audio/Jukebox/50 Cent - In Da Club.ogg
+
+- type: jukebox
+  id: Gessafelstein
+  name: Gessafelstein - Opr
+  path:
+    path: /Audio/Jukebox/Gesaffelstein - Opr.ogg
+
+- type: jukebox
+  id: BadBoys
+  name: Inner Circle - Bad Boys
+  path:
+    path: /Audio/Jukebox/Inner Circle - Bad Boys.ogg
+
+- type: jukebox
+  id: GoodEnding
+  name: Papers Please - Good Ending
+  path:
+    path: /Audio/Jukebox/Papers Please - Good Ending.ogg
+
+- type: jukebox
+  id: BadEnding
+  name: Papers Please - Bad Ending
+  path:
+    path: /Audio/Jukebox/Papers Please - Bad Ending.ogg
+
+- type: jukebox
+  id: Yamayka
+  name: Comedoz - Ямайка
+  path:
+    path: /Audio/Jukebox/Comedoz - Yamayka.ogg
+
+- type: jukebox
+  id: Wait
+  name: DVRST - WAIT
+  path:
+    path: /Audio/Jukebox/DVRST - WAIT.ogg
+
+- type: jukebox
+  id: RadioChill
+  name: My Summer Car - Radio Chill
+  path:
+    path: /Audio/Jukebox/My Summer Car - Radio Chill.ogg
+
+- type: jukebox
+  id: FallenDown
+  name: Undertale - Fallen Down
+  path:
+    path: /Audio/Jukebox/Undertale OST - Fallen Down.ogg
+
+- type: jukebox
+  id: Home
+  name: Undertale - Home
+  path:
+    path: /Audio/Jukebox/Undertale OST - Home.ogg
+
+- type: jukebox
+  id: SweetGingerGreen
+  name: This is The Police - Sweet Ginger Green
+  path:
+    path: /Audio/Jukebox/This is The Police OST - Sweet Ginger Green.ogg
+
+- type: jukebox
+  id: Fast
+  name: NAVOJ - Fast
+  path:
+    path: /Audio/Jukebox/NAVOJ - Fast.ogg
+
+- type: jukebox
+  id: WaitingForTheSun
+  name: Rimworld - Waiting for the Sun
+  path:
+    path: /Audio/Jukebox/Rimworld OST - Waiting for the Sun.ogg
+
+- type: jukebox
+  id: SearchParty
+  name: Pressure - Search Party
+  path:
+    path: /Audio/Jukebox/Pressure OST - Search Party.ogg
+
+- type: jukebox
+  id: Stalker
+  name: STALKER Clear Sky - Combat Song
+  path:
+    path: /Audio/Jukebox/STALKER Clear Sky OST - Combat Song.ogg
