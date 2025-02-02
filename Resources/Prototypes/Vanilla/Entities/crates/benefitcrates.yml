@@ -1,0 +1,55 @@
+- type: entity
+  parent: CrateBaseWeldable
+  id: CrateBaseBenefit
+  suffix: Benefit
+  abstract: true
+  name: награда за выполнение цели
+  description: Слава NanoTrasen!
+  components:
+  - type: CargoSellBlacklist
+  - type: Lock
+    onlyoneuse: true
+  - type: LockVisuals
+  - type: AccessReader
+  - type: Icon
+    sprite: Vanilla/Structures/Storage/Crates/benefitcrate.rsi
+  - type: Sprite
+    sprite: Vanilla/Structures/Storage/Crates/benefitcrate.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+    - state: paper
+      sprite: Structures/Storage/Crates/labels.rsi
+      offset: "-0.5,0"
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 95000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Construction
+    graph: CrateSecure
+    node: cratesecure
+    containers:
+    - entity_storage
+  - type: Reflect
+    reflects:
+    - Energy
+    reflectProb: 0.2
+    spread: 90

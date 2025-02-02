@@ -148,6 +148,7 @@
       job: ERTLeader
     - type: Loadout
       prototypes: [ ERTLeaderGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryLeader
@@ -215,6 +216,7 @@
       job: ERTLeader
     - type: Loadout
       prototypes: [ ERTLeaderREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryLeader
@@ -282,6 +284,7 @@
       job: ERTLeader
     - type: Loadout
       prototypes: [ ERTLeaderAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryLeader
@@ -341,6 +344,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTChaplainGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Engineer Gamma
 
@@ -408,6 +412,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTEngineerGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Engineer Red
 
@@ -475,6 +480,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTEngineerREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Engineer Amber
 
@@ -542,6 +548,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTEngineerAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Janitor Gamma
 
@@ -609,6 +616,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTJanitorGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Janitor Red
 
@@ -676,6 +684,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTJanitorREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Janitor Amber
 
@@ -743,6 +752,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTJanitorAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Security Gamma
 
@@ -810,6 +820,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTSecurityGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Security Red
 
@@ -877,6 +888,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTSecurityREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Security Amber
 
@@ -944,6 +956,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTSecurityAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Medic Gamma
 
@@ -1011,6 +1024,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTMedicalGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Medic Red
 
@@ -1078,6 +1092,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTMedicalREDGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## ERT Medic Amber
 
@@ -1145,6 +1160,7 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTMedicalAMBERGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
 
 ## CBURN
 

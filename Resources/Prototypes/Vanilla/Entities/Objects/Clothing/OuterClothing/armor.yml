@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorMakeshift
+  name: makeshift armor vest
+  description: An uncomfortable homemade armor vest made from tho shields.
+  components:
+  - type: Sprite
+    sprite: Vanilla/Objects/Clothing/OuterClothing/Armor/Makeshift.rsi
+  - type: Clothing
+    sprite: Vanilla/Objects/Clothing/OuterClothing/Armor/Makeshift.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.75
+        Piercing: 0.90
+        Heat: 0.70
+  - type: Construction
+    graph: ImprovisedArmorVestGraph
+    node: vest
