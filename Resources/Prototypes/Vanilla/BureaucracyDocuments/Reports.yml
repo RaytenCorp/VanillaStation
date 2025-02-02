@@ -15,3 +15,21 @@
   text: Bureaucracy-Report-Meeting
   label: "Отчёт о собрании глав"
   category: Report
+
+- type: BureaucracyDocument
+  id: DetectiveReport
+  text: Bureaucracy-Report-Detective
+  label: "Отчёт о расследовании"
+  category: Report
+
+- type: BureaucracyDocument
+  id: EpicrisisReport
+  text: Bureaucracy-Report-epicrisis
+  label: "Выписной эпикриз"
+  category: Report
+
+- type: BureaucracyDocument
+  id: PsyhoReport
+  text: Bureaucracy-Report-Psyho
+  label: "Заключение о психологическом здоровье"
+  category: Report

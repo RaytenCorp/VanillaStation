@@ -23,6 +23,12 @@
   category: Request
 
 - type: BureaucracyDocument
+  id: WorkRequest
+  text: Bureaucracy-request-Work
+  label: "Заявление о трудоустройстве"
+  category: Request
+
+- type: BureaucracyDocument
   id: familyRequest
   text: Bureaucracy-request-family
   label: "Заявление о заключении брака"

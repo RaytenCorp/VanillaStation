@@ -60,3 +60,12 @@ Bureaucracy-request-family=
     Она: (ФИО)
 
     { Bureaucracy-base-end }
+Bureaucracy-request-Work=
+    { Bureaucracy-base-start }
+
+    Прошу принять меня на должность (полное наименование должности).
+    
+    Обязуюсь следовать стандартным рабочим процедурам отдела. 
+    Обязуюсь сдать рабочее снаряжение и экипировку отдела при увольнении.
+
+    { Bureaucracy-base-end }

@@ -51,3 +51,9 @@
   text: Bureaucracy-order-judgment
   label: "Приговор"
   category: Order
+
+- type: BureaucracyDocument
+  id: searchOrder
+  text: Bureaucracy-order-search
+  label: "Ордер на обыск"
+  category: Order

@@ -70,3 +70,9 @@ Bureaucracy-order-judgment=
     С учетом всех смягчающих и отягчающих обстоятельств, правовое наказание данного лица представлено в виде:
         
     { Bureaucracy-base-end }
+Bureaucracy-order-search=
+    { Bureaucracy-base-start }
+
+    Разрешен обыск сотрудника (ФИО) в целях отыскания и изъятия (предмет поиска).
+        
+    { Bureaucracy-base-end }
