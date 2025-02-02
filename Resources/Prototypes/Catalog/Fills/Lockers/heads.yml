@@ -18,7 +18,6 @@
     - id: RubberStampDenied
     - id: RubberStampQm
     - id: AstroNavCartridge
-    - id: PrinterDocFlatpack # Corvax-Printer
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -139,7 +138,6 @@
     - id: WeaponDisabler
     - id: ClothingEyesHudCommand
     - id: ClothingOuterCoatHOP # Corvax-Resprite
-    - id: PrinterDocFlatpack # Corvax-Printer
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
