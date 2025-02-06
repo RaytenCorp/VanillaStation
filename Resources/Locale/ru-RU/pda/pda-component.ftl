@@ -16,6 +16,7 @@ comp-pda-ui-menu-title = КПК
 comp-pda-ui-footer = Карманный Персональный Компьютер
 comp-pda-ui-station = Станция: [color=white]{ $station }[/color]
 comp-pda-ui-station-alert-level = Уровень угрозы: [color={ $color }]{ $level }[/color]
+comp-pda-ui-station-alert-level-withtime = Уровень угрозы: [color={ $color }]{ $level }[/color], будет понижен через: { $time }
 comp-pda-ui-station-alert-level-instructions = Инструкции: [color=white]{ $instructions }[/color]
 comp-pda-ui-station-time = Продолжительность смены: [color=white]{ $time }[/color]
 comp-pda-ui-eject-id-button = Извлечь ID
@@ -29,3 +30,7 @@ comp-pda-ui-unknown = Неизвестно
 comp-pda-ui-unassigned = Не назначено
 pda-notification-message = [font size=12][bold]КПК[/bold] { $header }: [/font]
     "{ $message }"
+comp-pda-ui-station-sublevels = Дополнительные коды: { $sublevels }
+comp-pda-ui-alert-sublevel-withtime-yellow = [color=#DAA520]Жёлтый[/color] [bold]( { $time } )[/bold]
+comp-pda-ui-alert-sublevel-withtime-violet = [color=#8F00FF]Фиолетовый[/color] [bold]( { $time } )[/bold]
+comp-pda-ui-alert-sublevel-withtime-gray = [color=#808080]Серый[/color] [bold]( { $time } )[/bold]

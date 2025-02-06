@@ -1,0 +1,77 @@
+- type: entity
+  parent: BaseItem
+  id: AlertKeyUniversal
+  name: Универсальный ключ угрозы
+  description: Специальное устройство, предназначенное для установки кода на станции. Работает только на станции.
+  components:
+    - type: Sprite
+      sprite: Vanilla/Objects/Devices/alert_key.rsi
+      layers:
+        - state: universal
+    - type: Item
+    - type: UseDelay
+      delay: 0.5
+    - type: ActivatableUI
+      inHandsOnly: true
+      singleUser: true
+      requireActiveHand: false
+      key: enum.AlertKeyUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.AlertKeyUiKey.Key:
+          type: AlertKeyBoundUserInterface
+    - type: AccessReader
+      access: [[ "Command" ]]
+    - type: AlertKey
+      codeaccess:
+      - green
+      - blue
+      - red
+      - gray
+      - yellow
+      - violet
+
+- type: entity
+  parent: AlertKeyUniversal
+  id: AlertKeyRed
+  name: красный ключ угрозы
+  description: Специальное устройство, предназначенное для установки кода на станции. Работает только на станции.
+  components:
+    - type: Sprite
+      sprite: Vanilla/Objects/Devices/alert_key.rsi
+      layers:
+        - state: red
+    - type: AlertKey
+      codeaccess:
+      - green
+      - blue
+      - red
+      - gray
+
+- type: entity
+  parent: AlertKeyUniversal
+  id: AlertKeyYellow
+  name: жёлтый ключ угрозы
+  description: Специальное устройство, предназначенное для установки кода на станции. Работает только на станции.
+  components:
+    - type: Sprite
+      sprite: Vanilla/Objects/Devices/alert_key.rsi
+      layers:
+        - state: yellow
+    - type: AlertKey
+      codeaccess:
+      - yellow
+
+- type: entity
+  parent: AlertKeyUniversal
+  id: AlertKeyViolet
+  name: фиолетовый ключ угрозы
+  description: Специальное устройство, предназначенное для установки кода на станции. Работает только на станции.
+  components:
+    - type: Sprite
+      sprite: Vanilla/Objects/Devices/alert_key.rsi
+      layers:
+        - state: violet
+    - type: AlertKey
+      codeaccess:
+      - violet

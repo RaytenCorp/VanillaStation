@@ -2,3 +2,8 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "TFMB"
   source: "https://www.youtube.com/watch?v=pIZtv2UmffA&ab_channel=doudouyahmadino"
+
+- files: ["grayalarm.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "DEFCON"
+  source: "https://www.myinstants.com/en/instant/defcon-alarm-61383/"
