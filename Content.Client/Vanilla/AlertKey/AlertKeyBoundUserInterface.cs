@@ -1,5 +1,6 @@
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
+using Content.Shared.Vanilla.AlertKey;
 using Robust.Client.UserInterface;
 using Robust.Shared.Configuration;
 using Robust.Shared.Timing;
