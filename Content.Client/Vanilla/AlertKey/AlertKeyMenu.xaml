@@ -1,0 +1,8 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    Title="{Loc 'alertkey-menu-title'}"
+    MinSize="500 350"
+    SetSize="500 350"
+    Resizable="False">
+
+</controls:FancyWindow>
