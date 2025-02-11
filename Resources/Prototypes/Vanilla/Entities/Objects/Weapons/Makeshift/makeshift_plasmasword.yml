@@ -1,6 +1,6 @@
 - type: entity
   name: makeshift plasma sword
-  parent: BaseItem
+  parent: [BaseItem, BaseMajorContraband]
   id: MeleeWeaponMakeshiftPlasmaSword
   description: It looks more like a bomb than an energy sword.
   components:
@@ -51,7 +51,7 @@
       collection: MetalThud
     activatedDamage:
         types:
-            Heat: 17
+            Heat: 20
             Structural: 18
   - type: ItemToggleSize
     activatedSize: Large
@@ -126,6 +126,8 @@
   - type: Construction
     graph: ImprovisedPlasmaSwordGraph
     node: sword
+  - type: IgniteOnMeleeHit
+    fireStacks: 0.4
 
 
 - type: entity
