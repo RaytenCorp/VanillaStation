@@ -1,0 +1,14 @@
+- files: ["powersabrehit.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from zvukipro and modifies by Bamgeglo"
+  source: "https://zvukipro.com/"
+
+- files: ["powersabreoff.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from zvukipro and modified by Bamgeglo"
+  source: "https://zvukipro.com/"
+
+- files: ["powersabremiss.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from zvukipro and not modified by Bamgeglo"
+  source: "https://zvukipro.com/"

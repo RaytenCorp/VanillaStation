@@ -2,16 +2,25 @@
   id: PowerSabre
 
 - type: entity
-  name: Power Sabre
+  name: captain's force sabre
   parent: [BaseItem, BaseCommandContraband]
   id: PowerSabre
-  description: Captain's power sabre based on the principle of a containment field generator. The guard is made of gold, adorned with a platinum engraving that reads "Justice."
+  description: An energy sword that uses a red-hot containment field to bypass the prohibitions of the Earth government. The captain's own weapon.
   components:
   - type: Sprite
     sprite: Vanilla/Objects/Weapons/Melee/powersabre.rsi
     layers:
-    - state: powersabre_off
-      map: [ "enum.ToggleVisuals.Layer" ]
+    - state: beam
+      visible: false
+      shader: unshaded
+      map: ["blade"]
+    - state: base
+      map: ["base"]
+    - state: activated
+      map: ["enum.ToggleVisuals.Layer"]
+    - state: on-equipped-BELT
+      shader: unshaded
+      visible: false
   - type: Stunbaton
     energyPerUse: 250
   - type: ItemTogglePointLight
@@ -20,12 +29,12 @@
   - type: ItemToggle
     predictable: false
     soundActivate:
-      path: /Audio/Weapons/emitter.ogg
+      path: /Audio/Vanilla/Weapons/PowerSabre/powersabreon.ogg
       params:
         variation: 0.250
-        volume: -4
+        volume: -7
     soundDeactivate:
-      path: /Audio/Vanilla/Weapons/powersabreoff.ogg
+      path: /Audio/Vanilla/Weapons/PowerSabre/powersabreoff.ogg
       params:
         variation: 0.250
         volume: -5
@@ -35,34 +44,41 @@
         variation: 0.250
   - type: ItemToggleMeleeWeapon
     activatedSoundOnHit:
-      path: /Audio/Vanilla/Weapons/powersabrehit.ogg
+      path: /Audio/Vanilla/Weapons/PowerSabre/powersabrehit.ogg
       params:
         variation: 0.250
         volume: 6
     activatedSoundOnHitNoDamage:
-      path: /Audio/Vanilla/Weapons/powersabrehit.ogg
+      path: /Audio/Vanilla/Weapons/PowerSabre/powersabremiss.ogg
       params:
         variation: 0.250
         volume: 6
     activatedSoundOnSwing:
-      path: /Audio/Vanilla/Weapons/powersabrehit.ogg
+      path: /Audio/Vanilla/Weapons/PowerSabre/powersabremiss.ogg
       params:
         variation: 0.125
         volume: 6
     activatedDamage:
       types:
-        Blunt: 20
+        Blunt: 12
+        Heat: 8
         Structural: 20
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
       types:
         Blunt: 4.5
+  - type: Clothing
+    sprite: Vanilla/Objects/Weapons/Melee/powersabre.rsi
+    equipSound:
+      path: /Audio/Items/belt_equip.ogg
+    slots: [belt]
   - type: ItemToggleActiveSound
     activeSound:
-      path: /Audio/Ambience/Objects/gravity_gen_hum.ogg
+      path: /Audio/Vanilla/Weapons/PowerSabre/powersabreidle.ogg
       params:
-        volume: -10
+        volume: -4
+        maxDistance: 5
   - type: ComponentToggler
     components:
     - type: MeleeThrowOnHit
@@ -78,21 +94,38 @@
     maxCharge: 5000
     startingCharge: 5000
   - type: UseDelay
-    delay: 5.0
+    delay: 1
   - type: PointLight
     enabled: false
     radius: 2
     energy: 2
-    color: "#99c9ff"
+    color: "#9b99ff"
+    netsync: false
   - type: Item
+    sprite: Vanilla/Objects/Weapons/Melee/powersabre_inhands.rsi
     size: Small
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-     enum.ToggleVisuals.Toggled:
+      enum.ToggleVisuals.Toggled:
         enum.ToggleVisuals.Layer:
-          True: {state: powersabre_on}
-          False: {state: powersabre_off}
+          True: { visible: true }
+          False: { visible: false }
+        base:
+          True: {visible: false}
+          False: { visible: true }
+  - type: ToggleableLightVisuals
+    spriteLayer: "blade"
+    inhandVisuals:
+      left:
+      - state: left_enabled
+        shader: unshaded
+      right:
+      - state: right_enabled
+        shader: unshaded
+    clothingVisuals:
+      belt:
+      - state: on-equipped-BELT
   - type: StaticPrice
     price: 80
   - type: Riggable
@@ -104,10 +137,6 @@
     solution: battery
   - type: DrawableSolution
     solution: battery
-  - type: Explosive
-    explosionType: Default
-    intensitySlope: 1.5
-    maxIntensity: 200
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
