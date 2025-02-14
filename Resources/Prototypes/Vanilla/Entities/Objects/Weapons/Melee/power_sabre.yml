@@ -104,6 +104,7 @@
   - type: Item
     sprite: Vanilla/Objects/Weapons/Melee/powersabre_inhands.rsi
     size: Small
+    helfPrefix: off
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -120,9 +121,11 @@
       left:
       - state: left_enabled
         shader: unshaded
+      - state: off-inhand-left
       right:
       - state: right_enabled
         shader: unshaded
+      - state: off-inhand-right
     clothingVisuals:
       belt:
       - state: on-equipped-BELT
