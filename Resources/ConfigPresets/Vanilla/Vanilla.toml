@@ -5,7 +5,8 @@ desc             = """💻 Мощный хостинг.
 📚 Собственная вики, корпоративный закон и СРП.
 🌟 Баланс ролевой игры и веселья – стань частью уникального сообщества!"""
 lobbyenabled     = true
-lobbyduration = 180
+lobbyduration = 285
+round_restart_time = 15
 soft_max_players = 40
 panic_bunker.enabled = false
 #panic_bunker.disable_with_admins = true
@@ -14,6 +15,7 @@ panic_bunker.enabled = false
 #panic_bunker.min_overall_minutes = 60
 #panic_bunker.custom_reason = "В настоящий момент нет модераторов, а вы не наиграли достаточного количества минут (60) на нашем сервере."
 contraband_examine = false
+
 
 [hub]
 tags = "lang:ru,region:eu_e,rp:med"
