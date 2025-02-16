@@ -65,7 +65,7 @@ namespace Content.Client.Lobby
 
             _voteManager.SetPopupContainer(Lobby.VoteContainer);
             LayoutContainer.SetAnchorPreset(Lobby, LayoutContainer.LayoutPreset.Wide);
-            Lobby.ServerName.Text = "Добро пожаловать на Vanilla Station!"; // Vanilla-edit
+            Lobby.ServerName.Text = "Добро пожаловать на Rayten!"; // Vanilla-edit
             UpdateLobbyUi();
 
             // Vanilla-start

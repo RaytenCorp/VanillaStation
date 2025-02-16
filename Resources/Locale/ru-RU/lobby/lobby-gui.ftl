@@ -1,6 +1,6 @@
 ui-lobby-title = Лобби: {$serverName}
 ui-lobby-ahelp-button = AHelp
-ui-lobby-hello-label = Добро пожаловать на Vanilla Station!
+ui-lobby-hello-label = Добро пожаловать на Rayten!
 ui-lobby-subhello-label = Ознакомьтесь с правилами и нашей Википедией
 ui-lobby-news-label = Обновления
 ui-lobby-options-button = Настройки
