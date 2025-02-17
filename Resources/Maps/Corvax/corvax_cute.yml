@@ -57463,14 +57463,6 @@ entities:
     - type: Transform
       pos: 503.5,396.5
       parent: 1
-- proto: ClothingNeckCloakGay
-  entities:
-  - uid: 23067
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 321.5,423.5
-      parent: 1
 - proto: ClothingNeckCloakGoliathCloak
   entities:
   - uid: 21093
