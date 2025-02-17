@@ -6,7 +6,7 @@ discord-ban-notifications-administrator = **Администратор:** {$admi
 discord-ban-notifications-timeOfBan = **Выдан:** с {$timeOfBan}
 discord-ban-notifications-expires = **Истекает:**  {$expires}
 discord-ban-notifications-reason = **Причина:** {$reason}
-discord-ban-notifications-footer = Vanilla Station
+discord-ban-notifications-footer = Rayten
 
 discord-roleBan-notifications-roles = **Роли:** {$roles}
 

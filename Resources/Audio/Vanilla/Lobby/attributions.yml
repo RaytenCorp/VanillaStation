@@ -1,17 +1,7 @@
-- files: ["desire to eat.ogg"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "zHippeRz"
-  source: "https://www.youtube.com/watch?v=gUQGe74lA4o&ab_channel=zHippeRz"
-
 - files: ["peace_in_the_lags.ogg"]
   license: "CC-BY-3.0"
   copyright: "Made by qdzava prod. Oxygen. Converted from MP3 to OGG."
   source: "https://www.youtube.com/channel/UCKL0ZRkj9nOP684aRGh09ZQ"
-
-- files: ["Unwelcome_School.ogg"]
-  license: "Custom"
-  copyright: "Unwelcome School by KNSRK. He allowed us to use his music free of charge and with no conditions. Converted from MP3 to OGG."
-  source: "https://www.youtube.com/channel/UCNBW4NXp0x9KuKk9DyZsQkg"
 
 - files: ["Nightforce.ogg"]
   license: "CC-BY-NC-SA-3.0"
@@ -33,16 +23,6 @@
   copyright: "Borrtex"
   source: "https://www.youtube.com/watch?v=XrdldqW-7CY&ab_channel=Borrtex"
 
-- files: ["3D_is_just_a_measurement.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Made by qdzava prod. Oxygen. Converted from MP3 to OGG."
-  source: "https://www.youtube.com/channel/UCKL0ZRkj9nOP684aRGh09ZQ"
-
-- files: ["DANCE-WITH-THE-DEAD.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Riot"
-  source: "https://www.youtube.com/watch?v=W_5unoZTpoQ&ab_channel=dancewiththedead"
-
 - files: ["Viol.ogg"]
   license: "CC-BY-3.0"
   copyright: "Gesaffelstein"
@@ -57,3 +37,25 @@
   license: "CC-BY-3.0"
   copyright: "Shotacore"
   source: "https://www.youtube.com/watch?v=uA457FDfcBU&ab_channel=Shotacore"
+
+- files: ["I-Am-the-Danger.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Powernerd"
+  source: "https://www.youtube.com/watch?v=Ac7FyFffYw4&ab_channel=Powernerd-Topic"
+
+- files: ["Venger.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Perturbator"
+  source: "https://www.youtube.com/watch?v=-B7-Vcdlld8&ab_channel=Perturbator"
+
+- files: ["Roi.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "VIDEOCLUB"
+  source: "https://www.youtube.com/watch?v=YkiOhP3wdvw&ab_channel=DragonBoy"
+
+- files: ["Pay-Phone.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Fantom '87"
+  source: "https://www.youtube.com/watch?v=XZBViguI8VA&ab_channel=DRIVERadio"
+
+  
