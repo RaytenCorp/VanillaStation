@@ -1,1 +1,1 @@
-changelog-tab-title-ChangelogVanilla = Обновления Ваниллы
+changelog-tab-title-ChangelogVanilla = Обновления Rayten

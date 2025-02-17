@@ -38,11 +38,6 @@
   copyright: "Shotacore"
   source: "https://www.youtube.com/watch?v=uA457FDfcBU&ab_channel=Shotacore"
 
-- files: ["I-Am-the-Danger.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Powernerd"
-  source: "https://www.youtube.com/watch?v=Ac7FyFffYw4&ab_channel=Powernerd-Topic"
-
 - files: ["Venger.ogg"]
   license: "CC-BY-3.0"
   copyright: "Perturbator"
