@@ -1,0 +1,130 @@
+## Маркеры, они нужны чтобы показать где будут спавнится спавнеры
+## расставить на шаттле в тех местах где они должны быть, медиков в меде, командира на мостике итд.
+- type: entity
+  id: EventTeamDeathSquadComander
+  name: маркер командира отряда смерти
+  suffix: EventTeam
+  parent: MarkerBase
+  components:
+    - type: SpawnPoint
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      layers:
+        - state: green
+        - sprite: Mobs/Ghosts/ghost_human.rsi
+          state: icon
+
+## Спавнеры, на каждую роль один спавнер.
+- type: entity
+  id: SpawnMobDeathSquadRegular
+  categories: [ HideSpawnMenu ]
+  name: спавнер оперативника эскадрона смерти
+  parent: MarkerBase
+  components:
+    - type: GhostRoleMobSpawner
+      prototype: MobDeathSquadRegular
+
+- type: entity
+  id: SpawnMobDeathSquadComander
+  name: Спавнер командира эскадрона смерти
+  categories: [ HideSpawnMenu ]
+  parent: MarkerBase
+  components:
+    - type: GhostRoleMobSpawner
+      prototype: MobDeathSquadComander
+
+# Роли
+- type: entity
+  name: Командир эскадрона смерти
+  parent: MobEventTeamBase
+  suffix: Эскадрон смерти
+  id: MobDeathSquadComander
+  components:
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: eventteam-deathsquad-comander-name
+    description: eventteam-deathsquad-comander-desc
+    raffle:
+      settings: short
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Security
+        time: 18000
+      - !type:OverallPlaytimeRequirement
+        time: 36000
+  - type: Loadout
+    prototypes: [MobDeathSquadRegularLoot]
+  - type: Skill
+    PilotingLevel: 3
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 3
+    ChemistryLevel: 3
+    EngineeringLevel: 3
+    BuildingLevel: 3
+    ResearchLevel: 3
+    InstrumentationLevel: 3
+
+- type: entity
+  name: оперативник эскадрона смерти
+  parent: MobEventTeamBase
+  suffix: Эскадрон смерти
+  id: MobDeathSquadRegular
+  components:
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: eventteam-deathsquad-regularunit-name
+    description: eventteam-deathsquad-regularunit-desc
+    raffle:
+      settings: short
+    requirements:
+      - !type:OverallPlaytimeRequirement
+        time: 18000
+  - type: Loadout
+    prototypes: [MobDeathSquadRegularLoot]
+  - type: Skill
+    PilotingLevel: 3
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 3
+    ChemistryLevel: 3
+    EngineeringLevel: 3
+    BuildingLevel: 3
+    ResearchLevel: 3
+    InstrumentationLevel: 3
+
+# экипировка
+
+- type: startingGear
+  id: MobDeathSquadRegularLoot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingBackpackDeathSquad
+    mask: ClothingMaskGasDeathSquad
+    eyes: ClothingEyesHudSecurity
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitDeathsquad
+    shoes: ClothingShoesTacticalBoots
+    id: DeathsquadPDA
+    pocket1: EnergySword
+    pocket2: EnergyShield
+    belt: ClothingBeltMilitaryWebbingMedFilled
+  storage:
+    back:
+    - WeaponPulsePistol
+    - WeaponRevolverMateba
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - BoxFlashbang
+    - ToolDebug # spanish army knife
+    - WelderExperimental
+    - Hypospray
+    - DeathAcidifierImplanter # crew will try to steal their amazing hardsuits
+    - FreedomImplanter
+  inhand:
+  - WeaponPulseRifle

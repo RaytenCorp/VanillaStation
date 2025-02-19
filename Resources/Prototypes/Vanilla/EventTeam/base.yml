@@ -1,0 +1,36 @@
+## маркер для рядовых юнитов
+- type: entity
+  id: MarkerEventRegularRole
+  name: маркер спавна юнита
+  parent: MarkerBase
+  suffix: EventTeam
+  components:
+    - type: SpawnPoint
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      layers:
+        - state: green
+        - sprite: Mobs/Ghosts/ghost_human.rsi
+          state: icon
+          
+# Базовый прототип базовой гострольки базового оперативника
+- type: entity
+  parent: MobHuman
+  id: MobEventTeamBase
+  abstract: true
+  components:
+  - type: GhostTakeoverAvailable
+  - type: AutoImplant
+    implants:
+    - TrackingImplant
+    - MindShieldImplant
+  - type: NpcFactionMember
+    factions:
+      - CentComm
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstMilitary
+    - NamesLastMilitary
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: AntagImmune

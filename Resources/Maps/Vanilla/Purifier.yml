@@ -619,6 +619,17 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,-3.5
       parent: 41669
+    - type: Door
+      secondsUntilStateChange: -66.7666
+      state: Opening
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: True
+    - type: Forensics
+      residues: []
+      dnas: []
+      fibers: []
+      fingerprints: []
 - proto: AirlockShuttle
   entities:
   - uid: 1
@@ -1331,19 +1342,12 @@ entities:
       parent: 41781
     - type: Physics
       canCollide: False
-- proto: EventTeamERTLeader
+- proto: EventTeamCBURNComander
   entities:
-  - uid: 50
+  - uid: 47
     components:
     - type: Transform
       pos: 4.5,3.5
-      parent: 41669
-- proto: EventTeamERTMedic
-  entities:
-  - uid: 51
-    components:
-    - type: Transform
-      pos: 4.5,-1.5
       parent: 41669
 - proto: GasPassiveVent
   entities:
@@ -1865,22 +1869,22 @@ entities:
   - uid: 22
     components:
     - type: Transform
-      pos: 2.5,1.5
-      parent: 41669
-  - uid: 47
-    components:
-    - type: Transform
-      pos: 2.5,0.5
+      pos: 6.5,1.5
       parent: 41669
   - uid: 48
     components:
     - type: Transform
-      pos: 6.5,1.5
+      pos: 6.5,0.5
       parent: 41669
   - uid: 49
     components:
     - type: Transform
-      pos: 6.5,0.5
+      pos: 2.5,1.5
+      parent: 41669
+  - uid: 50
+    components:
+    - type: Transform
+      pos: 2.5,0.5
       parent: 41669
 - proto: MedicalBed
   entities:
@@ -2821,7 +2825,7 @@ entities:
       pos: 4.5,-4.5
       parent: 41669
     - type: WarpPoint
-      location: Шаттл ОБР M0-R
+      location: Шаттл РХБЗЗ Purifier
 - proto: WeaponCapacitorRecharger
   entities:
   - uid: 41967

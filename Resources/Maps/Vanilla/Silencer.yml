@@ -1331,19 +1331,12 @@ entities:
       parent: 41781
     - type: Physics
       canCollide: False
-- proto: EventTeamERTLeader
+- proto: EventTeamDeathSquadComander
   entities:
-  - uid: 50
+  - uid: 22
     components:
     - type: Transform
       pos: 4.5,3.5
-      parent: 41669
-- proto: EventTeamERTMedic
-  entities:
-  - uid: 51
-    components:
-    - type: Transform
-      pos: 4.5,-1.5
       parent: 41669
 - proto: GasPassiveVent
   entities:
@@ -1862,25 +1855,25 @@ entities:
           - 14
 - proto: MarkerEventRegularRole
   entities:
-  - uid: 22
-    components:
-    - type: Transform
-      pos: 2.5,1.5
-      parent: 41669
   - uid: 47
-    components:
-    - type: Transform
-      pos: 2.5,0.5
-      parent: 41669
-  - uid: 48
     components:
     - type: Transform
       pos: 6.5,1.5
       parent: 41669
-  - uid: 49
+  - uid: 48
     components:
     - type: Transform
       pos: 6.5,0.5
+      parent: 41669
+  - uid: 49
+    components:
+    - type: Transform
+      pos: 2.5,1.5
+      parent: 41669
+  - uid: 50
+    components:
+    - type: Transform
+      pos: 2.5,0.5
       parent: 41669
 - proto: MedicalBed
   entities:
@@ -2821,7 +2814,7 @@ entities:
       pos: 4.5,-4.5
       parent: 41669
     - type: WarpPoint
-      location: Шаттл ОБР M0-R
+      location: Шаттл эскадрона смерти Silencer
 - proto: WeaponCapacitorRecharger
   entities:
   - uid: 41967

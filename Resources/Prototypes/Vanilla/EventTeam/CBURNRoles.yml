@@ -1,0 +1,127 @@
+## Маркеры, они нужны чтобы показать где будут спавнится спавнеры
+## расставить на шаттле в тех местах где они должны быть, медиков в меде, командира на мостике итд.
+- type: entity
+  id: EventTeamCBURNComander
+  name: маркер командира отряда РХБЗЗ
+  suffix: EventTeam
+  parent: MarkerBase
+  components:
+    - type: SpawnPoint
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      layers:
+        - state: green
+        - sprite: Mobs/Ghosts/ghost_human.rsi
+          state: icon
+
+## Спавнеры, на каждую роль один спавнер.
+- type: entity
+  id: SpawnMobCBURNRegular
+  categories: [ HideSpawnMenu ]
+  name: спавнер оперативника РХБЗЗ
+  parent: MarkerBase
+  components:
+    - type: GhostRoleMobSpawner
+      prototype: MobCBURNRegular
+
+- type: entity
+  id: SpawnMobCBURNComander
+  categories: [ HideSpawnMenu ]
+  name: Спавнер командира отряда РХБЗЗ
+  parent: MarkerBase
+  components:
+    - type: GhostRoleMobSpawner
+      prototype: MobCBURNComander
+
+# Роли
+- type: entity
+  name: Командир отряда РХБЗЗ
+  parent: MobEventTeamBase
+  suffix: РХБЗЗ
+  id: MobCBURNComander
+  components:
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: eventteam-cburn-comander-name
+    description: eventteam-cburn-comander-desc
+    raffle:
+      settings: short
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Security
+        time: 18000
+      - !type:OverallPlaytimeRequirement
+        time: 36000
+  - type: Loadout
+    prototypes: [MobCBURNRegularLoot]
+  - type: Skill
+    PilotingLevel: 3
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 3
+    ChemistryLevel: 3
+    EngineeringLevel: 2
+    BuildingLevel: 0
+    ResearchLevel: 2
+    InstrumentationLevel: 2
+
+- type: entity
+  name: Оперативник РХБЗЗ
+  parent: MobEventTeamBase
+  suffix: РХБЗЗ
+  id: MobCBURNRegular
+  components:
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: eventteam-cburn-regularunit-name
+    description: eventteam-cburn-regularunit-desc
+    raffle:
+      settings: short
+    requirements:
+      - !type:OverallPlaytimeRequirement
+        time: 18000
+  - type: Loadout
+    prototypes: [MobCBURNRegularLoot]
+  - type: Skill
+    PilotingLevel: 2
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 3
+    ChemistryLevel: 2
+    EngineeringLevel: 1
+    BuildingLevel: 0
+    ResearchLevel: 1
+    InstrumentationLevel: 1
+
+# экипировка
+
+- type: startingGear
+  id: MobCBURNRegularLoot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    back: ClothingBackpackDuffelCBURN
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURN
+    shoes: ClothingShoesTacticalBoots
+    id: CBURNPDA
+    pocket1: RadioHandheldSecurity
+    pocket2: GlowstickYellow
+    belt: WeaponAdvancedLaser
+  storage:
+    back:
+    - BoxMagazineShotgunIncendiary
+    - GrenadeIncendiary
+    - PillAmbuzolPlus
+    - PillAmbuzol
+    - PillAmbuzol
+    - PillAmbuzol
+    - MeleeWeaponPlasmaSword
+  inhand:
+  - WeaponShotgunBulldog

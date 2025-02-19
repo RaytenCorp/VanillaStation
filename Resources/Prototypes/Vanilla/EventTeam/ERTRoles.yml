@@ -1,0 +1,255 @@
+## Маркеры, они нужны чтобы показать где будут спавнится спавнеры
+## расставить на шаттле в тех местах где они должны быть, медиков в меде, командира на мостике итд.
+- type: entity
+  id: EventTeamERTLeader
+  name: маркер лидера отряда ОБР
+  suffix: EventTeam
+  parent: MarkerBase
+  components:
+    - type: SpawnPoint
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      layers:
+        - state: green
+        - sprite: Mobs/Ghosts/ghost_human.rsi
+          state: icon
+
+- type: entity
+  id: EventTeamERTMedic
+  name: маркер медика отряда ОБР
+  suffix: EventTeam
+  parent: MarkerBase
+  components:
+    - type: SpawnPoint
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      layers:
+        - state: green
+        - sprite: Mobs/Ghosts/ghost_human.rsi
+          state: icon
+
+## Спавнеры, на каждую роль один спавнер.
+- type: entity
+  id: SpawnMobERTLeader
+  categories: [ HideSpawnMenu ]
+  name: Спавнер лидера отряда ОБР
+  parent: MarkerBase
+  components:
+    - type: GhostRoleMobSpawner
+      prototype: MobERTLeader
+
+- type: entity
+  id: SpawnMobERTMedic
+  categories: [ HideSpawnMenu ]
+  name: Спавнер медика отряда ОБР
+  parent: MarkerBase
+  components:
+    - type: GhostRoleMobSpawner
+      prototype: MobERTMedic
+
+- type: entity
+  id: SpawnMobERTRegular
+  categories: [ HideSpawnMenu ]
+  name: спавнер оперативника ОБР
+  parent: MarkerBase
+  components:
+    - type: GhostRoleMobSpawner
+      prototype: MobERTRegular
+
+
+
+# Роли
+- type: entity
+  name: Лидер ОБР
+  parent: MobEventTeamBase
+  suffix: ОБР
+  id: MobERTLeader
+  components:
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: eventteam-ert-leader-name
+    description: eventteam-ert-leader-desc
+    raffle:
+      settings: default
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Security
+        time: 18000
+      - !type:OverallPlaytimeRequirement
+        time: 36000
+  - type: Loadout
+    prototypes: [ERTLeaderLoot]
+  - type: Skill
+    PilotingLevel: 3
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 2
+    ChemistryLevel: 1
+    EngineeringLevel: 2
+    BuildingLevel: 2
+    ResearchLevel: 0
+    InstrumentationLevel: 0
+
+- type: entity
+  name: медик ОБР
+  parent: MobEventTeamBase
+  suffix: ОБР
+  id: MobERTMedic
+  components:
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: eventteam-ert-medic-name
+    description: eventteam-ert-medic-desc
+    raffle:
+      settings: default
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Security
+        time: 18000
+      - !type:OverallPlaytimeRequirement
+        time: 36000
+  - type: Loadout
+    prototypes: [ERTMedicLoot]
+  - type: Skill
+    PilotingLevel: 1
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 1
+    MedicineLevel: 3
+    ChemistryLevel: 3
+    EngineeringLevel: 2
+    BuildingLevel: 2
+    ResearchLevel: 0
+    InstrumentationLevel: 3
+
+- type: entity
+  name: оперативник ОБР
+  parent: MobEventTeamBase
+  suffix: ОБР
+  id: MobERTRegular
+  components:
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: eventteam-ert-regularunit-name
+    description: eventteam-ert-regularunit-desc
+    raffle:
+      settings: default
+    requirements:
+      - !type:OverallPlaytimeRequirement
+        time: 18000
+  - type: Loadout
+    prototypes: [ERTRegularLoot]
+  - type: Skill
+    PilotingLevel: 2
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 1
+    ChemistryLevel: 0
+    EngineeringLevel: 0
+    BuildingLevel: 0
+    ResearchLevel: 0
+    InstrumentationLevel: 0
+
+# экипировка
+- type: startingGear
+  id: ERTLeaderLoot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    back: ClothingBackpackERTLeader
+    shoes: ClothingShoesTacticalBoots
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    neck: ClothingNeckMantleERTLeader # Corvax-Clothing
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTLeader
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltSecurityWebbingFilled
+    pocket1: WeaponPistolN1984
+    pocket2: DoorRemoteCommand
+  storage:
+    back:
+    - WeaponDisabler
+    - MedicatedSuture
+    - RegenerativeMesh
+    - BoxZiptie
+    - CrowbarRed
+    - MagazineMagnum
+    - CombatMedipen
+    - CombatMedipen
+    - SmokeGrenade
+    - SmokeGrenade
+    - LogProbeCartridge
+    - PhoneInstrument
+  inhand:
+  - WeaponPulseCarbine
+
+- type: startingGear
+  id: ERTRegularLoot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesTacticalBoots
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    neck: SecurityWhistle
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    id: ERTSecurityPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltSecurityWebbingFilled
+    pocket1: WeaponPulsePistol
+    pocket2: GlowstickPurple
+  storage:
+    back:
+    - WeaponDisabler
+    - MedicatedSuture
+    - RegenerativeMesh
+    - CrowbarRed
+    - SmokeGrenade
+    - PortableRecharger
+    - CombatMedipen
+  inhand:
+  - WeaponPulseCarbine
+
+- type: startingGear
+  id: ERTMedicLoot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTMedic
+    back: ClothingBackpackERTMedical
+    shoes: ClothingShoesBootsMag
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesHudMedical
+    gloves: ClothingHandsGlovesNitrile
+    outerClothing: ClothingOuterHardsuitERTMedical
+    id: ERTMedicPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltMedicalFilled
+    pocket1: WeaponPulsePistol
+    pocket2: GlowstickPurple
+  storage:
+    back:
+    - Hypospray
+    - MedkitCombatFilled
+    - MedkitCombatFilled
+    - CrowbarRed
+    - OmnizineChemistryBottle
+    - EpinephrineChemistryBottle
+    - EpinephrineChemistryBottle
+    - MedkitCombatFilled
+    - MedkitCombatFilled
+    - AntiPoisonMedipen
+    - AntiPoisonMedipen
+    - RadAutoInjector
+    - RadAutoInjector
+    - PyraAutoInjector
+    - PyraAutoInjector
+    - PunctAutoInjector
+    - PunctAutoInjector
+  inhand:
+  - WeaponPulseCarbine
