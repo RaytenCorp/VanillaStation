@@ -552,6 +552,12 @@ LightTree06: LightTree
 #2024-12-28
 DrinkIrishCarBomb: DrinkIrishSlammer
 
-#no corvax-printer anymore
+#no corvax
 PrinterDoc: null
 PrinterDocMachineCircuitboard: null
+ERTSpawnerLeader: null
+ERTSpawnerJanitor: null
+ERTSpawnerEngineering: null
+ERTSpawnerSrcurity: null
+ERTSpawnerMedical: null
+ERTSpawnerCBURN: null
