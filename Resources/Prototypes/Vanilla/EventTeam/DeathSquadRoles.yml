@@ -46,6 +46,7 @@
     makeSentient: true
     name: eventteam-deathsquad-comander-name
     description: eventteam-deathsquad-comander-desc
+    rules: ghost-role-information-rules-team-antagonist
     raffle:
       settings: short
     requirements:
@@ -79,6 +80,7 @@
     makeSentient: true
     name: eventteam-deathsquad-regularunit-name
     description: eventteam-deathsquad-regularunit-desc
+    rules: ghost-role-information-rules-team-antagonist
     raffle:
       settings: short
     requirements:

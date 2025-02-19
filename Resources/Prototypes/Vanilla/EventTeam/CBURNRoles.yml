@@ -46,6 +46,7 @@
     makeSentient: true
     name: eventteam-cburn-comander-name
     description: eventteam-cburn-comander-desc
+    rules: ghost-role-information-nonantagonist-rules
     raffle:
       settings: short
     requirements:
@@ -79,6 +80,7 @@
     makeSentient: true
     name: eventteam-cburn-regularunit-name
     description: eventteam-cburn-regularunit-desc
+    rules: ghost-role-information-nonantagonist-rules
     raffle:
       settings: short
     requirements:
