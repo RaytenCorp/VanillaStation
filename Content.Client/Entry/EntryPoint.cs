@@ -124,6 +124,7 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("nukeopsRole");
             _prototypeManager.RegisterIgnore("stationGoal"); // Corvax-StationGoal
             _prototypeManager.RegisterIgnore("departmentgoal"); // Vanilla-StationGoal
+            _prototypeManager.RegisterIgnore("eventteam"); // Vanilla-eventteam
             _prototypeManager.RegisterIgnore("ghostRoleRaffleDecider");
 
             _componentFactory.GenerateNetIds();
