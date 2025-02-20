@@ -63,7 +63,7 @@ public sealed partial class NukeopsRuleComponent : Component
     ///     This amount of TC will be given to each nukie
     /// </summary>
     [DataField]
-    public int WarTcAmountPerNukie = 40;
+    public int WarTcAmountPerNukie = 20;
 
     /// <summary>
     ///     Delay between war declaration and nuke ops arrival on station map. Gives crew time to prepare
@@ -75,13 +75,13 @@ public sealed partial class NukeopsRuleComponent : Component
     ///     Time crew can't call emergency shuttle after war declaration.
     /// </summary>
     [DataField]
-    public TimeSpan WarEvacShuttleDisabled = TimeSpan.FromMinutes(25);
+    public TimeSpan WarEvacShuttleDisabled = TimeSpan.FromMinutes(35);
 
     /// <summary>
     ///     Minimal operatives count for war declaration
     /// </summary>
     [DataField]
-    public int WarDeclarationMinOps = 4;
+    public int WarDeclarationMinOps = 3;
 
     [DataField]
     public WinType WinType = WinType.Neutral;
