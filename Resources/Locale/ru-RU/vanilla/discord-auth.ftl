@@ -1,6 +1,7 @@
 discord-auth-title = Discord авторизация
-discord-auth-quit-btn = выйти
+discord-auth-quit-btn = Пропустить
 discord-auth-info = Привет!
-discord-auth-warn = Для доступа на сервер вам необходимо авторизовать свой аккаунт discord
-discord-auth-browser-btn = открыть в браузере
+discord-auth-warn = Вы можете авторизовать свой дискорд-аккаунт, хоть это и не обязательно....
+discord-auth-browser-btn = Открыть в браузере
+discord-auth-skipauth-btn = В другой раз...
 discord-auth-link = ссылка:
