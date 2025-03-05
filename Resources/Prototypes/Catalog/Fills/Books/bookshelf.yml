@@ -8,20 +8,22 @@
         range: 0, 4
     # Guidebooks
     - !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 1, 3
       children:
-      - id: BookBartendersManual
+      # - id: BookBartendersManual
       - id: BookChemicalCompendium
       - id: BookEngineersHandbook
-      - id: BookHowToCookForFortySpaceman
-      - id: BookHowToKeepStationClean
-      - id: BookHowToRockAndStone
+      # - id: BookHowToCookForFortySpaceman
+      # - id: BookHowToKeepStationClean
+      # - id: BookHowToRockAndStone
       - id: BookHowToSurvive
       - id: BookLeafLoversSecret
       - id: BookMedicalReferenceBook
       - id: BookScientistsGuidebook
-      - id: BookSecurity
+      # - id: BookSecurity
       - id: BookSpaceEncyclopedia
-      - id: BookSpaceLaw
+      # - id: BookSpaceLaw
       - id: BookTheBookOfControl
     # Handwritten books
     - !type:GroupSelector

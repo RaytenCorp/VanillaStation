@@ -11,10 +11,11 @@ public sealed partial class SkillAmnesiaComponent : Component
     public skillType skilltype { get; set; } = 0;
 
     [DataField("exptorestore"), AutoNetworkedField]
-    public int exptorestore { get; set; } = 900;
+    public int exptorestore { get; set; } = 600;
     
     [ViewVariables(VVAccess.ReadWrite), DataField]
     public TimeSpan TimeOfDeath = TimeSpan.Zero;
-
-    public CancellationTokenSource? TokenSource { get; set; } = null;
+    
+    [ViewVariables(VVAccess.ReadWrite), DataField]
+    public TimeSpan NextUpdateTime;
 }

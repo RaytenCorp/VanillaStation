@@ -48,7 +48,6 @@
   - type: ContentEye
     maxZoom: 1.44,1.44
   - type: Skill
-    PilotingLevel: 3
     RangeWeaponLevel: 3
     MeleeWeaponLevel: 3
     MedicineLevel: 3
@@ -57,6 +56,10 @@
     BuildingLevel: 3
     ResearchLevel: 3
     InstrumentationLevel: 3
+    Piloting: true
+    MusInstruments: true
+    Botany: true
+    Bureaucracy: true
   - type: Eye
     drawFov: false
   - type: Input

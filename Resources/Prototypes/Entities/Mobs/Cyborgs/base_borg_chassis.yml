@@ -6,6 +6,22 @@
   save: false
   abstract: true
   components:
+  - type: RequiresSkill
+    RequiresInstrumentationLevel: 3
+    NeedCraftableSkills: true
+  - type: Skill
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 3
+    ChemistryLevel: 3
+    EngineeringLevel: 3
+    BuildingLevel: 3
+    ResearchLevel: 3
+    InstrumentationLevel: 3
+    Piloting: true
+    MusInstruments: true
+    Botany: true
+    Bureaucracy: true
   - type: Reactive
     groups:
       Acidic: [Touch]
@@ -282,16 +298,6 @@
   parent: [BaseBorgChassis, BaseBorgTransponder]
   abstract: true
   components:
-  - type: Skill
-    PilotingLevel: 3
-    RangeWeaponLevel: 0
-    MeleeWeaponLevel: 0
-    MedicineLevel: 3
-    ChemistryLevel: 3
-    EngineeringLevel: 3
-    BuildingLevel: 3
-    ResearchLevel: 3
-    InstrumentationLevel: 3
   - type: RandomMetadata
     nameSegments:
       - names_borg
@@ -314,16 +320,6 @@
   parent: BaseBorgChassis
   abstract: true
   components:
-  - type: Skill
-    PilotingLevel: 3
-    RangeWeaponLevel: 3
-    MeleeWeaponLevel: 3
-    MedicineLevel: 3
-    ChemistryLevel: 3
-    EngineeringLevel: 3
-    BuildingLevel: 3
-    ResearchLevel: 3
-    InstrumentationLevel: 3
   - type: NpcFactionMember
     factions:
     - Syndicate

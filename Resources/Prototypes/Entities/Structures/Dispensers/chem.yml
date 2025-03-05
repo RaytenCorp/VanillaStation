@@ -50,7 +50,7 @@
         layer:
         - MachineLayer
   - type: RequiresSkill #vanilla-skill-issue
-    RequiresChemistryLevel: 2
+    RequiresChemistryLevel: 1
 
 
         

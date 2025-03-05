@@ -17,7 +17,6 @@
   - !type:AddComponentSpecial
     components:
       - type: Skill
-        PilotingLevel: 0
         RangeWeaponLevel: 2
         MeleeWeaponLevel: 0
         MedicineLevel: 0
@@ -26,8 +25,12 @@
         BuildingLevel: 0
         ResearchLevel: 0
         InstrumentationLevel: 0
+        Piloting: false
+        MusInstruments: true
+        Botany: true
+        Bureaucracy: false
       - type: AddSkillPoints
-        Points: 6
+        Points: 1
 
 - type: startingGear
   id: BartenderGear

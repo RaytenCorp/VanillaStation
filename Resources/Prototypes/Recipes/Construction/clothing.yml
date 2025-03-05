@@ -79,6 +79,7 @@
   name: мед-охранный визор
   id: ClothingEyesHudMedSec
   graph: HudMedSec
+  RequiresInstrumentationLevel: 2
   startNode: start
   targetNode: medsecHud
   category: construction-category-clothing

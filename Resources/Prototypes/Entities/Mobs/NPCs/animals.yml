@@ -1419,6 +1419,19 @@
   parent: MobBaseSyndicateMonkey
   suffix: syndicate agent
   components:
+  - type: Skill
+    RangeWeaponLevel: 0
+    MeleeWeaponLevel: 2
+    MedicineLevel: 2
+    ChemistryLevel: 0
+    EngineeringLevel: 0
+    BuildingLevel: 0
+    ResearchLevel: 0
+    InstrumentationLevel: 0
+    Piloting: false
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: false
     # make the player a traitor once its taken
   - type: AutoTraitor
     profile: TraitorReinforcement
@@ -1428,6 +1441,19 @@
   parent: MobBaseSyndicateMonkey
   suffix: NukeOps
   components:
+  - type: Skill
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 2
+    ChemistryLevel: 0
+    EngineeringLevel: 0
+    BuildingLevel: 0
+    ResearchLevel: 0
+    InstrumentationLevel: 0
+    Piloting: false
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: false
   - type: NukeOperative
 
 - type: entity
@@ -1580,6 +1606,19 @@
   parent: MobBaseSyndicateKobold
   suffix: syndicate agent
   components:
+  - type: Skill
+    RangeWeaponLevel: 0
+    MeleeWeaponLevel: 2
+    MedicineLevel: 2
+    ChemistryLevel: 0
+    EngineeringLevel: 0
+    BuildingLevel: 0
+    ResearchLevel: 0
+    InstrumentationLevel: 0
+    Piloting: false
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: false
     # make the player a traitor once its taken
   - type: AutoTraitor
     profile: TraitorReinforcement
@@ -1589,6 +1628,19 @@
   parent: MobBaseSyndicateKobold
   suffix: NukeOps
   components:
+  - type: Skill
+    RangeWeaponLevel: 2
+    MeleeWeaponLevel: 3
+    MedicineLevel: 2
+    ChemistryLevel: 0
+    EngineeringLevel: 0
+    BuildingLevel: 0
+    ResearchLevel: 0
+    InstrumentationLevel: 0
+    Piloting: false
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: false
   - type: NukeOperative
 
 - type: entity

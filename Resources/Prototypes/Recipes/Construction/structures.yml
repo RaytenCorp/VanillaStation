@@ -762,7 +762,7 @@
   canRotate: false
 
 - type: construction
-  name: диагональное урановое бронеокно
+  name: диагональное урановое окно
   id: UraniumWindowDiagonal
   graph: WindowDiagonal
   startNode: start
@@ -1817,7 +1817,7 @@
   graph: SecretDoor
   startNode: start
   targetNode: solidSecretDoor
-  RequiresInstrumentationLevel: 3
+  RequiresBuildingLevel: 3
   category: construction-category-structures
   description: Удерживает воздух внутри, а ассистентов снаружи.
   objectType: Structure

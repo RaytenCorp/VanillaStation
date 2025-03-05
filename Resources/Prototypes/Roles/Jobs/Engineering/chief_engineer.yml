@@ -30,7 +30,6 @@
     components:
       - type: CommandStaff
       - type: Skill
-        PilotingLevel: 2
         RangeWeaponLevel: 0
         MeleeWeaponLevel: 0
         MedicineLevel: 0
@@ -39,8 +38,12 @@
         BuildingLevel: 3
         ResearchLevel: 0
         InstrumentationLevel: 2
+        Piloting: true
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: true
       - type: AddSkillPoints
-        Points: 6
+        Points: 1
 
 - type: startingGear
   id: ChiefEngineerGear

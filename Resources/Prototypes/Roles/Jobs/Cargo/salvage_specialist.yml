@@ -21,17 +21,20 @@
   - !type:AddComponentSpecial
     components:
       - type: Skill
-        PilotingLevel: 3
         RangeWeaponLevel: 2
-        MeleeWeaponLevel: 2
+        MeleeWeaponLevel: 1
         MedicineLevel: 1
         ChemistryLevel: 0
         EngineeringLevel: 1
         BuildingLevel: 1
         ResearchLevel: 0
         InstrumentationLevel: 0
+        Piloting: true
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: false
       - type: AddSkillPoints
-        Points: 6
+        Points: 1
 
 - type: startingGear
   id: SalvageSpecialistGear

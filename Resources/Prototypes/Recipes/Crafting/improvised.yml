@@ -232,14 +232,14 @@
     state: icon
 
 - type: construction
-  name: pet carrier
+  name: большая переноска для животных
   id: PetCarrier
   graph: PetCarrier
   startNode: start
   targetNode: petCarrier
   category: construction-category-misc
   objectType: Item
-  description: Allows large animals to be carried comfortably.
+  description: Позволяет удобно переносить крупных животных.
   icon:
     sprite: Objects/Storage/petcarrier.rsi
     state: icon

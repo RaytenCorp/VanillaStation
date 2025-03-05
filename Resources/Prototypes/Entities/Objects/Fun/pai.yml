@@ -6,6 +6,19 @@
   name: personal ai device
   description: Your electronic pal who's fun to be with!
   components:
+  - type: Skill
+    RangeWeaponLevel: 3
+    MeleeWeaponLevel: 3
+    MedicineLevel: 3
+    ChemistryLevel: 3
+    EngineeringLevel: 3
+    BuildingLevel: 3
+    ResearchLevel: 3
+    InstrumentationLevel: 3
+    Piloting: true
+    MusInstruments: true
+    Botany: true
+    Bureaucracy: true
   - type: Instrument
     allowPercussion: false
     handheld: false

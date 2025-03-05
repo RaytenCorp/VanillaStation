@@ -9,39 +9,39 @@ public sealed partial class SkillLearnerComponent : Component
 {
     //Пилотирование
     [DataField("PilotingExpToLearn"), AutoNetworkedField]
-    public int PilotingExpToLearn { get; set; } = 900;
+    public int PilotingExpToLearn { get; set; } = 600;
 
     //Стрельба
     [DataField("RangeWeaponExpToLearn"), AutoNetworkedField]
-    public int RangeWeaponExpToLearn { get; set; } = 900;
+    public int RangeWeaponExpToLearn { get; set; } = 600;
 
     //Ближний бой
     [DataField("MeleeWeaponExpToLearn"), AutoNetworkedField]
-    public int MeleeWeaponExpToLearn { get; set; } = 900;
+    public int MeleeWeaponExpToLearn { get; set; } = 600;
 
     //Медицина
     [DataField("MedicineExpToLearn"), AutoNetworkedField]
-    public int MedicineExpToLearn { get; set; } = 900;
+    public int MedicineExpToLearn { get; set; } = 600;
 
     //Химия
     [DataField("ChemistryExpToLearn"), AutoNetworkedField]
-    public int ChemistryExpToLearn { get; set; } = 900;
+    public int ChemistryExpToLearn { get; set; } = 600;
 
     //Инженерия
     [DataField("EngineeringExpToLearn"), AutoNetworkedField]
-    public int EngineeringExpToLearn { get; set; } = 900;
+    public int EngineeringExpToLearn { get; set; } = 600;
 
     //Строительство
     [DataField("BuildingExpToLearn"), AutoNetworkedField]
-    public int BuildingExpToLearn { get; set; } = 900;
+    public int BuildingExpToLearn { get; set; } = 600;
 
     //Исследования
     [DataField("ResearchExpToLearn"), AutoNetworkedField]
-    public int ResearchExpToLearn { get; set; } = 900;
+    public int ResearchExpToLearn { get; set; } = 600;
 
     //Приборостроение
     [DataField("InstrumentationExpToLearn"), AutoNetworkedField]
-    public int InstrumentationExpToLearn { get; set; } = 900;
+    public int InstrumentationExpToLearn { get; set; } = 600;
 
 
     //получить доступное количество опыта на обучение

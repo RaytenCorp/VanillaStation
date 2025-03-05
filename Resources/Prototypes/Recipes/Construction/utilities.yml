@@ -385,6 +385,7 @@
   graph: GasPipeSensor
   startNode: start
   targetNode: sensor
+  RequiresInstrumentationLevel: 2
   category: construction-category-structures
   description: Сообщает о состоянии газа в подключенной сети трубопроводов.
   icon:
@@ -724,8 +725,8 @@
 
 - type: construction
   id: HeatExchangerBend
-  name: radiator bend
-  description: Transfers heat between the pipe and its surroundings.
+  name: радиатор [Угол]
+  description: Переносит тепло между трубой и окружающей средой.
   graph: GasBinary
   startNode: start
   targetNode: bendradiator

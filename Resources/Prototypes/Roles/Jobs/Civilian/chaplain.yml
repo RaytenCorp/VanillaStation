@@ -14,17 +14,20 @@
     components:
     - type: BibleUser #Lets them heal with bibles
     - type: Skill
-      PilotingLevel: 0
-      RangeWeaponLevel: 1
-      MeleeWeaponLevel: 0
-      MedicineLevel: 0
+      RangeWeaponLevel: 0
+      MeleeWeaponLevel: 1
+      MedicineLevel: 2
       ChemistryLevel: 0
       EngineeringLevel: 0
       BuildingLevel: 0
       ResearchLevel: 0
       InstrumentationLevel: 0
+      Piloting: false
+      MusInstruments: true
+      Botany: false
+      Bureaucracy: true
     - type: AddSkillPoints
-      Points: 6
+      Points: 1
 
 - type: startingGear
   id: ChaplainGear

@@ -10,12 +10,6 @@ public sealed partial class SkillComponent : Component
     [DataField("SkillPoints"), AutoNetworkedField]
     public int SkillPoints { get; set; } = 0;
 
-    //Пилотирование
-    [DataField("PilotingLevel"), AutoNetworkedField]
-    public SkillLevel PilotingLevel { get; set; } = 0;
-    [DataField("PilotingExp"), AutoNetworkedField]
-    public int PilotingExp { get; set; } = 0;
-
     //Стрельба
     [DataField("RangeWeaponLevel"), AutoNetworkedField]
     public SkillLevel RangeWeaponLevel { get; set; } = 0;
@@ -64,6 +58,44 @@ public sealed partial class SkillComponent : Component
     [DataField("InstrumentationExp"), AutoNetworkedField]
     public int InstrumentationExp { get; set; } = 0;
 
+    //Лёгкие навыки!!!
+
+    //Пилотирование
+    [DataField("Piloting"), AutoNetworkedField]
+    public bool Piloting { get; set; } = false;
+    [DataField("PilotingExp"), AutoNetworkedField]
+    public int PilotingExp { get; set; } = 0;
+
+    //Муз. инструменты
+    [DataField("MusInstruments"), AutoNetworkedField]
+    public bool MusInstruments { get; set; } = true;
+    [DataField("MusInstrumentsExp"), AutoNetworkedField]
+    public int MusInstrumentsExp { get; set; } = 0;
+
+    //Ботаника
+    [DataField("Botany"), AutoNetworkedField]
+    public bool Botany { get; set; } = false;
+    [DataField("BotanyExp"), AutoNetworkedField]
+    public int BotanyExp { get; set; } = 0;
+
+    //Бюрократия
+    [DataField("Bureaucracy"), AutoNetworkedField]
+    public bool Bureaucracy { get; set; } = false;
+    [DataField("BureaucracyExp"), AutoNetworkedField]
+    public int BureaucracyExp { get; set; } = 0;
+
+    //Воровство
+    [DataField("Thief"), AutoNetworkedField]
+    public bool Thief { get; set; } = false;
+    [DataField("ThiefExp"), AutoNetworkedField]
+    public int ThiefExp { get; set; } = 0;
+
+    //Скрытность
+    [DataField("Stealth"), AutoNetworkedField]
+    public bool Stealth { get; set; } = false;
+    [DataField("StealthExp"), AutoNetworkedField]
+    public int StealthExp { get; set; } = 0;
+
     //получить уровень навыка
     public SkillLevel? GetSkillLevel(skillType skill)
     {
@@ -73,7 +105,6 @@ public sealed partial class SkillComponent : Component
             skillType.Medicine => MedicineLevel,
             skillType.RangeWeapon => RangeWeaponLevel,
             skillType.MeleeWeapon => MeleeWeaponLevel,
-            skillType.Piloting => PilotingLevel,
             skillType.Research => ResearchLevel,
             skillType.Instrumentation => InstrumentationLevel,
             skillType.Building => BuildingLevel,
@@ -81,7 +112,20 @@ public sealed partial class SkillComponent : Component
             _ => null // Возвращаем null, если skillType неизвестен
         };
     }
-
+    //получить лёгкий навык
+    public bool? GetEasySkill(skillType skill)
+    {
+        return skill switch
+        {
+            skillType.Piloting => Piloting,
+            skillType.MusInstruments => MusInstruments,
+            skillType.Botany => Botany,
+            skillType.Bureaucracy => Bureaucracy,
+            skillType.Thief => Thief,
+            skillType.Stealth => Stealth,
+            _ => null 
+        };
+    }
     //получить опыт навыка
     public int GetSkillExp(skillType skill)
     {
@@ -91,11 +135,16 @@ public sealed partial class SkillComponent : Component
             skillType.Medicine => MedicineExp,
             skillType.RangeWeapon => RangeWeaponExp,
             skillType.MeleeWeapon => MeleeWeaponExp,
-            skillType.Piloting => PilotingExp,
             skillType.Research => ResearchExp,
             skillType.Instrumentation => InstrumentationExp,
             skillType.Building => BuildingExp,
             skillType.Engineering => EngineeringExp,
+            skillType.Piloting => PilotingExp,
+            skillType.MusInstruments => MusInstrumentsExp,
+            skillType.Botany => BotanyExp,
+            skillType.Bureaucracy => BureaucracyExp,
+            skillType.Thief => ThiefExp,
+            skillType.Stealth => StealthExp,
             _ => -1
         };
     }
@@ -113,7 +162,12 @@ public enum skillType : byte
     Engineering = 5,
     Building = 6,
     Research = 7,
-    Instrumentation = 8
+    Instrumentation = 8,
+    MusInstruments = 9,
+    Botany = 10,
+    Bureaucracy = 11,
+    Thief = 12,
+    Stealth = 13,
 }
 
 [Serializable, NetSerializable]

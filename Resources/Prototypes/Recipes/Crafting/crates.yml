@@ -26,6 +26,7 @@
   graph: CrateSecure
   startNode: start
   targetNode: cratesecure
+  RequiresInstrumentationLevel: 1
   category: construction-category-storage
   description: защищённый ящик
   icon: { sprite: Structures/Storage/Crates/secure.rsi, state: icon }

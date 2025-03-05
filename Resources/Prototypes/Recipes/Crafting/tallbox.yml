@@ -15,6 +15,7 @@
   graph: ClosetSteelSecure
   startNode: start
   targetNode: done
+  RequiresInstrumentationLevel: 1
   category: construction-category-storage
   description: Стальной шкаф, который может быть закрыт на замок
   icon: { sprite: Structures/Storage/closet.rsi, state: secure_icon }
@@ -38,6 +39,7 @@
   graph: GunSafe
   startNode: start
   targetNode: done
+  RequiresInstrumentationLevel: 1
   category: construction-category-storage
   description: Стандартное хранилище Nanotrasen.
   icon: { sprite: Structures/Storage/closet.rsi, state: shotguncase }

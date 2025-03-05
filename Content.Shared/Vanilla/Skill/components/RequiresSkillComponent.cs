@@ -9,18 +9,12 @@ namespace Content.Shared.Vanilla.Skill
         //Химия
         [DataField("RequiresChemistryLevel"), AutoNetworkedField]
         public SkillLevel RequiresChemistryLevel { get; set; } = 0;
-
+        //Химия
+        [DataField("NeedCraftableSkills"), AutoNetworkedField]
+        public bool NeedCraftableSkills { get; set; } = false;
         //Медицина
         [DataField("RequiresMedicineLevel"), AutoNetworkedField]
         public SkillLevel RequiresMedicineLevel { get; set; } = 0;
-
-        //Пилотирование
-        [DataField("RequiresPilotingLevel"), AutoNetworkedField]
-        public SkillLevel RequiresPilotingLevel { get; set; } = 0;
-        [DataField("RequiresPilotingLevelForMap"), AutoNetworkedField]
-        public SkillLevel RequiresPilotingLevelForMap { get; set; } = 0;
-        [DataField("RequiresPilotingLevelForCoord"), AutoNetworkedField]
-        public SkillLevel RequiresPilotingLevelForCoord { get; set; } = 0;
 
         //Исследования
         [DataField("RequiresResearchLevel"), AutoNetworkedField]
@@ -37,5 +31,19 @@ namespace Content.Shared.Vanilla.Skill
         //Строительство
         [DataField("RequiresBuildingLevel"), AutoNetworkedField]
         public SkillLevel RequiresBuildingLevel { get; set; } = 0;
+        
+        //Лёгкие навыки
+        //Пилотирование
+        [DataField("RequiresPiloting"), AutoNetworkedField]
+        public bool RequiresPiloting { get; set; } = false;
+        //Муз. инструменты
+        [DataField("RequiresMusInstruments"), AutoNetworkedField]
+        public bool RequiresMusInstruments { get; set; } = false;
+        //Ботаника
+        [DataField("RequiresBotany"), AutoNetworkedField]
+        public bool RequiresBotany { get; set; } = false;
+        //Воровство
+        [DataField("RequiresThief"), AutoNetworkedField]
+        public bool RequiresThief { get; set; } = false;
     }
 }

@@ -26,7 +26,7 @@
       startingGear: ThiefGear
       components:
       - type: AddSkillPoints
-        Points: 9
+        Points: 5
       mindRoles:
       - MindRoleThief
       briefing:

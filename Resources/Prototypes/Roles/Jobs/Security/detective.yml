@@ -25,17 +25,20 @@
   - !type:AddComponentSpecial
     components:
       - type: Skill
-        PilotingLevel: 0
         RangeWeaponLevel: 2
-        MeleeWeaponLevel: 1
-        MedicineLevel: 2
+        MeleeWeaponLevel: 2
+        MedicineLevel: 1
         ChemistryLevel: 2
-        EngineeringLevel: 2
+        EngineeringLevel: 0
         BuildingLevel: 0
-        ResearchLevel: 1
+        ResearchLevel: 0
         InstrumentationLevel: 0
+        Piloting: false
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: true
       - type: AddSkillPoints
-        Points: 6
+        Points: 1
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
 

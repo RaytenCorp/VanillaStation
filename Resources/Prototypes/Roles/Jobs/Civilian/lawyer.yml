@@ -19,18 +19,24 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: Skill
-        PilotingLevel: 0
-        RangeWeaponLevel: 0
-        MeleeWeaponLevel: 0
-        MedicineLevel: 0
-        ChemistryLevel: 0
-        EngineeringLevel: 0
-        BuildingLevel: 0
-        ResearchLevel: 0
-        InstrumentationLevel: 0
-      - type: AddSkillPoints
-        Points: 6
+    - type: Skill
+      RangeWeaponLevel: 0
+      MeleeWeaponLevel: 2
+      MedicineLevel: 0
+      ChemistryLevel: 0
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+      Piloting: true
+      MusInstruments: true
+      Botany: false
+      Bureaucracy: true
+    - type: AddSkillPoints
+      Points: 1
+
+
+
 - type: startingGear
   id: LawyerGear
   equipment:

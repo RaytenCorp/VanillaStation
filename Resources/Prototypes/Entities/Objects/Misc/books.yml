@@ -89,7 +89,7 @@
       color: "#42b6f5"
   - type: GuideHelp
     openOnActivation: false
-  - type: SkillTrainer
+  - type: SkillBook
     skillType:
       - Piloting
 
@@ -112,7 +112,7 @@
       color: red
   - type: GuideHelp
     openOnActivation: false
-  - type: SkillTrainer
+  - type: SkillBook
     skillType:
       - Building
 
@@ -194,7 +194,7 @@
     openOnActivation: false
     guides:
     - Engineering
-  - type: SkillTrainer
+  - type: SkillBook
     skillType:
       - Engineering
 
@@ -217,7 +217,7 @@
     openOnActivation: false
     guides:
     - Science
-  - type: SkillTrainer
+  - type: SkillBook
     skillType:
       - Research
 
@@ -300,7 +300,7 @@
       color: "#58abcc"
   - type: GuideHelp
     openOnActivation: false
-  - type: SkillTrainer
+  - type: SkillBook
     skillType:
       - Medicine
 
@@ -324,7 +324,7 @@
     - state: overlay_blood
   - type: GuideHelp
     openOnActivation: false
-  - type: SkillTrainer
+  - type: SkillBook
     skillType:
       - Instrumentation
 
@@ -344,7 +344,7 @@
     - state: icon_chemical
   - type: GuideHelp
     openOnActivation: false
-  - type: SkillTrainer
+  - type: SkillBook
     skillType:
       - Chemistry
 

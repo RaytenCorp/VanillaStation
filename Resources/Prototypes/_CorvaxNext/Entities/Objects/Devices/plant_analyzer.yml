@@ -5,6 +5,8 @@
   description: A handheld device that allows you to scan seeds and plants to get detailed information about their genes.
   abstract: true
   components:
+  - type: RequiresSkill
+    RequiresBotany: true
   - type: Sprite
     sprite: _CorvaxNext/Objects/Devices/plant_analyzer.rsi
     layers:

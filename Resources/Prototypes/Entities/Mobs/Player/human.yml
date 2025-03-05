@@ -11,16 +11,6 @@
   name: syndicate agent
   suffix: Human, Base
   components:
-  - type: Skill
-    PilotingLevel: 3
-    RangeWeaponLevel: 3
-    MeleeWeaponLevel: 3
-    MedicineLevel: 3
-    ChemistryLevel: 3
-    EngineeringLevel: 3
-    BuildingLevel: 3
-    ResearchLevel: 3
-    InstrumentationLevel: 3
   - type: RandomHumanoidAppearance
     randomizeName: false
     hair: HairBald
@@ -48,6 +38,19 @@
   id: MobHumanSyndicateAgentMedic
   name: syndicate medic
   components:
+  - type: Skill
+    RangeWeaponLevel: 1
+    MeleeWeaponLevel: 0
+    MedicineLevel: 3
+    ChemistryLevel: 3
+    EngineeringLevel: 0
+    BuildingLevel: 0
+    ResearchLevel: 0
+    InstrumentationLevel: 0
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
   - type: Loadout
     prototypes: [SyndicateReinforcementMedic]
     roleLoadout: [ RoleSurvivalSyndicate ]
@@ -57,6 +60,19 @@
   id: MobHumanSyndicateAgentSpy
   name: syndicate spy
   components:
+  - type: Skill
+    RangeWeaponLevel: 1
+    MeleeWeaponLevel: 1
+    MedicineLevel: 0
+    ChemistryLevel: 0
+    EngineeringLevel: 2
+    BuildingLevel: 2
+    ResearchLevel: 0
+    InstrumentationLevel: 1
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
   - type: Loadout
     prototypes: [SyndicateReinforcementSpy]
     roleLoadout: [ RoleSurvivalSyndicate ]
@@ -66,6 +82,19 @@
   id: MobHumanSyndicateAgentThief
   name: syndicate thief
   components:
+  - type: Skill
+    RangeWeaponLevel: 0
+    MeleeWeaponLevel: 0
+    MedicineLevel: 0
+    ChemistryLevel: 0
+    EngineeringLevel: 3
+    BuildingLevel: 3
+    ResearchLevel: 0
+    InstrumentationLevel: 1
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
   - type: Loadout
     prototypes: [SyndicateReinforcementThief]
     roleLoadout: [ RoleSurvivalSyndicate ]
@@ -76,15 +105,18 @@
   suffix: Human, NukeOps
   components:
   - type: Skill
-    PilotingLevel: 3
     RangeWeaponLevel: 3
     MeleeWeaponLevel: 3
     MedicineLevel: 3
-    ChemistryLevel: 3
-    EngineeringLevel: 3
-    BuildingLevel: 3
-    ResearchLevel: 3
-    InstrumentationLevel: 3
+    ChemistryLevel: 0
+    EngineeringLevel: 0
+    BuildingLevel: 0
+    ResearchLevel: 0
+    InstrumentationLevel: 0
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
   - type: NukeOperative
   - type: RandomMetadata
     nameSegments:
@@ -100,16 +132,6 @@
   parent: MobHuman
   id: MobHumanNukeOp
   components:
-  - type: Skill
-    PilotingLevel: 3
-    RangeWeaponLevel: 3
-    MeleeWeaponLevel: 3
-    MedicineLevel: 3
-    ChemistryLevel: 3
-    EngineeringLevel: 3
-    BuildingLevel: 3
-    ResearchLevel: 3
-    InstrumentationLevel: 3
   - type: NukeOperative
   - type: RandomHumanoidAppearance
 
@@ -119,16 +141,6 @@
   id: MobHumanLoneNuclearOperative
   name: Lone Operative
   components:
-  - type: Skill
-    PilotingLevel: 3
-    RangeWeaponLevel: 3
-    MeleeWeaponLevel: 3
-    MedicineLevel: 3
-    ChemistryLevel: 3
-    EngineeringLevel: 3
-    BuildingLevel: 3
-    ResearchLevel: 3
-    InstrumentationLevel: 3
   - type: RandomHumanoidAppearance
     randomizeName: false
   - type: NukeOperative

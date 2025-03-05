@@ -107,17 +107,12 @@
       - RoleSurvivalNukie
       components:
       - type: Skill
-        PilotingLevel: 3
-        RangeWeaponLevel: 3
-        MeleeWeaponLevel: 3
-        MedicineLevel: 0
-        ChemistryLevel: 0
-        EngineeringLevel: 0
-        BuildingLevel: 0
-        ResearchLevel: 0
-        InstrumentationLevel: 0
+        Piloting: true
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: false
       - type: AddSkillPoints
-        Points: 36
+        Points: 9
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
@@ -136,17 +131,20 @@
       - RoleSurvivalNukie
       components:
       - type: Skill
-        PilotingLevel: 0
-        RangeWeaponLevel: 2
-        MeleeWeaponLevel: 2
+        RangeWeaponLevel: 0
+        MeleeWeaponLevel: 0
         MedicineLevel: 3
         ChemistryLevel: 3
         EngineeringLevel: 0
         BuildingLevel: 0
         ResearchLevel: 0
         InstrumentationLevel: 0
+        Piloting: false
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: false
       - type: AddSkillPoints
-        Points: 36
+        Points: 4
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
@@ -167,17 +165,12 @@
       - RoleSurvivalNukie
       components:
       - type: Skill
-        PilotingLevel: 3
-        RangeWeaponLevel: 3
-        MeleeWeaponLevel: 3
-        MedicineLevel: 0
-        ChemistryLevel: 0
-        EngineeringLevel: 0
-        BuildingLevel: 0
-        ResearchLevel: 0
-        InstrumentationLevel: 0
+        Piloting: false
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: false
       - type: AddSkillPoints
-        Points: 36
+        Points: 10
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
@@ -224,7 +217,7 @@
       lateJoinAdditional: true
       components:
       - type: AddSkillPoints
-        Points: 36
+        Points: 5
       mindRoles:
       - MindRoleTraitor
 
@@ -261,7 +254,7 @@
       startingGear: HeadRevGear
       components:
       - type: AddSkillPoints
-        Points: 54
+        Points: 10
       - type: Revolutionary
       - type: HeadRevolutionary
       mindRoles:
@@ -304,7 +297,7 @@
         sound: "/Audio/Ambience/Antag/zombie_start.ogg"
       components:
       - type: AddSkillPoints
-        Points: 54
+        Points: 10
       - type: PendingZombie
       - type: ZombifyOnDeath
       - type: IncurableZombie

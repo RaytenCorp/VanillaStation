@@ -15,20 +15,21 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: Skill
-        PilotingLevel: 0
-        RangeWeaponLevel: 3
-        MeleeWeaponLevel: 0
-        MedicineLevel: 0
-        ChemistryLevel: 0
-        EngineeringLevel: 0
-        BuildingLevel: 0
-        ResearchLevel: 0
-        InstrumentationLevel: 0
-      - type: AddSkillPoints
-        Points: 6
-  - !type:AddComponentSpecial
-    components:
+    - type: Skill
+      RangeWeaponLevel: 0
+      MeleeWeaponLevel: 0
+      MedicineLevel: 0
+      ChemistryLevel: 0
+      EngineeringLevel: 0
+      BuildingLevel: 0
+      ResearchLevel: 0
+      InstrumentationLevel: 0
+      Piloting: false
+      MusInstruments: true
+      Botany: false
+      Bureaucracy: false
+    - type: AddSkillPoints
+      Points: 4
     - type: Clumsy
       gunShootFailDamage:
         types: #literally just picked semi random valus. i tested this once and tweaked it.

@@ -24,7 +24,6 @@
   - !type:AddComponentSpecial
     components:
       - type: Skill
-        PilotingLevel: 1
         RangeWeaponLevel: 0
         MeleeWeaponLevel: 0
         MedicineLevel: 0
@@ -32,9 +31,13 @@
         EngineeringLevel: 2
         BuildingLevel: 2
         ResearchLevel: 0
-        InstrumentationLevel: 1
+        InstrumentationLevel: 2
+        Piloting: false
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: true
       - type: AddSkillPoints
-        Points: 6
+        Points: 1
 
 - type: startingGear
   id: TechnicalAssistantGear

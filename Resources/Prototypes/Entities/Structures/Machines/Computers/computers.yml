@@ -151,14 +151,8 @@
         ents: []
       disk_slot: !type:ContainerSlot {}
   - type: RequiresSkill
-    RequiresPilotingLevel: 1
-    RequiresPilotingLevelForCoord: 2 
-    RequiresPilotingLevelForMap: 3
-  - type: SkillTrainer
-    skillIncreaseAmount: 1
-    skillType:
-      - Piloting
-
+    RequiresPiloting: true
+    
 - type: entity
   parent: BaseComputerShuttle
   id: ComputerShuttle

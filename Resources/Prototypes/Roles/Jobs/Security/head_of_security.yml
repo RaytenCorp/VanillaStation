@@ -44,19 +44,23 @@
           collection: SoldierDeath
           params:
             volume: -4
+      - type: CommandStaff
       - type: Skill
-        PilotingLevel: 2
         RangeWeaponLevel: 3
         MeleeWeaponLevel: 3
-        MedicineLevel: 1
+        MedicineLevel: 3
         ChemistryLevel: 0
         EngineeringLevel: 0
         BuildingLevel: 0
         ResearchLevel: 0
         InstrumentationLevel: 0
+        Piloting: true
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: true
       - type: AddSkillPoints
-        Points: 6
-      - type: CommandStaff
+        Points: 1
+
 
 - type: startingGear
   id: HoSGear
