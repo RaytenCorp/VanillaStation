@@ -376,7 +376,7 @@
     tags: [] # ignore "WhitelistChameleon" tag
   - type: Thieving
     stripTimeReduction: 1.5
-    stealthy: true
+    stealthy: false
 # Corvax-HiddenDesc-Start
   - type: HiddenDescription
     entries:
