@@ -35,6 +35,11 @@ public sealed partial class AlertLevelDetail
     [DataField("announcement")] public string Announcement { get; private set; } = string.Empty;
 
     /// <summary>
+    /// Vanilla-station
+    /// Анонс снятия кода
+    /// </summary>
+    [DataField("announcementdisable")] public string AnnouncementDisable { get; private set; } = string.Empty;
+    /// <summary>
     /// Whether this alert level is selectable from a communications console.
     /// </summary>
     [DataField("selectable")] public bool Selectable { get; private set; } = true;
@@ -71,5 +76,17 @@ public sealed partial class AlertLevelDetail
     /// How long it takes for the shuttle to arrive when called.
     /// </summary>
     [DataField("shuttleTime")] public TimeSpan ShuttleTime { get; private set; } = TimeSpan.FromMinutes(5);
+
+    /// <summary>
+    /// vanilla-station
+    /// Это основной код угрозы или дополнительный?
+    /// </summary>
+    [DataField("subcode")] public bool Subcode { get; private set; } = false;
+    /// <summary>
+    /// vanilla-station
+    /// Позиция данного уровня угрозы
+    /// </summary>
+    [DataField("position")] 
+    public int? Position { get; private set; }
 }
 

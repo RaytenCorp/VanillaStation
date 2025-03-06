@@ -82,15 +82,19 @@
   - type: Loadout
     prototypes: [ERTLeaderLoot]
   - type: Skill
-    PilotingLevel: 3
     RangeWeaponLevel: 3
     MeleeWeaponLevel: 3
     MedicineLevel: 2
-    ChemistryLevel: 1
-    EngineeringLevel: 2
-    BuildingLevel: 2
+    ChemistryLevel: 0
+    EngineeringLevel: 0
+    BuildingLevel: 1
     ResearchLevel: 0
     InstrumentationLevel: 0
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
+
 
 - type: entity
   name: медик ОБР
@@ -116,15 +120,18 @@
   - type: Loadout
     prototypes: [ERTMedicLoot]
   - type: Skill
-    PilotingLevel: 1
     RangeWeaponLevel: 3
     MeleeWeaponLevel: 1
     MedicineLevel: 3
     ChemistryLevel: 3
-    EngineeringLevel: 2
-    BuildingLevel: 2
+    EngineeringLevel: 0
+    BuildingLevel: 0
     ResearchLevel: 0
-    InstrumentationLevel: 3
+    InstrumentationLevel: 0
+    Piloting: false
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
 
 - type: entity
   name: оперативник ОБР
@@ -147,15 +154,18 @@
   - type: Loadout
     prototypes: [ERTRegularLoot]
   - type: Skill
-    PilotingLevel: 2
     RangeWeaponLevel: 3
     MeleeWeaponLevel: 3
-    MedicineLevel: 1
+    MedicineLevel: 2
     ChemistryLevel: 0
     EngineeringLevel: 0
-    BuildingLevel: 0
+    BuildingLevel: 1
     ResearchLevel: 0
     InstrumentationLevel: 0
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
 
 # экипировка
 - type: startingGear

@@ -33,15 +33,18 @@
     - Vox
   components:
     - type: Skill
-      PilotingLevel: 3
-      RangeWeaponLevel: 1
+      RangeWeaponLevel: 2
       MeleeWeaponLevel: 1
-      MedicineLevel: 1
-      ChemistryLevel: 0
-      EngineeringLevel: 0
-      BuildingLevel: 0
+      MedicineLevel: 0
+      ChemistryLevel: 2
+      EngineeringLevel: 2
+      BuildingLevel: 2
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      InstrumentationLevel: 2
+      Piloting: true
+      MusInstruments: true
+      Botany: false
+      Bureaucracy: true
     - type: AutoImplant
       implants:
       - TrackingImplant
@@ -72,16 +75,6 @@
 - type: randomHumanoidSettings
   id: SyndicateAgent
   components:
-    - type: Skill
-      PilotingLevel: 3
-      RangeWeaponLevel: 3
-      MeleeWeaponLevel: 3
-      MedicineLevel: 3
-      ChemistryLevel: 3
-      EngineeringLevel: 3
-      BuildingLevel: 3
-      ResearchLevel: 3
-      InstrumentationLevel: 3
     - type: RandomHumanoidAppearance
       randomizeName: false
     - type: Loadout
@@ -101,16 +94,6 @@
 - type: randomHumanoidSettings
   id: NukeOp
   components:
-    - type: Skill
-      PilotingLevel: 3
-      RangeWeaponLevel: 3
-      MeleeWeaponLevel: 3
-      MedicineLevel: 3
-      ChemistryLevel: 3
-      EngineeringLevel: 3
-      BuildingLevel: 3
-      ResearchLevel: 3
-      InstrumentationLevel: 3
     - type: RandomHumanoidAppearance
       randomizeName: false
     - type: NukeOperative
@@ -135,16 +118,6 @@
   parent: EventHumanoid
   randomizeName: false
   components:
-    - type: Skill
-      PilotingLevel: 0
-      RangeWeaponLevel: 0
-      MeleeWeaponLevel: 0
-      MedicineLevel: 0
-      ChemistryLevel: 0
-      EngineeringLevel: 0
-      BuildingLevel: 0
-      ResearchLevel: 0
-      InstrumentationLevel: 0
     - type: GhostRole
       name: ghost-role-information-cluwne-name
       description: ghost-role-information-cluwne-description

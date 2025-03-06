@@ -58,7 +58,6 @@
   - type: Loadout
     prototypes: [MobDeathSquadRegularLoot]
   - type: Skill
-    PilotingLevel: 3
     RangeWeaponLevel: 3
     MeleeWeaponLevel: 3
     MedicineLevel: 3
@@ -67,6 +66,10 @@
     BuildingLevel: 3
     ResearchLevel: 3
     InstrumentationLevel: 3
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
 
 - type: entity
   name: оперативник эскадрона смерти
@@ -89,7 +92,6 @@
   - type: Loadout
     prototypes: [MobDeathSquadRegularLoot]
   - type: Skill
-    PilotingLevel: 3
     RangeWeaponLevel: 3
     MeleeWeaponLevel: 3
     MedicineLevel: 3
@@ -98,6 +100,10 @@
     BuildingLevel: 3
     ResearchLevel: 3
     InstrumentationLevel: 3
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
 
 # экипировка
 

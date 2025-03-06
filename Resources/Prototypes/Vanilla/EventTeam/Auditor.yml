@@ -28,7 +28,7 @@
 - type: entity
   name: аудитор ЦК
   parent: MobEventTeamBase
-  suffix: ОБР
+  suffix: аудитор
   id: MobAuditor
   components:
   - type: GhostRole
@@ -49,15 +49,18 @@
   - type: Loadout
     prototypes: [AuditorLoot]
   - type: Skill
-    PilotingLevel: 3
     RangeWeaponLevel: 1
-    MeleeWeaponLevel: 0
-    MedicineLevel: 2
-    ChemistryLevel: 2
-    EngineeringLevel: 2
-    BuildingLevel: 2
-    ResearchLevel: 2
-    InstrumentationLevel: 2
+    MeleeWeaponLevel: 1
+    MedicineLevel: 1
+    ChemistryLevel: 1
+    EngineeringLevel: 1
+    BuildingLevel: 1
+    ResearchLevel: 1
+    InstrumentationLevel: 1
+    Piloting: true
+    MusInstruments: true
+    Botany: false
+    Bureaucracy: true
 
 # экипировка
 - type: startingGear
