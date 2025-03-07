@@ -130,10 +130,10 @@
     - state: decor_wingette
       color: "#006666"
     - state: icon_bar
-  - type: GuideHelp
-    guides:
-    - Bartender
-    - Drinks
+  - type: SkillBook
+    skillType:
+      - Building
+
 
 - type: entity
   id: BookHowToCookForFortySpaceman
@@ -170,9 +170,13 @@
     - state: icon_corner
       color: gold
   - type: GuideHelp
+    openOnActivation: false
     guides:
     - Botany
     - Chemicals
+  - type: SkillBook
+    skillType:
+      - Botany
 
 - type: entity
   id: BookEngineersHandbook
