@@ -255,9 +255,6 @@
     - SmokeGrenade
     - LogProbeCartridge
     - PhoneInstrument
-    - DoorRemoteSecurity
-    - DoorRemoteCommand
-    - DoorRemoteCargo
     - DoubleEmergencyOxygenTankFilled
     - DoorRemoteAll
   inhand:
