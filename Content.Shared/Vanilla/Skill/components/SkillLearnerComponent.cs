@@ -43,6 +43,17 @@ public sealed partial class SkillLearnerComponent : Component
     [DataField("InstrumentationExpToLearn"), AutoNetworkedField]
     public int InstrumentationExpToLearn { get; set; } = 600;
 
+    //Ботаника
+    [DataField("BotanyExpToLearn"), AutoNetworkedField]
+    public int BotanyExpToLearn { get; set; } = 600;
+
+    //Бюрократия
+    [DataField("BureaucracyExpToLearn"), AutoNetworkedField]
+    public int BureaucracyExpToLearn { get; set; } = 600;
+
+    //Муз. инструменты
+    [DataField("MusInstrumentsExpToLearn"), AutoNetworkedField]
+    public int MusInstrumentsExpToLearn { get; set; } = 600;
 
     //получить доступное количество опыта на обучение
     public int GetSkillExpToLearn(skillType skill)
@@ -58,6 +69,9 @@ public sealed partial class SkillLearnerComponent : Component
             skillType.Instrumentation => InstrumentationExpToLearn,
             skillType.Building => BuildingExpToLearn,
             skillType.Engineering => EngineeringExpToLearn,
+            skillType.Botany => BotanyExpToLearn,
+            skillType.Bureaucracy => BureaucracyExpToLearn,
+            skillType.MusInstruments => MusInstrumentsExpToLearn,
             _ => -1
         };
     }

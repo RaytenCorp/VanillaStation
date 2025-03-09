@@ -13,9 +13,9 @@ public sealed partial class SkillBookComponent : Component
     public int SkillIncreaseAmount { get; set; } = 30;
 
     [DataField("skillType")]
-    public skillType SkillType = skillType.Piloting | skillType.RangeWeapon |skillType.MeleeWeapon |skillType.Medicine |skillType.Chemistry |skillType.Engineering |skillType.Building |skillType.Research |skillType.Instrumentation;
+    public skillType SkillType = skillType.Piloting;
     
     [DataField("basereadTime")]
-    public float BaseReadTime { get; set; } = 10f; 
+    public float BaseReadTime { get; set; } = 3f; 
 }
 

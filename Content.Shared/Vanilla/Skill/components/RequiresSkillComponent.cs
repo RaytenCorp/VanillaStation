@@ -42,8 +42,5 @@ namespace Content.Shared.Vanilla.Skill
         //Ботаника
         [DataField("RequiresBotany"), AutoNetworkedField]
         public bool RequiresBotany { get; set; } = false;
-        //Воровство
-        [DataField("RequiresThief"), AutoNetworkedField]
-        public bool RequiresThief { get; set; } = false;
     }
 }

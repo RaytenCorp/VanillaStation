@@ -84,18 +84,6 @@ public sealed partial class SkillComponent : Component
     [DataField("BureaucracyExp"), AutoNetworkedField]
     public int BureaucracyExp { get; set; } = 0;
 
-    //Воровство
-    [DataField("Thief"), AutoNetworkedField]
-    public bool Thief { get; set; } = false;
-    [DataField("ThiefExp"), AutoNetworkedField]
-    public int ThiefExp { get; set; } = 0;
-
-    //Скрытность
-    [DataField("Stealth"), AutoNetworkedField]
-    public bool Stealth { get; set; } = false;
-    [DataField("StealthExp"), AutoNetworkedField]
-    public int StealthExp { get; set; } = 0;
-
     //получить уровень навыка
     public SkillLevel? GetSkillLevel(skillType skill)
     {
@@ -121,8 +109,6 @@ public sealed partial class SkillComponent : Component
             skillType.MusInstruments => MusInstruments,
             skillType.Botany => Botany,
             skillType.Bureaucracy => Bureaucracy,
-            skillType.Thief => Thief,
-            skillType.Stealth => Stealth,
             _ => null 
         };
     }
@@ -143,8 +129,6 @@ public sealed partial class SkillComponent : Component
             skillType.MusInstruments => MusInstrumentsExp,
             skillType.Botany => BotanyExp,
             skillType.Bureaucracy => BureaucracyExp,
-            skillType.Thief => ThiefExp,
-            skillType.Stealth => StealthExp,
             _ => -1
         };
     }
@@ -166,8 +150,6 @@ public enum skillType : byte
     MusInstruments = 9,
     Botany = 10,
     Bureaucracy = 11,
-    Thief = 12,
-    Stealth = 13,
 }
 
 [Serializable, NetSerializable]
