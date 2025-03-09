@@ -257,6 +257,7 @@
     - PhoneInstrument
     - DoubleEmergencyOxygenTankFilled
     - DoorRemoteAll
+    - PinpointerNuclear
   inhand:
   - WeaponPulseCarbine
 
@@ -288,6 +289,7 @@
     - DoorRemoteResearch
     - DoorRemoteService
     - DoubleEmergencyOxygenTankFilled
+    - PinpointerNuclear
   inhand:
   - WeaponPulseCarbine
 
@@ -327,6 +329,7 @@
     - PunctAutoInjector
     - DoorRemoteMedical
     - DoubleEmergencyOxygenTankFilled
+    - PinpointerNuclear
 
 - type: startingGear
   id: ERTEngineerLoot
@@ -352,7 +355,7 @@
     - SheetPlasteel
     - SheetPlasteel
     - AmeJar
-    - AmeJar
+    - PinpointerNuclear
     - SeismicCharge
     - SeismicCharge
     - ExGrenade
