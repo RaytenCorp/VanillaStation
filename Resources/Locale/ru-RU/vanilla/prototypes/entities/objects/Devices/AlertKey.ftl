@@ -1,3 +1,5 @@
+ent-ActionShowAlertKey = Интерфейс ключа угрозы
+    .desc = Просмотр интерфейса ключа угрозы
 alert-level-colored-green = [color={ $color }]Зелёный[/color]
 alert-level-colored-blue = [color={ $color }]Синий[/color]
 alert-level-colored-red = [color={ $color }]Красный[/color]

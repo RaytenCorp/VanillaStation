@@ -38,6 +38,8 @@
     - ActionAIViewLaws
   - type: UserInterface
     interfaces:
+      enum.AlertKeyUiKey.Key: #Rayten
+        type: AlertKeyBoundUserInterface #Rayten
       enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
       enum.CrewMonitoringUIKey.Key:
@@ -50,6 +52,8 @@
         type: CommunicationsConsoleBoundUserInterface
   - type: IntrinsicUI
     uis:
+      enum.AlertKeyUiKey.Key: #Rayten
+        toggleAction: ActionShowAlertKey #Rayten
       enum.RadarConsoleUiKey.Key:
         toggleAction: ActionAGhostShowRadar
       enum.CrewMonitoringUIKey.Key:
@@ -60,6 +64,14 @@
         toggleAction: ActionAGhostShowCommunications
   - type: CrewMonitoringConsole
   - type: GeneralStationRecordConsole
+  - type: AlertKey
+    codeaccess:
+    - green
+    - blue
+    - red
+    - gray
+    - yellow
+    - violet
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: CrewMonitor
@@ -627,3 +639,16 @@
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
+
+###Rayten
+- type: entity
+  id: ActionShowAlertKey
+  name: AlertKey Interface
+  description: View a Alert Key Interface.
+  components:
+  - type: InstantAction
+    icon: Vanilla/Interface/AIActions/AlertKey.png
+    iconOn: Vanilla/Interface/AIActions/AlertKey.png
+    keywords: [ "AI", "console", "interface" ]
+    priority: -7
+    event: !type:ToggleIntrinsicUIEvent { key: enum.AlertKeyUiKey.Key }
