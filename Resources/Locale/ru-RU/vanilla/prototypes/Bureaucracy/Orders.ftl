@@ -76,3 +76,9 @@ Bureaucracy-order-search=
     Разрешен обыск сотрудника (ФИО) в целях отыскания и изъятия (предмет поиска).
         
     { Bureaucracy-base-end }
+Bureaucracy-order-equipment=
+    { Bureaucracy-base-start }
+
+    (ФИО) в должности (полное наименование должности)  разрешено использовать следующее рабочее снаряжение отдела:
+
+    { Bureaucracy-base-end }

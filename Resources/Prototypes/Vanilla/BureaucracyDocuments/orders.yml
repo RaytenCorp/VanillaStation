@@ -57,3 +57,11 @@
   text: Bureaucracy-order-search
   label: "Ордер на обыск"
   category: Order
+
+- type: BureaucracyDocument
+  id: equipmentOrder
+  text: Bureaucracy-order-equipment
+  label: "Разрешение на использование снаряжения"
+  category: Order
+
+#f

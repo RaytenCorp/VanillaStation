@@ -69,3 +69,26 @@ Bureaucracy-request-Work=
     Обязуюсь сдать рабочее снаряжение и экипировку отдела при увольнении.
 
     { Bureaucracy-base-end }
+Bureaucracy-request-dismissal=
+    { Bureaucracy-base-start }
+    
+    Прошу уволить меня из отдела (название отдела) по причине (причина).
+
+    { Bureaucracy-base-end }
+Bureaucracy-request-increase=
+    { Bureaucracy-base-start }
+
+    Прошу рассмотреть возможность повышения (ФИО), в должности (полное наименование должности), согласно иерархии командования. Сотрудник получил необходимую для данной работы квалификацию.
+    Запрашиваемая должность:
+
+    Ответственный за работника глава или сотрудник:
+
+    Причина повышения:
+    { Bureaucracy-base-end }
+Bureaucracy-request-constructionwork=
+    { Bureaucracy-base-end }
+
+    Прошу провести строительные работы в (название отдела или объекта) по причине (причина запроса).
+    
+    { Bureaucracy-base-end }
+    
