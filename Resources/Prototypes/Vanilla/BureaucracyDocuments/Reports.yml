@@ -33,3 +33,21 @@
   text: Bureaucracy-Report-Psyho
   label: "Заключение о психологическом здоровье"
   category: Report
+
+- type: BureaucracyDocument
+  id: DisposalReport
+  text: Bureaucracy-Report-disposal
+  label: "Отчёт об утилизации"
+  category: Report
+
+- type: BureaucracyDocument
+  id: DepartmentReport
+  text: Bureaucracy-Report-Department
+  label: "Отчёт о работе отдела"
+  category: Report
+
+- type: BureaucracyDocument
+  id: StudyingReport
+  text: Bureaucracy-Report-Analysis
+  label: "Отчёт об изучении обьекта"
+  category: Report

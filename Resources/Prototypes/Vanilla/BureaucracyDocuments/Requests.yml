@@ -45,3 +45,29 @@
   text: Bureaucracy-request-SOP
   label: "Жалоба на нарушение СРП"
   category: Request
+
+- type: BureaucracyDocument
+  id: dismissalRequest
+  text: Bureaucracy-request-dismissal
+  label: "Заявление об увольнении"
+  category: Request
+
+- type: BureaucracyDocument
+  id: payRequest
+  text: Bureaucracy-request-pay
+  label: "Запрос на изменение заработной платы"
+  category: Request
+
+- type: BureaucracyDocument
+  id: increaseRequest
+  text: Bureaucracy-request-increase
+  label: "Запрос повышения"
+  category: Request
+
+- type: BureaucracyDocument
+  id: constructionworkRequest
+  text: Bureaucracy-request-constructionwork
+  label: "Запрос на проведение строительных работ"
+  category: Request
+
+#f
