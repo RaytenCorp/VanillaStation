@@ -21,6 +21,7 @@
   specialUnits:
     EventTeamERTLeader: SpawnMobERTLeader
     EventTeamERTMedic: SpawnMobERTMedic
+    EventTeamERTEngineer: SpawnMobERTEngineer
   regularUnit: SpawnMobERTRegular
   maxRegularUnitAmount: 3
 
