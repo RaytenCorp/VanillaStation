@@ -101,8 +101,7 @@ public sealed class RadioSystem : EntitySystem
             ? FormattedMessage.EscapeText(message)
             : message;
 
-        // Vanilla-start
-        // Сохраняем текущую станцию и имя индивидуального отправителя через мета-данные(слава Богу)
+        // Rayten-start
         var speakerName = MetaData(messageSource).EntityName;
         var station = _station.GetOwningStation(messageSource);
         var role = "Неизвестно";
