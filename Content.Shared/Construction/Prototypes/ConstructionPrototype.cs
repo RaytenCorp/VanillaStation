@@ -29,12 +29,17 @@ public sealed partial class ConstructionPrototype : IPrototype
     /// </summary>
     [DataField("description")]
     public string Description = string.Empty;
-
-    [DataField("RequiresInstrumentationLevel")]
-    public SkillLevel RequiresInstrumentationLevel = 0;
-
-    [DataField("RequiresBuildingLevel")]
+    //Rayten-Start
+    //инженерия
+    [DataField("RequiresEngineeringLevel")]
+    public SkillLevel RequiresEngineeringLevel = 0;
+    //атмосфера
+    [DataField("RequiresAtmosphere")]
+    public bool RequiresAtmosphere = false;
+    //строительство
+    [DataField("RequiresBuildingLevel")]    
     public SkillLevel RequiresBuildingLevel = 0;
+    //Rayten-end
     /// <summary>
     ///     The <see cref="ConstructionGraphPrototype"/> this construction will be using.
     /// </summary>
