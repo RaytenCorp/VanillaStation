@@ -20,7 +20,6 @@ using JetBrains.Annotations;
 using Content.Shared.StationRecords;
 using Content.Server.StationRecords.Systems;
 using Content.Server.Station.Systems;
-//Vanilla-end
 
 namespace Content.Server.Radio.EntitySystems;
 
