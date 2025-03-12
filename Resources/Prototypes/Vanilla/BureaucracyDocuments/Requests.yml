@@ -53,12 +53,6 @@
   category: Request
 
 - type: BureaucracyDocument
-  id: increaseRequest
-  text: Bureaucracy-request-increase
-  label: "Запрос повышения"
-  category: Request
-
-- type: BureaucracyDocument
   id: constructionworkRequest
   text: Bureaucracy-request-constructionwork
   label: "Запрос на проведение строительных работ"
