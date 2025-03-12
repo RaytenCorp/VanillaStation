@@ -107,7 +107,7 @@ public sealed class RadioSystem : EntitySystem
         // Сохраняем текущую станцию и имя индивидуального отправителя через мета-данные(слава Богу)
         var speakerName = MetaData(messageSource).EntityName;
         var station = _station.GetOwningStation(messageSource);
-        var role = "Unknown"; // Предустановка на всякий
+        var role = "Неизвестно";
 
         if (station != null) // ээаауауаэээы
         {
