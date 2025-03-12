@@ -35,7 +35,7 @@
     EngineeringLevel: 3
     BuildingLevel: 3
     ResearchLevel: 3
-    InstrumentationLevel: 3
+    Atmosphere: true
     Piloting: true
     MusInstruments: true
     Botany: true

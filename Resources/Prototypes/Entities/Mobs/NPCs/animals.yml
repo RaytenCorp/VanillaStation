@@ -1421,13 +1421,13 @@
   components:
   - type: Skill
     RangeWeaponLevel: 0
-    MeleeWeaponLevel: 2
-    MedicineLevel: 2
+    MeleeWeaponLevel: 3
+    MedicineLevel: 1
     ChemistryLevel: 0
     EngineeringLevel: 0
     BuildingLevel: 0
     ResearchLevel: 0
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: false
     MusInstruments: true
     Botany: false
@@ -1449,7 +1449,7 @@
     EngineeringLevel: 0
     BuildingLevel: 0
     ResearchLevel: 0
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: false
     MusInstruments: true
     Botany: false
@@ -1608,13 +1608,13 @@
   components:
   - type: Skill
     RangeWeaponLevel: 0
-    MeleeWeaponLevel: 2
-    MedicineLevel: 2
+    MeleeWeaponLevel: 3
+    MedicineLevel: 1
     ChemistryLevel: 0
     EngineeringLevel: 0
     BuildingLevel: 0
     ResearchLevel: 0
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: false
     MusInstruments: true
     Botany: false
@@ -1629,14 +1629,14 @@
   suffix: NukeOps
   components:
   - type: Skill
-    RangeWeaponLevel: 2
+    RangeWeaponLevel: 3
     MeleeWeaponLevel: 3
     MedicineLevel: 2
     ChemistryLevel: 0
     EngineeringLevel: 0
     BuildingLevel: 0
     ResearchLevel: 0
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: false
     MusInstruments: true
     Botany: false

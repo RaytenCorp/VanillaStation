@@ -21,14 +21,14 @@
         - VisitorWalter
       roleLoadout: [ RoleSurvivalExtended ]
     - type: Skill
-      RangeWeaponLevel: 1
+      RangeWeaponLevel: 2
       MeleeWeaponLevel: 0
       MedicineLevel: 3
       ChemistryLevel: 3
       EngineeringLevel: 2
       BuildingLevel: 2
       ResearchLevel: 0
-      InstrumentationLevel: 2
+      Atmosphere: true
       Piloting: true
       MusInstruments: true
       Botany: true
@@ -64,7 +64,7 @@
       EngineeringLevel: 0
       BuildingLevel: 1
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      Atmosphere: false
       Piloting: true
       MusInstruments: true
       Botany: true

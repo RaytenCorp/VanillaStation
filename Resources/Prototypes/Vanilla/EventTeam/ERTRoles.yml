@@ -112,7 +112,7 @@
     EngineeringLevel: 1 
     BuildingLevel: 1
     ResearchLevel: 0
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: true
     MusInstruments: true
     Botany: false
@@ -150,7 +150,7 @@
     EngineeringLevel: 0
     BuildingLevel: 0
     ResearchLevel: 0 
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: false
     MusInstruments: true
     Botany: true 
@@ -184,7 +184,7 @@
     EngineeringLevel: 2
     BuildingLevel: 3
     ResearchLevel: 0
-    InstrumentationLevel: 1
+    Atmosphere: true
     Piloting: true
     MusInstruments: true
     Botany: false
@@ -218,7 +218,7 @@
     EngineeringLevel: 1
     BuildingLevel: 1
     ResearchLevel: 0
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: true
     MusInstruments: true
     Botany: false

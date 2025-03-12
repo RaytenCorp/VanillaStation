@@ -17,7 +17,7 @@
       EngineeringLevel: 0
       BuildingLevel: 0
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      Atmosphere: false
       Piloting: false
       MusInstruments: true
       Botany: false
@@ -123,7 +123,7 @@
       EngineeringLevel: 0
       BuildingLevel: 0
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      Atmosphere: false
       Piloting: true
       MusInstruments: true
       Botany: false
@@ -189,7 +189,7 @@
       EngineeringLevel: 0
       BuildingLevel: 0
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      Atmosphere: false
       Piloting: true
       MusInstruments: true
       Botany: false
@@ -231,11 +231,11 @@
       RangeWeaponLevel: 0
       MeleeWeaponLevel: 0
       MedicineLevel: 0
-      ChemistryLevel: 0
+      ChemistryLevel: 1
       EngineeringLevel: 3
       BuildingLevel: 3
       ResearchLevel: 0
-      InstrumentationLevel: 2
+      Atmosphere: true
       Piloting: true
       MusInstruments: true
       Botany: false
@@ -291,7 +291,7 @@
       EngineeringLevel: 1
       BuildingLevel: 0
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      Atmosphere: false
       Piloting: true
       MusInstruments: true
       Botany: false
@@ -392,12 +392,12 @@
     - type: Skill
       RangeWeaponLevel: 0
       MeleeWeaponLevel: 0
-      MedicineLevel: 1
+      MedicineLevel: 0
       ChemistryLevel: 0
-      EngineeringLevel: 0
+      EngineeringLevel: 3
       BuildingLevel: 0
       ResearchLevel: 3
-      InstrumentationLevel: 3
+      Atmosphere: true
       Piloting: true
       MusInstruments: true
       Botany: false
@@ -443,7 +443,7 @@
       EngineeringLevel: 0
       BuildingLevel: 0
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      Atmosphere: false
       Piloting: true
       MusInstruments: true
       Botany: false
