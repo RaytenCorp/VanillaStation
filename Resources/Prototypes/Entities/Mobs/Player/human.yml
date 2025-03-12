@@ -46,7 +46,7 @@
     EngineeringLevel: 0
     BuildingLevel: 0
     ResearchLevel: 0
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: true
     MusInstruments: true
     Botany: false
@@ -66,9 +66,9 @@
     MedicineLevel: 0
     ChemistryLevel: 0
     EngineeringLevel: 2
-    BuildingLevel: 2
+    BuildingLevel: 3
     ResearchLevel: 0
-    InstrumentationLevel: 1
+    Atmosphere: false
     Piloting: true
     MusInstruments: true
     Botany: false
@@ -83,14 +83,14 @@
   name: syndicate thief
   components:
   - type: Skill
-    RangeWeaponLevel: 0
-    MeleeWeaponLevel: 0
+    RangeWeaponLevel: 2
+    MeleeWeaponLevel: 3
     MedicineLevel: 0
     ChemistryLevel: 0
-    EngineeringLevel: 3
-    BuildingLevel: 3
+    EngineeringLevel: 1
+    BuildingLevel: 1
     ResearchLevel: 0
-    InstrumentationLevel: 1
+    Atmosphere: false
     Piloting: true
     MusInstruments: true
     Botany: false
@@ -112,7 +112,7 @@
     EngineeringLevel: 0
     BuildingLevel: 0
     ResearchLevel: 0
-    InstrumentationLevel: 0
+    Atmosphere: false
     Piloting: true
     MusInstruments: true
     Botany: false
