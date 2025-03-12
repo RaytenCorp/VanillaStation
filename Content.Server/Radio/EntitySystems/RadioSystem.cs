@@ -17,7 +17,6 @@ using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
 using JetBrains.Annotations;
-//Vanilla-start
 using Content.Shared.StationRecords;
 using Content.Server.StationRecords.Systems;
 using Content.Server.Station.Systems;
