@@ -27,9 +27,9 @@
         MedicineLevel: 0
         ChemistryLevel: 0
         EngineeringLevel: 3
-        BuildingLevel: 2
+        BuildingLevel: 3
         ResearchLevel: 0
-        InstrumentationLevel: 2
+        Atmosphere: true
         Piloting: false
         MusInstruments: true
         Botany: false

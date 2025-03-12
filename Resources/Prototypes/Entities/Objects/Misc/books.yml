@@ -330,7 +330,7 @@
     openOnActivation: false
   - type: SkillBook
     skillType:
-      - Instrumentation
+      - Atmosphere
 
 - type: entity
   id: BookChemicalCompendium

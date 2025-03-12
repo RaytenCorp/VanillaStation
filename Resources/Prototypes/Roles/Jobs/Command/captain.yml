@@ -23,13 +23,13 @@
     components:
     - type: Skill
       RangeWeaponLevel: 2
-      MeleeWeaponLevel: 3
+      MeleeWeaponLevel: 2
       MedicineLevel: 1
       ChemistryLevel: 2
       EngineeringLevel: 1
       BuildingLevel: 0
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      Atmosphere: true
       Piloting: true
       MusInstruments: true
       Botany: false

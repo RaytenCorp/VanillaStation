@@ -7,7 +7,7 @@
     mode: SnapgridCenter
   components:
     - type: RequiresSkill
-      RequiresInstrumentationLevel: 2
+      RequiresEngineeringLevel: 2
     - type: Transform
       anchored: true
     - type: Physics
@@ -67,7 +67,7 @@
     mode: SnapgridCenter
   components:
     - type: RequiresSkill
-      RequiresInstrumentationLevel: 2
+      RequiresEngineeringLevel: 2
     - type: Transform
       anchored: true
     - type: Physics
@@ -137,7 +137,7 @@
     mode: SnapgridCenter
   components:
     - type: RequiresSkill
-      RequiresInstrumentationLevel: 2
+      RequiresEngineeringLevel: 2
     - type: Transform
       anchored: true
       noRot: true

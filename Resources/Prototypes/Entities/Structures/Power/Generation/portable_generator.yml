@@ -200,7 +200,7 @@
   suffix: Uranium, 50 kW
   components:
     - type: RequiresSkill
-      RequiresEngineeringLevel: 1
+      RequiresEngineeringLevel: 2
     - type: Sprite
       layers:
         - state: portgen1

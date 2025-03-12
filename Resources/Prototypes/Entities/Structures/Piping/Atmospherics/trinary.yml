@@ -37,7 +37,7 @@
   components:
     - type: RequiresSkillToActivateInWorld  
     - type: RequiresSkill
-      RequiresEngineeringLevel: 1
+      RequiresAtmosphere:  true
     - type: Sprite
       sprite: Structures/Piping/Atmospherics/gasfilter.rsi
       layers:
@@ -133,7 +133,7 @@
   components:
     - type: RequiresSkillToActivateInWorld  
     - type: RequiresSkill
-      RequiresEngineeringLevel: 1
+      RequiresAtmosphere:  true
     - type: Sprite
       sprite: Structures/Piping/Atmospherics/gasmixer.rsi
       layers:

@@ -5,7 +5,7 @@
   parent: BaseStructure
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
+    RequiresEngineeringLevel: 2
   - type: InteractionOutline
   - type: Sprite
     sprite: Structures/Doors/Windoors/windoor.rsi

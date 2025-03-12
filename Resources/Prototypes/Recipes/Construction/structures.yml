@@ -805,7 +805,7 @@
   graph: Firelock
   startNode: start
   targetNode: Firelock
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Примените монтировку.
   icon:
@@ -824,7 +824,7 @@
   graph: Firelock
   startNode: start
   targetNode: FirelockGlass
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Примените монтировку.
   icon:
@@ -843,7 +843,7 @@
   graph: Firelock
   startNode: start
   targetNode: FirelockEdge
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Примените монтировку.
   icon:
@@ -861,7 +861,7 @@
   graph: Shutters
   startNode: start
   targetNode: Shutters
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Страшно подумать, что могут скрывать эти ставни.
   icon:
@@ -877,7 +877,7 @@
   graph: Shutters
   startNode: start
   targetNode: ShuttersWindow
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Лучшее (TM) место чтобы поглядеть, как взрываются твои друзья!
   icon:
@@ -893,7 +893,7 @@
   graph: Shutters
   startNode: start
   targetNode: ShuttersRadiation
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Лучшее (TM) место чтобы поглядеть, как взрываются твои друзья!
   icon:
@@ -909,7 +909,7 @@
   graph: BlastDoor
   startNode: start
   targetNode: blastdoor
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Имеется надпись "ОПАСНОСТЬ ВЗРЫВА".
   icon:
@@ -1326,7 +1326,7 @@
   graph: Airlock
   startNode: start
   targetNode: airlock
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Он открывается, он закрывается, и он может вас раздавить.
   icon:
@@ -1344,7 +1344,7 @@
   graph: Airlock
   startNode: start
   targetNode: glassAirlock
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Он открывается, он закрывается, и он может вас раздавить.
   icon:
@@ -1362,7 +1362,7 @@
   graph: PinionAirlock
   startNode: start
   targetNode: airlock
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Он открывается, он закрывается, и он может вас раздавить.
   icon:
@@ -1380,7 +1380,7 @@
   graph: PinionAirlock
   startNode: start
   targetNode: glassAirlock
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Он открывается, он закрывается, и он может вас раздавить.
   icon:
@@ -1398,7 +1398,7 @@
   graph: AirlockShuttle
   startNode: start
   targetNode: airlock
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Он открывается, он закрывается, и он может вас раздавить. Necessary for connecting two space craft together.
   icon:
@@ -1417,7 +1417,7 @@
   graph: AirlockShuttle
   startNode: start
   targetNode: airlockGlass
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Он открывается, он закрывается, и он может вас раздавить. Necessary for connecting two space craft together. This one has a window.
   icon:
@@ -1436,7 +1436,7 @@
   graph: Windoor
   startNode: start
   targetNode: windoor
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Это и окно, и раздвижная дверь. Вот это да!
   icon:
@@ -1454,7 +1454,7 @@
   graph: Windoor
   startNode: start
   targetNode: windoorSecure
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Это и прочное окно, и раздвижная дверь. Вот это да!
   icon:
@@ -1472,7 +1472,7 @@
   graph: Windoor
   startNode: start
   targetNode: windoorClockwork
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Это и прочное окно, и раздвижная дверь. Вот это да!
   icon:

@@ -13,7 +13,7 @@
   name: логический элемент
   id: LogicGate
   graph: LogicGate
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: logic_gate
   category: construction-category-tools
@@ -25,7 +25,7 @@
   name: детектор сигнала
   id: EdgeDetector
   graph: LogicGate
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: edge_detector
   category: construction-category-tools
@@ -37,7 +37,7 @@
   name: датчик питания
   id: PowerSensor
   graph: LogicGate
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: power_sensor
   category: construction-category-tools
@@ -49,7 +49,7 @@
   name: ячейка памяти
   id: MemoryCell
   graph: LogicGate
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: memory_cell
   category: construction-category-tools

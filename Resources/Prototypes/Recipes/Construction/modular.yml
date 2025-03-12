@@ -3,7 +3,7 @@
   id: ModularGrenadeRecipe
   graph: ModularGrenadeGraph
   startNode: start
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   targetNode: grenade
   category: construction-category-weapons
   description: Корпус гранаты. Требуется триггер и заряд.
@@ -16,7 +16,7 @@
   name: модульная мина
   id: ModularMineRecipe
   graph: ModularMineGraph
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   startNode: start
   targetNode: mine
   category: construction-category-weapons

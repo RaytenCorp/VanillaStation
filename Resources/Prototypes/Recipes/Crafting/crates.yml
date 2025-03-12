@@ -26,7 +26,7 @@
   graph: CrateSecure
   startNode: start
   targetNode: cratesecure
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   category: construction-category-storage
   description: защищённый ящик
   icon: { sprite: Structures/Storage/Crates/secure.rsi, state: icon }
@@ -37,7 +37,7 @@
   id: CrateFreezer
   graph: CrateFreezer
   startNode: start
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   targetNode: done
   category: construction-category-storage
   description: Стандартное хранилище Nanotrasen.

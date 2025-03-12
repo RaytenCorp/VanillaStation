@@ -27,7 +27,7 @@
       EngineeringLevel: 0
       BuildingLevel: 0
       ResearchLevel: 0
-      InstrumentationLevel: 0
+      Atmosphere: false
       Piloting: true
       MusInstruments: true
       Botany: false

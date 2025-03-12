@@ -8,8 +8,7 @@
     - Wallmount
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
-    RequiresEngineeringLevel: 3
+    RequiresAtmosphere:  true
   - type: StationAiWhitelist
   - type: WallMount
   - type: ApcPowerReceiver

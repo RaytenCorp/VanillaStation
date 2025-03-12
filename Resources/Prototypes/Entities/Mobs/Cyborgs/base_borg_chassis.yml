@@ -7,7 +7,7 @@
   abstract: true
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 3
+    RequiresEngineeringLevel: 3
     NeedCraftableSkills: true
   - type: Skill
     RangeWeaponLevel: 3

@@ -33,11 +33,11 @@
         RangeWeaponLevel: 0
         MeleeWeaponLevel: 0
         MedicineLevel: 0
-        ChemistryLevel: 1
+        ChemistryLevel: 2
         EngineeringLevel: 3
         BuildingLevel: 3
         ResearchLevel: 0
-        InstrumentationLevel: 2
+        Atmosphere: true
         Piloting: true
         MusInstruments: true
         Botany: false

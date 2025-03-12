@@ -261,7 +261,7 @@
     mode: SnapgridCenter
   components:
     - type: RequiresSkill
-      RequiresEngineeringLevel: 2
+      RequiresAtmosphere:  true
     - type: StationAiWhitelist
     - type: Sprite
       granularLayersRendering: true
@@ -308,7 +308,7 @@
     mode: SnapgridCenter
   components:
     - type: RequiresSkill
-      RequiresEngineeringLevel: 2
+      RequiresAtmosphere:  true
     - type: StationAiWhitelist
     - type: Sprite
       granularLayersRendering : true

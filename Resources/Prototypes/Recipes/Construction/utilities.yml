@@ -5,7 +5,7 @@
   graph: SurveillanceCamera
   startNode: start
   targetNode: camera
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   description: Камера наблюдения. Не похоже, что в ближайшее время она будет за кем-то наблюдать. Возможно.
   icon:
@@ -20,7 +20,7 @@
   graph: WallmountTelescreen
   startNode: start
   targetNode: Telescreen
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   description: Наконец-то тут появился нормальный сигнал...
   icon:
@@ -36,7 +36,7 @@
   graph: StationMap
   startNode: start
   targetNode: station_map
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Виртуальная карта окрестностей станции.
   icon:
@@ -56,7 +56,7 @@
   graph: APC
   startNode: start
   targetNode: apc
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   description: Терминал управления локальными электрическими системами.
   icon:
@@ -72,7 +72,7 @@
   graph: CableTerminal
   startNode: start
   targetNode: cable_terminal
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   description: На красных кабелях вы видите небольшое предупреждение. "ПОДКЛЮЧИТЬ КРАСНЫМ К АККУМУЛЯТОРУ ДЛЯ ЕГО ЗАРЯДКИ".
   icon:
@@ -88,7 +88,7 @@
   graph: WallmountSubstation
   startNode: start
   targetNode: substation
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   description: Подстанция, предназначенная для компактных шаттлов и помещений.
   icon:
@@ -104,7 +104,7 @@
   graph: WallmountGenerator
   startNode: start
   targetNode: generator
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   description: Высокоэффективный термоэлектрический генератор, помещённый в настенный шкаф.
   icon:
@@ -120,7 +120,7 @@
   graph: WallmountGenerator
   startNode: start
   targetNode: APU
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   description: Вспомогательная силовая установка для шаттла - 6кВт.
   icon:
@@ -138,7 +138,7 @@
   graph: DisposalMachine
   startNode: start
   targetNode: disposal_unit
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -153,7 +153,7 @@
   graph: DisposalMachine
   startNode: start
   targetNode: mailing_unit
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -331,7 +331,7 @@
   graph: AirAlarm
   startNode: start
   targetNode: air_alarm
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-structures
   description: Воздушная сигнализация. Сигнализация... воздуха?
   icon:
@@ -350,7 +350,7 @@
   graph: FireAlarm
   startNode: start
   targetNode: fire_alarm
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-structures
   description: Пожарная сигнализация. Огонь!
   icon:
@@ -369,7 +369,7 @@
   graph: AirSensor
   startNode: start
   targetNode: sensor
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-structures
   description: Воздушный сенсор. Чувствует воздух.
   icon:
@@ -385,7 +385,7 @@
   graph: GasPipeSensor
   startNode: start
   targetNode: sensor
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-structures
   description: Сообщает о состоянии газа в подключенной сети трубопроводов.
   icon:
@@ -472,7 +472,7 @@
   description: Имеет клапан и прикреплённый к нему насос.
   id: GasVentPump
   graph: GasUnary
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   startNode: start
   targetNode: ventpump
   category: construction-category-utilities
@@ -494,7 +494,7 @@
   description: Это открытая вентиляция.
   id: GasPassiveVent
   graph: GasUnary
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   startNode: start
   targetNode: passivevent
   category: construction-category-utilities
@@ -517,7 +517,7 @@
   id: GasVentScrubber
   graph: GasUnary
   startNode: start
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   targetNode: ventscrubber
   category: construction-category-utilities
   placementMode: SnapgridCenter
@@ -539,7 +539,7 @@
   id: GasOutletInjector
   graph: GasUnary
   startNode: start
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   targetNode: outletinjector
   category: construction-category-utilities
   placementMode: SnapgridCenter
@@ -563,7 +563,7 @@
   graph: GasBinary
   startNode: start
   targetNode: pressurepump
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -585,7 +585,7 @@
   graph: GasBinary
   startNode: start
   targetNode: volumepump
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -607,7 +607,7 @@
   graph: GasBinary
   startNode: start
   targetNode: passivegate
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -629,7 +629,7 @@
   graph: GasBinary
   startNode: start
   targetNode: valve
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -651,7 +651,7 @@
   graph: GasBinary
   startNode: start
   targetNode: signalvalve
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -673,7 +673,7 @@
   graph: GasBinary
   startNode: start
   targetNode: port
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -695,7 +695,7 @@
   graph: GasBinary
   startNode: start
   targetNode: dualportventpump
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -715,7 +715,7 @@
   graph: GasBinary
   startNode: start
   targetNode: radiator
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -745,7 +745,7 @@
   graph: GasTrinary
   startNode: start
   targetNode: filter
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -764,7 +764,7 @@
   graph: GasTrinary
   startNode: start
   targetNode: filterflipped
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -782,7 +782,7 @@
   graph: GasTrinary
   startNode: start
   targetNode: mixer
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -801,7 +801,7 @@
   graph: GasTrinary
   startNode: start
   targetNode: mixerflipped
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -819,7 +819,7 @@
   graph: GasTrinary
   startNode: start
   targetNode: pneumaticvalve
-  RequiresInstrumentationLevel: 2
+  RequiresAtmosphere: true
   category: construction-category-utilities
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -836,7 +836,7 @@
   graph: Intercom
   startNode: start
   targetNode: intercom
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-structures
   description: Интерком. На случай, когда необходимо что-то сообщить станции.
   icon:
@@ -857,7 +857,7 @@
   startNode: start
   targetNode: signal
   category: construction-category-utilities
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   description: Это таймер для подачи на устройства сигналов через определённое время.
   icon:
     sprite: Structures/Wallmounts/switch.rsi
@@ -875,7 +875,7 @@
   startNode: start
   targetNode: screen
   category: construction-category-utilities
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   description: Это таймер для подачи на устройства сигналов через определённое время, со встроенным экраном.
   icon:
     sprite: Structures/Wallmounts/signalscreen.rsi
@@ -893,7 +893,7 @@
   graph: Timer
   startNode: start
   targetNode: brig
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   description: Это таймер для камер брига.
   icon:

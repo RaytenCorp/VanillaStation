@@ -271,7 +271,7 @@
     mode: SnapgridCenter
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
+    RequiresEngineeringLevel: 2
   - type: Clickable
   - type: InteractionOutline
   - type: Physics

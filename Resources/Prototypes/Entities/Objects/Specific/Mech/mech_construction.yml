@@ -141,7 +141,7 @@
   description: An in-progress construction of the Ripley APLU mech.
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
+    RequiresEngineeringLevel: 2
   - type: Appearance
   - type: ContainerContainer
     containers:
@@ -271,7 +271,7 @@
   description: An in-progress construction of a H.O.N.K. mech. Contains chuckle unit, bananium core and honk support systems.
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
+    RequiresEngineeringLevel: 2
   - type: Appearance
   - type: ContainerContainer
     containers:
@@ -401,7 +401,7 @@
   description: An in-progress construction of the HAMTR mech.
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
+    RequiresEngineeringLevel: 2
   - type: Appearance
   - type: ContainerContainer
     containers:
@@ -477,7 +477,7 @@
   description: An in-progress construction of the Vim exosuit.
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
+    RequiresEngineeringLevel: 2
   - type: Appearance
   - type: ContainerContainer
     containers:

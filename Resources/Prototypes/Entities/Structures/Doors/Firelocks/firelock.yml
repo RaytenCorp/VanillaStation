@@ -6,7 +6,7 @@
   description: Apply crowbar.
   components:
     - type: RequiresSkill
-      RequiresInstrumentationLevel: 2
+      RequiresEngineeringLevel: 2
     - type: AtmosAlarmable
       syncWith:
         - FireAlarm

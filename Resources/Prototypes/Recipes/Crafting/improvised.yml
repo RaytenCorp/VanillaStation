@@ -39,7 +39,7 @@
   name: шок-палка
   id: makeshiftstunprod
   graph: makeshiftstunprod
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   startNode: start
   targetNode: msstunprod
   category: construction-category-weapons
@@ -170,7 +170,7 @@
   graph: FireBomb
   startNode: start
   targetNode: firebomb
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   category: construction-category-weapons
   objectType: Item
   description: слабое самодельное зажигательное устройство.
@@ -210,7 +210,7 @@
   graph: PipeBomb
   startNode: start
   targetNode: pipebomb
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-weapons
   objectType: Item
   description: Самодельное взрывное устройство, изготовленное из трубы и проводов.

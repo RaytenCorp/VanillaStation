@@ -23,10 +23,10 @@
         MeleeWeaponLevel: 0
         MedicineLevel: 0
         ChemistryLevel: 0
-        EngineeringLevel: 0
+        EngineeringLevel: 2
         BuildingLevel: 0
         ResearchLevel: 3
-        InstrumentationLevel: 3
+        Atmosphere: true
         Piloting: false
         MusInstruments: true
         Botany: false

@@ -4,7 +4,7 @@
   graph: CleanBot
   startNode: start
   targetNode: bot
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   objectType: Item
   description: Ужас автоматизации теперь угрожает и космическим уборщикам.
@@ -18,7 +18,7 @@
   graph: FireBot
   startNode: start
   targetNode: bot
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   objectType: Item
   description: Маленький бот для тушения пожаров. Он выглядит довольно встревоженным.
@@ -32,7 +32,7 @@
   graph: HonkBot
   startNode: start
   targetNode: bot
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   objectType: Item
   description: This bot honks and slips people.
@@ -46,7 +46,7 @@
   graph: JonkBot
   startNode: start
   targetNode: bot
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   objectType: Item
   description: Ужасающе.
@@ -60,7 +60,7 @@
   graph: MediBot
   startNode: start
   targetNode: bot
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   objectType: Item
   description: Не заменит врача, но лучше, чем ничего.
@@ -74,7 +74,7 @@
   graph: MimeBot
   startNode: start
   targetNode: bot
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   objectType: Item
   description: Почему бы не помахать мимботу?
@@ -88,7 +88,7 @@
   graph: SupplyBot
   startNode: start
   targetNode: bot
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-utilities
   objectType: Item
   description: Доставляет грузы!

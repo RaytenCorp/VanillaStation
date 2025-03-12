@@ -8,7 +8,7 @@
     mode: SnapgridCenter
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
+    RequiresEngineeringLevel: 2
   - type: StationAiWhitelist
   - type: Sprite
     sprite: Structures/Doors/Shutters/shutters.rsi

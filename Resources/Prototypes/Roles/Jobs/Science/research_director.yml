@@ -30,12 +30,12 @@
       - type: Skill
         RangeWeaponLevel: 0
         MeleeWeaponLevel: 0
-        MedicineLevel: 2
-        ChemistryLevel: 2
-        EngineeringLevel: 0
-        BuildingLevel: 0
+        MedicineLevel: 1
+        ChemistryLevel: 0
+        EngineeringLevel: 3
+        BuildingLevel: 2
         ResearchLevel: 3
-        InstrumentationLevel: 3
+        Atmosphere: true
         Piloting: false
         MusInstruments: true
         Botany: false

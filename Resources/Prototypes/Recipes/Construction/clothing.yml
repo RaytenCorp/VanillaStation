@@ -79,7 +79,7 @@
   name: мед-охранный визор
   id: ClothingEyesHudMedSec
   graph: HudMedSec
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   startNode: start
   targetNode: medsecHud
   category: construction-category-clothing
@@ -102,7 +102,7 @@
   name: очки охраны
   id: ClothingEyesGlassesSecurity
   graph: GlassesSecHUD
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: glassesSec
   category: construction-category-clothing
@@ -124,7 +124,7 @@
 - type: construction
   name: шлем правосудия
   id: ClothingHeadHelmetJustice
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   graph: HelmetJustice
   startNode: start
   targetNode: helmet

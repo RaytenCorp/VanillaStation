@@ -10,12 +10,13 @@ Skill-issue-easyskill-message-piloting-unskilled = Требуется навык
 Skill-issue-easyskill-message-botany-unskilled = Требуется навык ботаники.
 Skill-issue-easyskill-message-musinstruments-unskilled = Требуется навык музыкальных инструментов.
 Skill-issue-easyskill-message-bureaucracy-unskilled = Требуется навык бюрократии.
-Skill-issue-easyskill-message-thief-unskilled = Требуется навык воровства.
-Skill-issue-easyskill-message-stealth-unskilled = Требуется навык скрытности.
+Skill-issue-easyskill-message-atmosphere-unskilled = Требуется навык атмосферы.
+Skill-issue-easyskill-message-crime-unskilled = Требуется навык преступности.
 
 shared-solution-container-component-on-examine-main-text-skill-issue = { "" }
 construction-menu-skill-building=[color=#FFBF00]Требуется {$lvl} ур. строительства[/color]
-construction-menu-skill-instrumentation=[color=#b03bd0]Требуется {$lvl} ур. приборостроения[/color]
+construction-menu-skill-engineering=[color=#ff6600]Требуется {$lvl} ур. инженерии[/color]
+construction-menu-skill-atmosphere=[color=#4ebed7]Требуется знание атмосферы[/color]
 
 Skill-train-overtrain-medicine = Ваш навык медицины больше, чем может дать эта книга.
 Skill-train-overtrain-chemistry = Ваш навык химии больше, чем может дать эта книга.
@@ -28,8 +29,8 @@ Skill-train-overtrain-piloting = Ваш навык пилотирования б
 Skill-train-overtrain-botany = Ваш навык ботаники больше, чем может дать эта книга.
 Skill-train-overtrain-musinstruments = Ваш навык муз. инструментов больше, чем может дать эта книга.
 Skill-train-overtrain-bureaucracy = Ваш навык бюрократии больше, чем может дать эта книга.
-Skill-train-overtrain-thief = Ваш навык воровства больше, чем может дать эта книга.
-Skill-train-overtrain-stealth = Ваш навык скрытности больше, чем может дать эта книга.
+Skill-train-overtrain-atmosphere = Ваш навык атмосферы больше, чем может дать эта книга.
+Skill-train-overtrain-crime = Ваш навык преступности больше, чем может дать эта книга.
 
 skill-system-bonusskillpoints-message= Вы получили {$skillpoints} очков навыков, т.к. было менее 10 готовых игроков.
 
@@ -39,15 +40,15 @@ examine-skilltrainer-part-1 = Повышает навык [color={$skilltype ->
     [MeleeWeapon]#8f2121
     [Medicine]#005b53
     [Chemistry]#AD4915
-    [Engineering]#AF8D1A
+    [Engineering]#ff6600
     [Building]#FFBF00
     [Research]#7c0183
     [Instrumentation]#b03bd0
     [Botany]#6db33f
     [MusInstruments]#355f44
     [Bureaucracy]#939794
-    [Thief]#c34537
-    [Stealth]#530000
+    [Atmosphere]#4ebed7
+    [Crime]#ff0000
     *[other]white
 }]{$skilltype ->
     [Piloting]пилотирования
@@ -62,8 +63,8 @@ examine-skilltrainer-part-1 = Повышает навык [color={$skilltype ->
     [Botany]Ботаники
     [MusInstruments]Муз. инструментов
     [Bureaucracy]Бюрократии
-    [Thief]Воровства
-    [Stealth]Скрытности
+    [Atmosphere]Атмосферы
+    [Crime]Преступности
     *[other]???
 }[/color].
 examine-skilltrainer-part-2 = доступно {$SkillExpToLearn} опыта.
@@ -81,8 +82,8 @@ skill-system-UI-SkillNameLabel=[color=#EFBF04]{$skillname ->
     [Botany]Ботаника
     [MusInstruments]Муз. инструменты
     [Bureaucracy]Бюрократия
-    [Thief]Воровство
-    [Stealth]Скрытность
+    [Atmosphere]Атмосфера
+    [Crime]Преступность
     *[other]ВТФ?
 }[/color]
 skill-system-UI-Lvllabel= Ур. [color={$color}]{$lvl}[/color] [color=red]{$amnesia}[/color]
@@ -112,6 +113,5 @@ skill-system-UI-Tooltip-Piloting=Данный навык отвечает за �
 skill-system-UI-Tooltip-Botany=Данный навык отвечает за возможность скрещивания растений, 
     использование секатора, биофабрикатора и анализатора растений 
 skill-system-UI-Tooltip-Bureaucracy=Данный навык позволяет писать отчёты приказы запросы и прочие бюрократические документы.
-skill-system-UI-Tooltip-Thief=Данный навык позволяет скрытно воровать предметы у зевак.
-skill-system-UI-Tooltip-Stealth=Данный навык позволяет с некоторым шансом не оставить отпечатков, шум от шагов и инструментов,
-    а также дальность шёпота.
+skill-system-UI-Tooltip-Atmosphere=Данный навык отвечает за возможность прокладывания труб и взаимодействие с атмосферными приборами.
+skill-system-UI-Tooltip-Crime=будет добавлен в ближайшем патче.

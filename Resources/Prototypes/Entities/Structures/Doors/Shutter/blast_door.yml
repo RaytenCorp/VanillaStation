@@ -5,7 +5,7 @@
   description: This one says 'BLAST DONGER'.
   components:
   - type: RequiresSkill
-    RequiresInstrumentationLevel: 2
+    RequiresEngineeringLevel: 2
   - type: AccessReader
     containerAccessProvider: board
   - type: Sprite

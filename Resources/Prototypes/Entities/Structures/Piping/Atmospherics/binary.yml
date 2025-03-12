@@ -32,7 +32,7 @@
     mode: SnapgridCenter
   components:
   - type: RequiresSkill
-    RequiresEngineeringLevel: 1
+    RequiresAtmosphere:  true
   - type: ExtensionCableReceiver
   - type: LightningTarget
     priority: 1
@@ -91,7 +91,7 @@
   components:
     - type: RequiresSkillToActivateInWorld  
     - type: RequiresSkill
-      RequiresEngineeringLevel: 1
+      RequiresAtmosphere:  true
     - type: ExtensionCableReceiver
     - type: LightningTarget
       priority: 1

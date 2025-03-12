@@ -10,20 +10,20 @@
   - !type:AddComponentSpecial
     components:
       - type: Skill
-        RangeWeaponLevel: 0
-        MeleeWeaponLevel: 0
-        MedicineLevel: 0
+        RangeWeaponLevel: 1
+        MeleeWeaponLevel: 1
+        MedicineLevel: 1
         ChemistryLevel: 0
         EngineeringLevel: 0
         BuildingLevel: 0
         ResearchLevel: 0
-        InstrumentationLevel: 0
+        Atmosphere: false
         Piloting: false
         MusInstruments: true
         Botany: false
         Bureaucracy: false
       - type: AddSkillPoints
-        Points: 4
+        Points: 1
 #  access: # Corvax-MRP
 #  - Maintenance
 

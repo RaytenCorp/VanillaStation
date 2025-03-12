@@ -4,7 +4,7 @@
   graph: Computer
   startNode: start
   targetNode: computer
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-machines
   description: Строящаяся консоль.
   placementMode: SnapgridCenter
@@ -20,7 +20,7 @@
   graph: Machine
   startNode: start
   targetNode: machine
-  RequiresInstrumentationLevel: 2
+  RequiresEngineeringLevel: 2
   category: construction-category-machines
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -33,7 +33,7 @@
   name: Двухпозиционный рычаг.
   id: TwoWayLeverRecipe
   graph: LeverGraph
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: LeverNode
   category: construction-category-machines
@@ -50,7 +50,7 @@
   name: переключатель сети ЛКП
   id: LightSwitchRecipe
   graph: LightSwitchGraph
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: LightSwitchNode
   category: construction-category-machines
@@ -69,7 +69,7 @@
   name: переключатель сигнала
   id: SignalSwitchRecipe
   graph: SignalSwitchGraph
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: SignalSwitchNode
   category: construction-category-machines
@@ -87,7 +87,7 @@
 - type: construction
   name: кнопка сигнала
   id: SignalButtonRecipe
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   graph: SignalButtonGraph
   startNode: start
   targetNode: SignalButtonNode
@@ -107,7 +107,7 @@
   name: направленный переключатель сети ЛКП
   id: LightSwitchDirectionalRecipe
   graph: LightSwitchDirectionalGraph
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: LightSwitchDirectionalNode
   category: construction-category-machines
@@ -126,7 +126,7 @@
   name: направленный переключатель сигнала
   id: SignalSwitchDirectionalRecipe
   graph: SignalSwitchDirectionalGraph
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: SignalSwitchDirectionalNode
   category: construction-category-machines
@@ -145,7 +145,7 @@
   name: направленная кнопка сигнала
   id: SignalButtonDirectionalRecipe
   graph: SignalButtonDirectionalGraph
-  RequiresInstrumentationLevel: 1
+  RequiresEngineeringLevel: 1
   startNode: start
   targetNode: SignalButtonDirectionalNode
   category: construction-category-machines

@@ -4,7 +4,7 @@
   graph: ImprovisedPlasmaSwordGraph
   startNode: start
   targetNode: sword
-  RequiresInstrumentationLevel: 3
+  RequiresEngineeringLevel: 3
   category: construction-category-weapons
   objectType: Item
   description: Неэкономный кустарный плазменный меч с повышенной температурой сгорания.
@@ -42,7 +42,7 @@
   name: самодельная эмиттерная пушка
   id: ImprovisedEmitterGun
   graph: ImprovisedEmitterGunGraph
-  RequiresInstrumentationLevel: 3
+  RequiresEngineeringLevel: 3
   startNode: start
   targetNode: finish
   category: construction-category-weapons

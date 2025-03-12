@@ -19,14 +19,14 @@
       ChemistryLevel: 0
       EngineeringLevel: 0
       BuildingLevel: 0
-      ResearchLevel: 3
-      InstrumentationLevel: 0
+      ResearchLevel: 0
+      Atmosphere: false
       Piloting: false
       MusInstruments: true
       Botany: false
       Bureaucracy: true
     - type: AddSkillPoints
-      Points: 1
+      Points: 4
 
 - type: startingGear
   id: LibrarianGear
