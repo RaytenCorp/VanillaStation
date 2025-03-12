@@ -16,6 +16,12 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
+using JetBrains.Annotations;
+//Vanilla-start
+using Content.Shared.StationRecords;
+using Content.Server.StationRecords.Systems;
+using Content.Server.Station.Systems;
+//Vanilla-end
 
 namespace Content.Server.Radio.EntitySystems;
 
@@ -30,7 +36,8 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly SharedJobSystem _jobs = default!;
+    [Dependency] private readonly StationRecordsSystem _recordsSystem = default!; //vanilla-station
+    [Dependency] private readonly StationSystem _station = default!; //Vanilla-station
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -85,10 +92,7 @@ public sealed class RadioSystem : EntitySystem
 
         var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);
-        //vanilla-start
-        TryComp<MindContainerComponent>(messageSource, out var mind);
-        var role = _jobs.MindTryGetJobName(mind?.Mind);
-        //vanilla-end
+
         SpeechVerbPrototype speech;
         if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
             speech = evntProto;
@@ -99,6 +103,27 @@ public sealed class RadioSystem : EntitySystem
             ? FormattedMessage.EscapeText(message)
             : message;
 
+        // Vanilla-start
+        // Сохраняем текущую станцию и имя индивидуального отправителя через мета-данные(слава Богу)
+        var speakerName = MetaData(messageSource).EntityName;
+        var station = _station.GetOwningStation(messageSource);
+        var role = "Unknown"; // Предустановка на всякий
+
+        if (station != null) // ээаауауаэээы
+        {
+            // Сохраняем коллекцию записей IEnumerable типа GeneralStationRecord(Альтернативное решение через LINQ для конкретной записи)
+            var records = _recordsSystem.GetRecordsOfType<GeneralStationRecord>(station.Value);
+
+            // Деструктурируем кортеж при помощи ключа и самой записи
+            foreach (var (key, record) in records)
+            {
+                if (record.Name == speakerName) // Сравниваем короче имя "чубрика" с источником сообщения дабы не возникло конфликтов
+                {
+                    role = record.JobTitle;
+                }
+            }
+        }
+        //Vanilla-end
         var wrappedMessage = Loc.GetString(speech.Bold ? "chat-radio-message-wrap-bold" : "chat-radio-message-wrap",
             ("color", channel.Color),
             ("fontType", speech.FontId),
@@ -133,7 +158,7 @@ public sealed class RadioSystem : EntitySystem
             if (!radio.ReceiveAllChannels)
             {
                 if (!radio.Channels.Contains(channel.ID) || (TryComp<IntercomComponent>(receiver, out var intercom) &&
-                                                             !intercom.SupportedChannels.Contains(channel.ID)))
+                                                     !intercom.SupportedChannels.Contains(channel.ID)))
                     continue;
             }
 
