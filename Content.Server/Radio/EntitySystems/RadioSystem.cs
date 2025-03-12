@@ -106,21 +106,19 @@ public sealed class RadioSystem : EntitySystem
         var station = _station.GetOwningStation(messageSource);
         var role = "Неизвестно";
 
-        if (station != null) // ээаауауаэээы
+        if (station != null)
         {
-            // Сохраняем коллекцию записей IEnumerable типа GeneralStationRecord(Альтернативное решение через LINQ для конкретной записи)
             var records = _recordsSystem.GetRecordsOfType<GeneralStationRecord>(station.Value);
-
-            // Деструктурируем кортеж при помощи ключа и самой записи
             foreach (var (key, record) in records)
             {
-                if (record.Name == speakerName) // Сравниваем короче имя "чубрика" с источником сообщения дабы не возникло конфликтов
+                if (record.Name == speakerName)
                 {
                     role = record.JobTitle;
+                    break;
                 }
             }
         }
-        //Vanilla-end
+        //Rayten-end
         var wrappedMessage = Loc.GetString(speech.Bold ? "chat-radio-message-wrap-bold" : "chat-radio-message-wrap",
             ("color", channel.Color),
             ("fontType", speech.FontId),
