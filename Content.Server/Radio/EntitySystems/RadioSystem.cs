@@ -34,8 +34,8 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly StationRecordsSystem _recordsSystem = default!; //vanilla-station
-    [Dependency] private readonly StationSystem _station = default!; //Vanilla-station
+    [Dependency] private readonly StationRecordsSystem _recordsSystem = default!;
+    [Dependency] private readonly StationSystem _station = default!;
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
