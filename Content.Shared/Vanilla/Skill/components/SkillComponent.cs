@@ -49,14 +49,16 @@ public sealed partial class SkillComponent : Component
     //Исследования
     [DataField("ResearchLevel"), AutoNetworkedField]
     public SkillLevel ResearchLevel { get; set; } = 0;
+
     [DataField("ResearchExp"), AutoNetworkedField]
     public int ResearchExp { get; set; } = 0;
 
-    //Приборостроение
-    [DataField("InstrumentationLevel"), AutoNetworkedField]
-    public SkillLevel InstrumentationLevel { get; set; } = 0;
-    [DataField("InstrumentationExp"), AutoNetworkedField]
-    public int InstrumentationExp { get; set; } = 0;
+    //преступность
+    [DataField("CrimeLevel"), AutoNetworkedField]
+    public SkillLevel CrimeLevel { get; set; } = 0;
+
+    [DataField("CrimeExp"), AutoNetworkedField]
+    public int CrimeExp { get; set; } = 0;
 
     //Лёгкие навыки!!!
 
@@ -84,6 +86,13 @@ public sealed partial class SkillComponent : Component
     [DataField("BureaucracyExp"), AutoNetworkedField]
     public int BureaucracyExp { get; set; } = 0;
 
+    //Атмсофера
+    [DataField("Atmosphere"), AutoNetworkedField]
+    public bool Atmosphere { get; set; } = false;
+
+    [DataField("AtmosphereExp"), AutoNetworkedField]
+    public int AtmosphereExp { get; set; } = 0;
+
     //получить уровень навыка
     public SkillLevel? GetSkillLevel(skillType skill)
     {
@@ -94,7 +103,7 @@ public sealed partial class SkillComponent : Component
             skillType.RangeWeapon => RangeWeaponLevel,
             skillType.MeleeWeapon => MeleeWeaponLevel,
             skillType.Research => ResearchLevel,
-            skillType.Instrumentation => InstrumentationLevel,
+            skillType.Crime => CrimeLevel,
             skillType.Building => BuildingLevel,
             skillType.Engineering => EngineeringLevel,
             _ => null // Возвращаем null, если skillType неизвестен
@@ -109,6 +118,7 @@ public sealed partial class SkillComponent : Component
             skillType.MusInstruments => MusInstruments,
             skillType.Botany => Botany,
             skillType.Bureaucracy => Bureaucracy,
+            skillType.Atmosphere => Atmosphere,
             _ => null 
         };
     }
@@ -122,13 +132,14 @@ public sealed partial class SkillComponent : Component
             skillType.RangeWeapon => RangeWeaponExp,
             skillType.MeleeWeapon => MeleeWeaponExp,
             skillType.Research => ResearchExp,
-            skillType.Instrumentation => InstrumentationExp,
+            skillType.Crime => CrimeExp,
             skillType.Building => BuildingExp,
             skillType.Engineering => EngineeringExp,
             skillType.Piloting => PilotingExp,
             skillType.MusInstruments => MusInstrumentsExp,
             skillType.Botany => BotanyExp,
             skillType.Bureaucracy => BureaucracyExp,
+            skillType.Atmosphere => AtmosphereExp,
             _ => -1
         };
     }
@@ -146,10 +157,11 @@ public enum skillType : byte
     Engineering = 5,
     Building = 6,
     Research = 7,
-    Instrumentation = 8,
+    Crime = 8,
     MusInstruments = 9,
     Botany = 10,
     Bureaucracy = 11,
+    Atmosphere = 12,
 }
 
 [Serializable, NetSerializable]

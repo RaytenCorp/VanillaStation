@@ -39,10 +39,6 @@ public sealed partial class SkillLearnerComponent : Component
     [DataField("ResearchExpToLearn"), AutoNetworkedField]
     public int ResearchExpToLearn { get; set; } = 600;
 
-    //Приборостроение
-    [DataField("InstrumentationExpToLearn"), AutoNetworkedField]
-    public int InstrumentationExpToLearn { get; set; } = 600;
-
     //Ботаника
     [DataField("BotanyExpToLearn"), AutoNetworkedField]
     public int BotanyExpToLearn { get; set; } = 600;
@@ -55,6 +51,10 @@ public sealed partial class SkillLearnerComponent : Component
     [DataField("MusInstrumentsExpToLearn"), AutoNetworkedField]
     public int MusInstrumentsExpToLearn { get; set; } = 600;
 
+    //Атмосфера
+    [DataField("AtmosphereExpToLearn"), AutoNetworkedField]
+    public int AtmosphereExpToLearn { get; set; } = 600;
+
     //получить доступное количество опыта на обучение
     public int GetSkillExpToLearn(skillType skill)
     {
@@ -66,12 +66,12 @@ public sealed partial class SkillLearnerComponent : Component
             skillType.MeleeWeapon => MeleeWeaponExpToLearn,
             skillType.Piloting => PilotingExpToLearn,
             skillType.Research => ResearchExpToLearn,
-            skillType.Instrumentation => InstrumentationExpToLearn,
             skillType.Building => BuildingExpToLearn,
             skillType.Engineering => EngineeringExpToLearn,
             skillType.Botany => BotanyExpToLearn,
             skillType.Bureaucracy => BureaucracyExpToLearn,
             skillType.MusInstruments => MusInstrumentsExpToLearn,
+            skillType.Atmosphere => AtmosphereExpToLearn,
             _ => -1
         };
     }
