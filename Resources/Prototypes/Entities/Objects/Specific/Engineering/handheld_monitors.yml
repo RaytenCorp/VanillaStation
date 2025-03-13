@@ -14,7 +14,6 @@
 
 - type: entity
   name: Портативный мониторинг атмосферного оповещения
-  suffix: Фисташке
   parent: BaseHandheldComputerJaz
   id: HandheldAlertMonitor
   description: Отображает атмосферные овопещения сигнализаций станции.
@@ -71,7 +70,6 @@
         
 - type: entity
   name: Портативный мониторинг атмосферных сетей
-  suffix: Фисташке
   parent: BaseHandheldComputerJaz
   id: HandheldAtmosMonitor
   description: Отображает атмосферную сеть труб станции.
@@ -119,7 +117,6 @@
         
 - type: entity
   name: Портативный мониторинг питания
-  suffix: Фисташке
   parent: BaseHandheldComputerJaz
   id: HandheldPowerMonitor
   description: Отображает уровни энергии и питания станции.
