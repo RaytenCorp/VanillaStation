@@ -69,7 +69,7 @@
   id: SyndicateOperativeGearFull
   parent: SyndicateOperativeGearFullNoUplink
   equipment:
-    pocket2: BaseUplinkRadio20TC #Rayten - nukeupdate
+    pocket2: BaseUplinkRadio20TCNUKIE #Rayten - nukeupdate
 
 #Nuclear Operative Commander Gear
 - type: startingGear
