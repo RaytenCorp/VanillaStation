@@ -168,6 +168,9 @@
     - BorgModuleAdvancedTool
     - Fulton
     - FultonBeacon
+    - HandheldAlertMonitor
+    - HandheldAtmosMonitor
+    - HandheldPowerMonitor
 
 - type: technology
   id: MassExcavation

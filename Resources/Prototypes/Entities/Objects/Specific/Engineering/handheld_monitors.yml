@@ -1,5 +1,6 @@
 - type: entity
   id: BaseHandheldComputerJaz
+  abstract: true
   parent: [BaseItem, PowerCellSlotSmallItem]
   components:
     - type: ItemToggle
@@ -8,13 +9,12 @@
     - type: PowerCellDraw
       useRate: 40 #ничего не делает, установлено во избежание открытия интерфейса без заряда
       drawRate: 1.6
- 
- 
+
+
     #РУЧНАЯ КОНСОЛЬ РАЗГЕРМА
 
 - type: entity
   name: Портативный мониторинг атмосферного оповещения
-  suffix: Фисташке
   parent: BaseHandheldComputerJaz
   id: HandheldAlertMonitor
   description: Отображает атмосферные овопещения сигнализаций станции.
@@ -66,12 +66,11 @@
         enum.AtmosAlertsComputerUiKey.Key:
             type: AtmosAlertsComputerBoundUserInterface
   - type: AtmosAlertsComputer
-        
+
         #РУЧНАЯ КОНСОЛЬ ТРУБ
-        
+
 - type: entity
   name: Портативный мониторинг атмосферных сетей
-  suffix: Фисташке
   parent: BaseHandheldComputerJaz
   id: HandheldAtmosMonitor
   description: Отображает атмосферную сеть труб станции.
@@ -114,12 +113,11 @@
     interfaces:
       enum.AtmosMonitoringConsoleUiKey.Key:
         type: AtmosMonitoringConsoleBoundUserInterface
-        
+
         #РУЧНАЯ КОНСОЛЬ ПИТАНИЯ
-        
+
 - type: entity
   name: Портативный мониторинг питания
-  suffix: Фисташке
   parent: BaseHandheldComputerJaz
   id: HandheldPowerMonitor
   description: Отображает уровни энергии и питания станции.
@@ -161,4 +159,3 @@
     interfaces:
       enum.PowerMonitoringConsoleUiKey.Key:
         type: PowerMonitoringConsoleBoundUserInterface
-        
