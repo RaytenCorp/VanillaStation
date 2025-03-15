@@ -155,6 +155,9 @@
   id: LockerFillChiefEngineerNoHardsuit
   table: !type:AllSelector
     children:
+    - id: HandheldAlertMonitor
+    - id: HandheldAtmosMonitor
+    - id: HandheldPowerMonitor
     - id: AlertKeyYellow
     - id: AccessConfigurator
     - id: BoxEncryptionKeyEngineering
