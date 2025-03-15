@@ -81,5 +81,5 @@
   equipment:
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
-    pocket1: BaseUplinkRadio40TC
+    pocket1: BaseUplinkRadio20TCNUKIE #Rayten-Nukieupdate
     id: SyndiPDA

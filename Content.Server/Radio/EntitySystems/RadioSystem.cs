@@ -9,6 +9,9 @@ using Content.Shared.Radio.Components;
 using Content.Shared.Speech;
 using Content.Shared.Roles.Jobs;
 using Content.Shared.Mind.Components;
+using Content.Shared.Inventory;
+using Content.Shared.PDA;
+using Content.Shared.Access.Components;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -30,7 +33,7 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly SharedJobSystem _jobs = default!;
+    [Dependency] private readonly InventorySystem _inventorySystem = default!;
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -86,8 +89,7 @@ public sealed class RadioSystem : EntitySystem
         var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);
         //vanilla-start
-        TryComp<MindContainerComponent>(messageSource, out var mind);
-        var role = _jobs.MindTryGetJobName(mind?.Mind);
+        var role = GetJob(messageSource);
         //vanilla-end
         SpeechVerbPrototype speech;
         if (evt.SpeechVerb != null && _prototype.TryIndex(evt.SpeechVerb, out var evntProto))
@@ -179,5 +181,24 @@ public sealed class RadioSystem : EntitySystem
             }
         }
         return false;
+    }
+    private string GetJob(EntityUid uid)
+    {
+        if (_inventorySystem.TryGetSlotEntity(uid, "id", out var idUid))
+        {
+            // кпк и айди карта
+            if (EntityManager.TryGetComponent(idUid, out PdaComponent? pda) &&
+                TryComp<IdCardComponent>(pda.ContainedId, out var id) ||
+                EntityManager.TryGetComponent(idUid, out id))
+            {
+                var jobSuffix = string.IsNullOrWhiteSpace(id.LocalizedJobTitle) ? string.Empty : $"{id.LocalizedJobTitle}";
+                //первая буква должности - заглавная
+                if (!string.IsNullOrEmpty(jobSuffix))
+                    jobSuffix = char.ToUpperInvariant(jobSuffix[0]) + jobSuffix.Substring(1);
+
+                return jobSuffix;
+            }
+        }
+        return Loc.GetString("Radio-Job-unknown");
     }
 }

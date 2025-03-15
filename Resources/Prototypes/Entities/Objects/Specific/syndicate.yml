@@ -111,12 +111,12 @@
 #this uplink MUST be used for nukeops, as it has the tag for filtering the listing.
 - type: entity
   parent: BaseUplinkRadio
-  id: BaseUplinkRadio40TC
-  suffix: 40 TC, NukeOps
+  id: BaseUplinkRadio20TCNUKIE #Rayten - nukeupdate
+  suffix: 20 TC, NukeOps #Rayten - nukeupdate
   components:
   - type: Store
     balance:
-      Telecrystal: 40
+      Telecrystal: 20 #Rayten - nukeupdate
   - type: Tag
     tags:
     - NukeOpsUplink

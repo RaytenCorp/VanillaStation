@@ -1098,3 +1098,13 @@
   id: 71
   time: '2025-03-12T19:48:24.0000000+00:00'
   url: https://github.com/RaytenCorp/VanillaStation/pull/175
+- author: thefuckmybrain
+  changes:
+  - message: "\u0422\u0435\u043F\u0435\u0440\u044C \u043F\u0440\u0435\u0444\u0438\u043A\
+      \u0441 \u0432 \u0440\u0430\u0446\u0438\u0438 \u0441\u043E\u043E\u0442\u0432\u0435\
+      \u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u043F\u0440\u0435\u0444\u0438\u043A\
+      \u0441\u0443 \u0430\u0439\u0434\u0438 \u043A\u0430\u0440\u0442\u044B"
+    type: Add
+  id: 72
+  time: '2025-03-13T13:16:47.0000000+00:00'
+  url: https://github.com/RaytenCorp/VanillaStation/pull/179
