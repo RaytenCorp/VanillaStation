@@ -8,3 +8,14 @@ marking-ScarTopSurgeryShort = Хирургический шрам (Коротк�
 marking-ScarTopSurgeryLong = Хирургический шрам (Длинный)
 marking-ScarChest-scar_chest = Шрам на груди
 marking-ScarChest = Шрам на груди
+marking-ScarNeck-scar_neck = Шрам на шее
+marking-ScarNeck = Шрам на шее
+marking-ScarChestBullets-scar_chest_bullets = Шрам от пуль
+marking-ScarChestBullets = Шрам на груди (пули)
+marking-ScarStomachBullets-scar_stomach_bullets = Шрам от пуль
+marking-ScarStomachBullets = Шрам на животе (пули)
+marking-ScarFace1-scar_face_1 = Шрам на лице
+marking-ScarFace1 = Шрам на лице (большой)
+marking-ScarFace2-scar_face_2 = Шрам на лице
+marking-ScarFace2 = Шрам на лице (малый)
+

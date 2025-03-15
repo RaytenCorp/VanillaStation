@@ -27,3 +27,7 @@ injector-component-drawing-user = You start drawing the needle.
 injector-component-injecting-user = You start injecting the needle.
 injector-component-drawing-target = {CAPITALIZE(THE($user))} is trying to use a needle to draw from you!
 injector-component-injecting-target = {CAPITALIZE(THE($user))} is trying to inject a needle into you!
+
+## Vanilla Station
+
+injector-component-inject-target-protected = wtf?

@@ -30,6 +30,8 @@ comp-pda-ui-station = Station: [color=white]{$station}[/color]
 
 comp-pda-ui-station-alert-level = Alert Level: [color={ $color }]{ $level }[/color]
 
+comp-pda-ui-station-alert-level-withtime = wtf??
+
 comp-pda-ui-station-alert-level-instructions = Instructions: [color=white]{ $instructions }[/color]
 
 comp-pda-ui-station-time = Shift duration: [color=white]{ $time }[/color]
@@ -54,3 +56,8 @@ comp-pda-ui-unassigned = Unassigned
 
 pda-notification-message = [font size=12][bold]PDA[/bold] { $header }: [/font]
     "{ $message }"
+
+comp-pda-ui-station-sublevels = wtf??
+comp-pda-ui-alert-sublevel-withtime-yellow =  wtf??
+comp-pda-ui-alert-sublevel-withtime-violet =  wtf??
+comp-pda-ui-alert-sublevel-withtime-gray =  wtf??

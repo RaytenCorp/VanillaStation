@@ -30,15 +30,47 @@ ent-ExteriorLightTube = экстерьерная лампа-трубка
     .desc = Мощная энергосберегающая лампа для космических глубин. Может содержать ртуть.
 ent-SodiumLightTube = натриевая лампа-трубка
     .desc = Мощная энергосберегающая лампа для космических глубин. Солёная.
+ent-BaseLightTubeCrystal = кристальная лампа-трубка
+    .desc = Высоковольтная энергичная лампа, внутри которой находится маленький цветной кристалл.
 ent-LightTubeCrystalCyan = голубая кристальная лампа-трубка
     .desc = Мощная лампа, внутри которой находится маленький цветной кристалл.
 ent-LightTubeCrystalBlue = синяя кристальная лампа-трубка
     .desc = { ent-LightTubeCrystalCyan.desc }
+ent-LightTubeCrystalYellow = жёлтая кристальная лампа-трубка
+    .desc = { ent-BaseLightTubeCrystal.desc }
 ent-LightTubeCrystalPink = розовая кристальная лампа-трубка
     .desc = { ent-LightTubeCrystalCyan.desc }
 ent-LightTubeCrystalOrange = оранжевая кристальная лампа-трубка
     .desc = { ent-LightTubeCrystalCyan.desc }
+ent-LightTubeCrystalBlack = чёрная кристальная лампа-трубка
+    .desc = Лампа высокой мощности и энергии с маленьким цветным кристаллом внутри. Она не очень яркая.
 ent-LightTubeCrystalRed = красная кристальная лампа-трубка
     .desc = { ent-LightTubeCrystalCyan.desc }
 ent-LightTubeCrystalGreen = зелёная кристальная лампа-трубка
     .desc = { ent-LightTubeCrystalCyan.desc }
+ent-BaseLightbulbCrystal = кристаллическая лампочка
+    .desc = Лампа высокой мощности и энергии с маленьким цветным кристаллом внутри.
+
+ent-LightBulbCrystalCyan = циановая кристаллическая лампочка
+    .desc = { ent-BaseLightbulbCrystal.desc }
+
+ent-LightBulbCrystalBlue = синяя кристаллическая лампочка
+    .desc = { ent-BaseLightbulbCrystal.desc }
+
+ent-LightBulbCrystalYellow = жёлтая кристаллическая лампочка
+    .desc = { ent-BaseLightbulbCrystal.desc }
+
+ent-LightBulbCrystalPink = розовая кристаллическая лампочка
+    .desc = { ent-BaseLightbulbCrystal.desc }
+
+ent-LightBulbCrystalOrange = оранжевая кристаллическая лампочка
+    .desc = { ent-BaseLightbulbCrystal.desc }
+
+ent-LightBulbCrystalBlack = чёрная кристаллическая лампочка
+    .desc = Лампа высокой мощности и энергии с маленьким цветным кристаллом внутри. Она не очень яркая.
+
+ent-LightBulbCrystalRed = красная кристаллическая лампочка
+    .desc = { ent-BaseLightbulbCrystal.desc }
+
+ent-LightBulbCrystalGreen = зелёная кристаллическая лампочка
+    .desc = { ent-BaseLightbulbCrystal.desc }

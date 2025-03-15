@@ -81,8 +81,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
-      # - SecWatchCartridge # Corvax-Next-SecWatch
-      - NanoChatCartridge # Corvax-Next-PDAChat
     cartridgeSlot:
       priority: -1
       name: device-pda-slot-component-slot-name-cartridge
@@ -134,7 +132,6 @@
     - NotekeeperCartridge
     - NewsReaderCartridge
     - WantedListCartridge
-    - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: BasePDA
@@ -148,8 +145,6 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - MedTekCartridge
-      # - SecWatchCartridge # Corvax-Next-SecWatch
-      - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: BasePDA
@@ -499,8 +494,6 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - AstroNavCartridge
-      # - SecWatchCartridge # Corvax-Next-SecWatch
-      - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: BasePDA
@@ -850,7 +843,6 @@
     - NewsReaderCartridge
     - WantedListCartridge
     - LogProbeCartridge
-    - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: BaseSecurityPDA
@@ -921,7 +913,6 @@
       - WantedListCartridge
       - LogProbeCartridge
       - AstroNavCartridge
-      - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: CentcomPDA
@@ -946,7 +937,6 @@
       - WantedListCartridge
       - MedTekCartridge
       - AstroNavCartridge
-      - NanoChatCartridge # Corvax-Next-PDAChat
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -1095,7 +1085,6 @@
       - WantedListCartridge
       - LogProbeCartridge
       - AstroNavCartridge
-      - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: ERTLeaderPDA
@@ -1264,7 +1253,6 @@
     - NewsReaderCartridge
     - WantedListCartridge
     - LogProbeCartridge
-    - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: BaseMedicalPDA
@@ -1292,7 +1280,6 @@
     - NewsReaderCartridge
     - WantedListCartridge
     - MedTekCartridge
-    - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: ClownPDA
@@ -1303,6 +1290,13 @@
   components:
   - type: Pda
     id: CluwneIDCard
+    penSlot:
+      startingItem: CrayonGreen
+      ejectSound: /Audio/Items/bikehorn.ogg
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -1312,13 +1306,6 @@
     borderColor: "#1c8f4d"
   - type: Icon
     state: pda-cluwne
-    penSlot:
-      startingItem: CrayonGreen
-      ejectSound: /Audio/Items/bikehorn.ogg
-      priority: -1
-      whitelist:
-        tags:
-        - Write
   - type: Unremoveable
 
 - type: entity
@@ -1437,7 +1424,6 @@
     preinstalled:
       - NotekeeperCartridge
       - MedTekCartridge
-      - NanoChatCartridge # Corvax-Next-PDAChat
 
 - type: entity
   parent: BasePDA
@@ -1469,3 +1455,27 @@
         type: HealthAnalyzerBoundUserInterface
       enum.ChameleonUiKey.Key:
         type: ChameleonBoundUserInterface
+
+- type: entity
+  parent: BasePDA
+  id: WizardPDA
+  name: wizard PDA
+  description: You hear faint whispers coming from it.
+  components:
+  - type: Pda
+    id: WizardIDCard
+    penSlot:
+      startingItem: PenWiz
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-wizard
+  - type: PdaBorderColor
+    borderColor: "#7F3300"
+  - type: Icon
+    state: pda-wizard

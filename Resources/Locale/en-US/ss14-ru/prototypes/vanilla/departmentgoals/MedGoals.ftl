@@ -1,0 +1,10 @@
+ent-BenefitMedChemistry = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }
+ent-BenefitMedLauncherSyringe = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }
+ent-BenefitMedImplant = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }
+ent-BenefitMedImplantAdvanced = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }
+ent-BenefitPsyho = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }

@@ -170,6 +170,7 @@ namespace Content.Server.Entry
 
                 IoCManager.Resolve<WebhookBans>().Initialize();
                 IoCManager.Resolve<MultiServerKickManager>().Initialize();
+                IoCManager.Resolve<CVarControlManager>().Initialize();
             }
         }
 

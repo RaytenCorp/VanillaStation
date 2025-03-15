@@ -83,8 +83,8 @@
     components:
     - type: MeleeThrowOnHit
       speed: 10
-      lifetime: 0.2
-      minLifetime: 0.01
+      unanchorOnHit: true
+      stunTime: 0.1
     - type: DisarmMalus
       malus: 0.7
   - type: StaminaDamageOnHit

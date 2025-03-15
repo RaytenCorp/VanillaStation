@@ -1,4 +1,5 @@
 alert-level-announcement = Attention! Station alert level is now {$name}! {$announcement}
+alert-level-announcement-disable = wtf?
 
 alert-level-unknown = Unknown.
 alert-level-unknown-instructions = Unknown.
@@ -18,19 +19,29 @@ alert-level-red-instructions = Crewmembers should find a safe place to shelter i
 alert-level-violet = Violet
 alert-level-violet-announcement = There is a viral threat on the station. Medical staff are advised to isolate crewmembers with any symptoms. Crewmembers are advised to distance themselves from others and perform safety measures to prevent further spread.
 alert-level-violet-instructions = Crewmembers are advised to distance themselves from others and perform safety measures to prevent further spread.
+alert-level-violet-announcement-disable = wtf?
 
 alert-level-yellow = Yellow
 alert-level-yellow-announcement = There is a structural or atmospheric threat within the station. Engineering staff are advised to immediately respond and perform safety measures. Crewmembers are advised to stay away from the threat, and stay in their workplaces if necessary.
 alert-level-yellow-instructions = Crewmembers are advised to stay away from the threat, and stay in their workplaces if necessary.
+alert-level-yellow-announcement-disable = wtf?
 
 alert-level-gamma = Gamma
 alert-level-gamma-announcement = Central Command has ordered the Gamma security level on the station. Security is to have weapons equipped at all times, and all civilians are to immediately seek their nearest head for transportation to a secure location.
 alert-level-gamma-instructions = All civilians are to immediately seek their nearest head for transportation to a secure location.
+alert-level-gamma-announcement-disable = wtf?
 
 alert-level-delta = Delta
 alert-level-delta-announcement = The station is currently under threat of imminent destruction. Crewmembers are advised to listen to heads of staff for more information.
 alert-level-delta-instructions = Crewmembers are advised to listen to heads of staff for more information.
+alert-level-delta-announcement-disable = wtf?
 
 alert-level-epsilon = Epsilon
 alert-level-epsilon-announcement = Central Command has ordered the Epsilon security level on the station. Consider all contracts terminated.
 alert-level-epsilon-instructions = Consider all contracts terminated.
+alert-level-epsilon-announcement-disable =  wtf?
+
+alert-level-gray = wtf?
+alert-level-gray-announcement = wtf?
+alert-level-gray-instructions = wtf?
+alert-level-gray-announcement-disable = wtf?

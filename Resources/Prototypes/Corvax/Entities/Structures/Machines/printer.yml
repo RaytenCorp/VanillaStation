@@ -1,6 +1,0 @@
-- type: entity
-  parent: BaseLathe
-  id: PrinterDoc
-  name: document printer
-  categories: [ HideSpawnMenu ]
-  description: Bureaucratic perfection. Stores a database of all Nanotrasen documents, and lets you print them as long as you have paper.

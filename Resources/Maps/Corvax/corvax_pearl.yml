@@ -126047,14 +126047,6 @@ entities:
     - type: Transform
       pos: 115.54563,57.679348
       parent: 1
-- proto: PrinterDoc
-  entities:
-  - uid: 13110
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 84.5,137.5
-      parent: 1
 - proto: Protolathe
   entities:
   - uid: 15009

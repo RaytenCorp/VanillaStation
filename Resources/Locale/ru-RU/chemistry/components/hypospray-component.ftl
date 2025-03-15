@@ -20,5 +20,6 @@ hypospray-verb-mode-inject-all = Вы больше не можете набир�
 hypospray-verb-mode-inject-mobs-only = Теперь вы можете набирать из контейнеров.
 hypospray-cant-inject = Нельзя сделать инъекцию в { $target }!
 
-## Vanilla Station
+## Rayten
+
 hypospray-component-inject-target-protected = Нельзя сделать инъекцию, так как он(а) защищен(а) броней!

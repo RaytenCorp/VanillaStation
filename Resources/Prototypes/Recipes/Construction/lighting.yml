@@ -21,6 +21,17 @@
   objectType: Item
 
 - type: construction
+  name: жёлтая кристальная лампа-трубка
+  id: YellowLight
+  graph: YellowLight
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: Мощная лампа, внутри которой находится маленький цветной кристалл.
+  icon: { sprite: Objects/Power/light_tube.rsi, state: normal }
+  objectType: Item
+
+- type: construction
   name: розовая кристальная лампа-трубка
   id: PinkLight
   graph: PinkLight
@@ -35,6 +46,17 @@
   name: оранжевая кристальная лампа-трубка
   id: OrangeLight
   graph: OrangeLight
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: Мощная лампа, внутри которой находится маленький цветной кристалл.
+  icon: { sprite: Objects/Power/light_tube.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: Чёрная кристальная лампа-трубка
+  id: BlackLight
+  graph: BlackLight
   startNode: start
   targetNode: icon
   category: construction-category-utilities
@@ -62,4 +84,92 @@
   category: construction-category-utilities
   description: Мощная лампа, внутри которой находится маленький цветной кристалл.
   icon: { sprite: Objects/Power/light_tube.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: cyan light bulb
+  id: CyanLightBulb
+  graph: CyanLightBulb
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: A high powered light bulb containing a cyan crystal.
+  icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: blue light bulb
+  id: BlueLightBulb
+  graph: BlueLightBulb
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: A high powered light bulb containing a blue crystal.
+  icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: yellow light bulb
+  id: YellowLightBulb
+  graph: YellowLightBulb
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: A high powered light bulb containing a yellow crystal.
+  icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: pink light bulb
+  id: PinkLightBulb
+  graph: PinkLightBulb
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: A high powered light bulb containing a pink crystal.
+  icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: orange light bulb
+  id: OrangeLightBulb
+  graph: OrangeLightBulb
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: A high powered light bulb containing an orange crystal.
+  icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: black light bulb
+  id: BlackLightBulb
+  graph: BlackLightBulb
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: A high powered light bulb containing a black crystal. It won't be very bright.
+  icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: red light bulb
+  id: RedLightBulb
+  graph: RedLightBulb
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: A high powered light bulb containing a red crystal.
+  icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
+  objectType: Item
+
+- type: construction
+  name: green light bulb
+  id: GreenLightBulb
+  graph: GreenLightBulb
+  startNode: start
+  targetNode: icon
+  category: construction-category-utilities
+  description: A high powered light bulb containing a green crystal.
+  icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
   objectType: Item

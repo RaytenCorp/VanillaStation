@@ -14631,17 +14631,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -22.493404,-5.341877
       parent: 2
-- proto: BoxFolderCentCom
-  entities:
-  - uid: 1041
-    components:
-    - type: MetaData
-      name: папка
-    - type: Transform
-      parent: 1029
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: BoxFolderClipboard
   entities:
   - uid: 1042
@@ -43944,15 +43933,6 @@ entities:
     - type: Transform
       pos: 21.489666,19.753956
       parent: 2
-- proto: ClothingHeadHatCatEars
-  entities:
-  - uid: 6070
-    components:
-    - type: Transform
-      pos: -35.5,-37.3
-      parent: 2
-    missingComponents:
-    - Clothing
 - proto: ClothingHeadHatHetmanHat
   entities:
   - uid: 6071
@@ -88726,34 +88706,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -16.651258,25.973894
-      parent: 2
-- proto: PrinterDoc
-  entities:
-  - uid: 12076
-    components:
-    - type: Transform
-      pos: -33.5,18.5
-      parent: 2
-  - uid: 12077
-    components:
-    - type: Transform
-      pos: 18.5,-21.5
-      parent: 2
-  - uid: 12078
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 16.5,-24.5
-      parent: 2
-  - uid: 12079
-    components:
-    - type: Transform
-      pos: 10.5,-18.5
-      parent: 2
-  - uid: 12080
-    components:
-    - type: Transform
-      pos: 13.5,36.5
       parent: 2
 - proto: Protolathe
   entities:

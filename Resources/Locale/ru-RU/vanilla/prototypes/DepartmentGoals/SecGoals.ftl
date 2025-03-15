@@ -1,6 +1,6 @@
 station-goal-sec-NoGib =
     { department-goal-start }[bold]
-
+    
     Цель смены службы безопасности:[/bold] не допустить безвозвратных потерь среди экипажа в течение первых 50 минут смены, демонстрируя оперативность и слаженность действий.
     
     { department-goal-end }
@@ -40,25 +40,25 @@ station-goal-sec-CallSigns =
     Цель смены службы безопасности:[/bold] придумать позывные для всех сотрудников СБ. Для обеспечения дополнительного уровня шифрования отдела.
     
     { department-goal-end }
-station-goal-sec-Warmup=
+station-goal-sec-Warmup =
     { department-goal-start }[bold]
     
     Цель смены службы безопасности:[/bold] провести разминку для сотрудиков СБ. Она должна включать не менее 30 приседаний, 30 отжимай и тренировку стрельбы для каждого сотрудника службы безпоасности.
     
     { department-goal-end }
-station-goal-sec-SafetyRulesSlime=
+station-goal-sec-SafetyRulesSlime =
     { department-goal-start }[bold]
     
     Цель смены службы безопасности:[/bold] провести инструктаж для всего экипажа по технике безопасности при нападении слаймов.
     
     { department-goal-end }
-station-goal-sec-SafetyRulesNuke=
+station-goal-sec-SafetyRulesNuke =
     { department-goal-start }[bold]
     
     Цель смены службы безопасности:[/bold] провести инструктаж для всего экипажа по технике безопасности при нападении ядерных оперативников.
     
     { department-goal-end }
-station-goal-sec-SafetyRulesDragon=
+station-goal-sec-SafetyRulesDragon =
     { department-goal-start }[bold]
     
     Цель смены службы безопасности:[/bold] провести инструктаж для всего экипажа по технике безопасности при нападении космического дракона.
