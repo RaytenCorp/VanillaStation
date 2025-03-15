@@ -1,5 +1,5 @@
-cmd-forceghost-desc = Makes a player an observer.
-cmd-forceghost-help = Usage: forceghost <player>
-cmd-forceghost-error-lobby = Target player can't ghost right now. They are not in the game!
-cmd-forceghost-denied = Failed to ghost the target player.
-cmd-forceghost-hint = <player>
+cmd-forceghost-desc = Делает игрока наблюдателем.
+cmd-forceghost-help = Использование: forceghost <игрок>
+cmd-forceghost-error-lobby = Целевой игрок не может стать призраком прямо сейчас. Он не в игре!
+cmd-forceghost-denied = Не удалось сделать целевого игрока призраком.
+cmd-forceghost-hint = <игрок>

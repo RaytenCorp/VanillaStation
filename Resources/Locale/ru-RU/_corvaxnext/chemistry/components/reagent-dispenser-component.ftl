@@ -3,4 +3,4 @@ reagent-dispenser-component-set-auto-label-on-verb = Включить авто-�
 reagent-dispenser-component-set-auto-label-off-verb = Выключить авто-этикеровщик
 reagent-dispenser-component-examine-auto-label-on = Авто-этикеровщик [color=darkgreen]включен[/color].
 reagent-dispenser-component-examine-auto-label-off = Авто-этикеровщик [color=red]выключен[/color].
-reagent-dispenser-component-examine-extra-slots = Number of jug slots
+reagent-dispenser-component-examine-extra-slots = Количество партий кувшинов
