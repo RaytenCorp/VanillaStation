@@ -343,22 +343,21 @@
   abstract: true
   components:
   - type: MovementSpeedModifier
-    baseWalkSpeed: 6
-    baseSprintSpeed: 6
+    baseSprintSpeed: 5
   - type: Hands
     showInHands: true
-    - type: Sprite
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      shader: unshaded
-    - map: [ "head" ]
-  - type: CanEscapeInventory
-  - type: MultiHandedItem
-  - type: Item
-    size: Huge
-    Pickup:
-    BasesistTime: 10
+  # - type: Sprite
+  #   layers:
+  #   - map: [ "enum.DamageStateVisualLayers.Base" ]
+  #   - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+  #     shader: unshaded
+  #   - map: [ "head" ]
+  # - type: CanEscapeInventory
+  # - type: MultiHandedItem
+  # - type: Item
+  #   size: Huge
+  #   Pickup:
+  #   BasesistTime: 10
   - type: HumanoidAppearance
     species: FelinidSpec
   - type: Hunger # on 1.5x more
@@ -448,6 +447,9 @@
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
   skinColoration: HumanToned
+  youngAge: 27
+  oldAge: 50
+  maxAge: 65
 
 #спрайт частей тела
 - type: speciesBaseSprites
@@ -482,7 +484,22 @@
       points: 1
       required: false
       defaultMarkings: [ CatEars ]
-
+# Bishop
+- type: marking
+  id: CyberlimbRArmBishop
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [ Human, Dwarf, Arachnid, FelinidSpec ]
+  sponsorOnly: true
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+    - sprite: Corvax/Mobs/Customization/Cyberlimbs/bishop.rsi
+      state: r_arm
+#-----------------------------------------
 - type: humanoidBaseSprite
   id: MobHumanoidEyes
   baseSprite:
@@ -598,7 +615,7 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: /Audio/Corvax/Effects/FelinidSound/krik.ogg #кастом крик
+      path: /Audio/Corvax/Effects/FelinidSound/krik.ogg #кастом крик
     Laugh:
       collection: MaleLaugh
     Purring:
@@ -632,7 +649,7 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: /Audio/Corvax/Effects/FelinidSound/krik.ogg #кастом крик
+      path: /Audio/Corvax/Effects/FelinidSound/krik.ogg #кастом крик
     Laugh:
       collection: FemaleLaugh
     Purring:
@@ -663,10 +680,10 @@
 #эмоции
 - type: emote
   id: Purring
-  name: chat-emote-name-myaukan
+  name: chat-emote-msg-myaukan
   category: Vocal
   available: false
-  icon: Interface/Emotes/chitter.png #ЗАМЕНИТЬ!
+  icon: Interface/Emotes/scream.png #ЗАМЕНИТЬ!
   whitelist:
     components:
     - Vocal
@@ -680,10 +697,10 @@
 
 - type: emote
   id: Meow
-  name: chat-emote-name-murchanie
+  name: chat-emote-msg-murchanie
   category: Vocal
   available: false
-  icon: Interface/Emotes/chitter.png #ЗАМЕНИТЬ!
+  icon: Interface/Emotes/scream.png #ЗАМЕНИТЬ!
   whitelist:
     components:
     - Vocal
