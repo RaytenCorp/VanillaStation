@@ -17,7 +17,7 @@
   name: Портативный мониторинг атмосферного оповещения
   parent: BaseHandheldComputerJaz
   id: HandheldAlertMonitor
-  description: Отображает атмосферные овопещения сигнализаций станции.
+  description: Отображает атмосферные оповещения сигнализаций станции.
   components:
   - type: RequiresSkill
     RequiresEngineeringLevel: 2
