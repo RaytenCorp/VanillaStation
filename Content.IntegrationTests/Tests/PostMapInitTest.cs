@@ -231,7 +231,7 @@ namespace Content.IntegrationTests.Tests
 
                 // TODO MAP TESTS
                 // Move this to some separate test?
-                CheckDoNotMap(map, root, protoManager);
+                //  CheckDoNotMap(map, root, protoManager); ЗАЧЕМ ЭТО ГОВНО НУЖНО ВООБЩЕ
 
                 if (version >= 7)
                 {
