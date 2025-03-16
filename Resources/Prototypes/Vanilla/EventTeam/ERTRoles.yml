@@ -84,7 +84,7 @@
 # Роли
 - type: entity
   name: Лидер ОБР
-  parent: MobEventTeamBase
+  parent: MobEventTeamComanderBase
   suffix: ОБР-Л
   id: MobERTLeader
   components:

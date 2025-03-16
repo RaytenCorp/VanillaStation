@@ -1,6 +1,5 @@
 ### Interaction Popup component
 
-
 ## Petting animals
 
 petting-success-generic = Вы гладите { $target } по голове.
@@ -99,3 +98,5 @@ hugging-success-generic-target = { CAPITALIZE($user) } обнимает вас.
 
 petting-success-tesla = Вы гладите { $target }, попутно нарушая законы природы и физики.
 petting-failure-tesla = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } разряд заставляет вас отдёрнуть руку.
+petting-success-mail-teleporter = Вы погладили { THE($target) } по { POSS-ADJ($target) } усердной, холодной внешности.
+petting-failure-mail-teleporter = Вы протягиваете руку, чтобы погладить { THE($target) }, но { SUBJECT($target) } { CONJUGATE-BE($target) } занят сортировкой почты!

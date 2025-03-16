@@ -1,0 +1,13 @@
+ent-EventTeamDeathSquadComander = маркер командира отряда смерти
+    .suffix = EventTeam
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobDeathSquadRegular = спавнер оперативника эскадрона смерти
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobDeathSquadComander = Спавнер командира эскадрона смерти
+    .desc = { ent-MarkerBase.desc }
+ent-MobDeathSquadComander = Командир эскадрона смерти
+    .suffix = Эскадрон смерти
+    .desc = { ent-MobEventTeamBase.desc }
+ent-MobDeathSquadRegular = оперативник эскадрона смерти
+    .suffix = Эскадрон смерти
+    .desc = { ent-MobEventTeamBase.desc }

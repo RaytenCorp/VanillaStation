@@ -11,7 +11,7 @@
       time: 108000 #30 hrs # Vanilla-RoleTime
       inverted: true # stop playing intern if you're good at engineering!
     - !type:AgeRequirement
-      requiredAge: 	20
+      requiredAge: 20
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering

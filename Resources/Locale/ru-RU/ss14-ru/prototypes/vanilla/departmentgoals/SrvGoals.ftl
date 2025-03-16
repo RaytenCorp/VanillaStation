@@ -1,0 +1,10 @@
+ent-BenefitSRVClown = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }
+ent-BenefitSRVChaplain = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }
+ent-BenefitSRVBotany = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }
+ent-BenefitSRVKitchen = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }
+ent-BenefitSRVBar = { ent-CrateBaseBenefit }
+    .desc = { ent-CrateBaseBenefit.desc }

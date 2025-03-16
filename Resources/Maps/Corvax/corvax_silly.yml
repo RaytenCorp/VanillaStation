@@ -35931,14 +35931,6 @@ entities:
     - type: Transform
       pos: -17.531164,9.377331
       parent: 2
-- proto: PrinterDoc
-  entities:
-  - uid: 3786
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,-5.5
-      parent: 2
 - proto: Protolathe
   entities:
   - uid: 3787

@@ -19,3 +19,7 @@ hypospray-cant-inject = Can't inject into {$target}!
 hypospray-verb-mode-label = Toggle Container Draw
 hypospray-verb-mode-inject-all = You cannot draw from containers anymore.
 hypospray-verb-mode-inject-mobs-only = You can now draw from containers.
+
+## Rayten
+
+hypospray-component-inject-target-protected = wtf??

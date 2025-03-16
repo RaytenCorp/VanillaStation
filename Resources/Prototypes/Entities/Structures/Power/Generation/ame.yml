@@ -206,8 +206,8 @@
     node: ameShielding
   - type: GuideHelp
     guides:
-      - AME
-      - Power
+    - AME
+    - Power
   - type: Electrified
     onHandInteract: false
     onInteractUsing: false

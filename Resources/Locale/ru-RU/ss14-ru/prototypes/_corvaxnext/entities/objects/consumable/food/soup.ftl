@@ -1,0 +1,12 @@
+
+
+ent-FoodGOOOOLsoup = медвежий суп
+    .desc = доигрался в карты....
+ent-FoodOkroshkasoup = окрошка
+    .desc = салат с квасом? че
+ent-FoodOlivielsoup = оливье
+    .desc = у меня столько майонеза, сколько и не снилось моему отцу!
+ent-FoodSolankasoup = солянка
+    .desc = мээээ.....
+ent-FoodPlow = плов
+    .desc = ой васа, пловъ просто пушка, отвечаю!

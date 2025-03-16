@@ -30,5 +30,5 @@ injector-component-drawing-target = { CAPITALIZE($user) } начинает на�
 injector-component-injecting-target = { CAPITALIZE($user) } начинает вводить содержимое шприца в вас!
 
 ## Vanilla Station
-injector-component-inject-target-protected = Нельзя сделать инъекцию, так как он(а) защищен(а) броней!
 
+injector-component-inject-target-protected = Нельзя сделать инъекцию, так как он(а) защищен(а) броней!

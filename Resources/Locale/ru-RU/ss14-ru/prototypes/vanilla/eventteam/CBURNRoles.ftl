@@ -1,0 +1,13 @@
+ent-EventTeamCBURNComander = маркер командира отряда РХБЗЗ
+    .suffix = EventTeam
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobCBURNRegular = спавнер оперативника РХБЗЗ
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobCBURNComander = Спавнер командира отряда РХБЗЗ
+    .desc = { ent-MarkerBase.desc }
+ent-MobCBURNComander = Командир отряда РХБЗЗ
+    .suffix = РХБЗЗ
+    .desc = { ent-MobEventTeamBase.desc }
+ent-MobCBURNRegular = Оперативник РХБЗЗ
+    .suffix = РХБЗЗ
+    .desc = { ent-MobEventTeamBase.desc }

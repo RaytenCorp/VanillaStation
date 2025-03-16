@@ -51,7 +51,7 @@
             - type: ProtectedGrid
             - type: TradeStation
           paths:
-            - /Maps/Shuttles/Торговый пост.yml
+            - /Maps/Shuttles/RaytenTrade.yml #Rayten-Tradepost
         # Spawn last
         ruins: !type:GridSpawnGroup
           hide: true
@@ -148,6 +148,12 @@
   abstract: true
   components:
     - type: StationNews
+
+- type: entity
+  id: BaseStationDeliveries
+  abstract: true
+  components:
+  - type: CargoDeliveryData
 
 - type: entity
   id: BaseStationAllEventsEligible
