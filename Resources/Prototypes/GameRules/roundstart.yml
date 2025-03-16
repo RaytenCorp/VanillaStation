@@ -149,7 +149,6 @@
         EngineeringLevel: 0
         BuildingLevel: 0
         ResearchLevel: 0
-        InstrumentationLevel: 0
         Piloting: false
         MusInstruments: true
         Botany: false
@@ -325,6 +324,18 @@
       startingGear: WizardBlueGear
       # TODO: WizardComp as needed
       components:
+      - type: Skill
+        RangeWeaponLevel: 2
+        MeleeWeaponLevel: 3
+        MedicineLevel: 2
+        ChemistryLevel: 0
+        EngineeringLevel: 0
+        BuildingLevel: 1
+        ResearchLevel: 0
+        Piloting: true
+        MusInstruments: true
+        Botany: false
+        Bureaucracy: false
       - type: NpcFactionMember
         factions:
         - Wizard
