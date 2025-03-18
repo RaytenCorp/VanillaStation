@@ -36,7 +36,7 @@
       - map: ["computerLayerScreen", "enum.PowerDeviceVisualLayers.Powered"]
         state: alert-0
         shader: unshaded
-        visible: true
+        visible: false
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -67,6 +67,16 @@
             type: AtmosAlertsComputerBoundUserInterface
   - type: AtmosAlertsComputer
 
+- type: entity
+  id: HandheldAlertMonitorEmpty
+  parent: HandheldAlertMonitor
+  suffix: Пустой
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
         #РУЧНАЯ КОНСОЛЬ ТРУБ
 
 - type: entity
@@ -91,7 +101,7 @@
       - state: tablet
       - state: generic
         shader: unshaded
-        visible: true
+        visible: false
         map: [ "enum.PowerDeviceVisualLayers.Powered" ]
   - type: Appearance
   - type: GenericVisualizer
@@ -113,6 +123,16 @@
     interfaces:
       enum.AtmosMonitoringConsoleUiKey.Key:
         type: AtmosMonitoringConsoleBoundUserInterface
+
+- type: entity
+  id: HandheldAtmosMonitorEmpty
+  parent: HandheldAtmosMonitor
+  suffix: Пустой
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
 
         #РУЧНАЯ КОНСОЛЬ ПИТАНИЯ
 
@@ -138,7 +158,7 @@
       - state: tablet
       - state: generic
         shader: unshaded
-        visible: true
+        visible: false
         map: [ "enum.PowerDeviceVisualLayers.Powered" ]
   - type: Appearance
   - type: GenericVisualizer
@@ -159,3 +179,13 @@
     interfaces:
       enum.PowerMonitoringConsoleUiKey.Key:
         type: PowerMonitoringConsoleBoundUserInterface
+        
+- type: entity
+  id: HandheldPowerMonitorEmpty
+  parent: HandheldPowerMonitor
+  suffix: Пустой
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
