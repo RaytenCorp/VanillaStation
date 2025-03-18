@@ -210,24 +210,24 @@
 
 - type: latheRecipe
   parent: BaseToolRecipe
-  id: HandheldAlertMonitor
-  result: HandheldAlertMonitor
+  id: HandheldAlertMonitorEmpty
+  result: HandheldAlertMonitorEmpty
   materials:
     Steel: 300
     Glass: 150
 
 - type: latheRecipe
   parent: BaseToolRecipe
-  id: HandheldAtmosMonitor
-  result: HandheldAtmosMonitor
+  id: HandheldAtmosMonitorEmpty
+  result: HandheldAtmosMonitorEmpty
   materials:
     Steel: 300
     Glass: 150
 
 - type: latheRecipe
   parent: BaseToolRecipe
-  id: HandheldPowerMonitor
-  result: HandheldPowerMonitor
+  id: HandheldPowerMonitorEmpty
+  result: HandheldPowerMonitorEmpty
   materials:
     Steel: 300
     Glass: 150
