@@ -1,12 +1,3 @@
-#Желудок вульпы, как хищника
-- type: entity
-  id: OrganVulpkaninStomach 
-  parent: OrganAnimalStomach
-  noSpawn: true
-  components:
-  - type: Stomach
-    maxVolume: 50
-    
 # TODO: Add descriptions (many)
 # TODO BODY: Part damage
 - type: entity
