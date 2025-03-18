@@ -76,7 +76,7 @@
   description: Отображает атмосферную сеть труб станции.
   components:
   - type: RequiresSkill
-    RequiresEngineeringLevel: 1
+    RequiresAtmosphere: true
   - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
