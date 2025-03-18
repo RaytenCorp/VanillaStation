@@ -20,7 +20,7 @@
   description: Отображает атмосферные оповещения сигнализаций станции.
   components:
   - type: RequiresSkill
-    RequiresEngineeringLevel: 2
+    RequiresAtmosphere: true
   - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
