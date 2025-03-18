@@ -60,9 +60,9 @@
   - JawsOfLife
   - Fulton
   - FultonBeacon
-  - HandheldAlertMonitor
-  - HandheldAtmosMonitor
-  - HandheldPowerMonitor
+  - HandheldAlertMonitorEmpty
+  - HandheldAtmosMonitorEmpty
+  - HandheldPowerMonitorEmpty
 
 - type: latheRecipePack
   id: AtmosTools
