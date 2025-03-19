@@ -75,7 +75,7 @@
 #----------------------------------------------------------------------
 #------------------------ВЫБОР-В-СПЕЦИАЛЬНОМ---------------------------   Доделать и переделать надо!
 - type: marking
-  id: CatEars
+  id: CatEarsFelinid
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [FelinidSpec, Human]
@@ -99,7 +99,7 @@
     state: ears_cat_inner
 
 - type: marking
-  id: CatTail
+  id: CatTailFelinid
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [FelinidSpec, Human]
@@ -118,7 +118,7 @@
     state: tail_cat_wag # Corvax-Sponsors
     
 - type: marking
-  id: CatEarsStubby
+  id: CatEarsStubbyFelinid
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [FelinidSpec, Human]
@@ -142,7 +142,7 @@
     state: ears_stubby_inner
 
 - type: marking
-  id: CatEarsCurled
+  id: CatEarsCurledFelinid
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [FelinidSpec, Human]
@@ -166,7 +166,7 @@
     state: ears_curled_inner
 
 - type: marking
-  id: CatEarsTorn
+  id: CatEarsTornFelinid
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [FelinidSpec, Human]
@@ -190,7 +190,7 @@
     state: ears_torn_inner
 
 - type: marking
-  id: CatTailStripes
+  id: CatTailStripesFelinid
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [FelinidSpec, Human]
@@ -363,38 +363,38 @@
     Tail: # the cat tail joke
       points: 1 # Corvax-Sponsors
       required: false
-      defaultMarkings: [ CatTail ]
+      defaultMarkings: [ CatTailFelinid ]
     HeadTop:
       points: 1
       required: false
-      defaultMarkings: [ CatEars ]
-# Bishop
-- type: marking
-  id: CyberlimbRArmBishop
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [ Human, Dwarf, Arachnid, FelinidSpec ]
-  sponsorOnly: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
-  sprites:
-    - sprite: Corvax/Mobs/Customization/Cyberlimbs/bishop.rsi
-      state: r_arm
+      defaultMarkings: [ CatEarsFelinid, CyberlimbRArmBishop ]
+# # Bishop
+# - type: marking
+#   id: CyberlimbRArmBishop
+#   bodyPart: RArm
+#   markingCategory: Arms
+#   speciesRestriction: [ Human, Dwarf, Arachnid, FelinidSpec ]
+#   sponsorOnly: true
+#   coloring:
+#     default:
+#       type:
+#         !type:SimpleColoring
+#           color: "#FFFFFF"
+#   sprites:
+#     - sprite: Corvax/Mobs/Customization/Cyberlimbs/bishop.rsi
+#       state: r_arm
 #-----------------------------------------
     
 #Рандом спец
-- type: weightedRandomSpecies
-  id: SpeciesWeights
-  weights:
-    Human: 5
-    Reptilian: 4
-    SlimePerson: 4
-    Vulpkanin: 4 # Corvax-Vulp
-    Diona: 2
-    Felinid: 3
+# - type: weightedRandomSpecies
+#   id: SpeciesWeights
+#   weights:
+#     Human: 5
+#     Reptilian: 4
+#     SlimePerson: 4
+#     Vulpkanin: 4 # Corvax-Vulp
+#     Diona: 2
+#     Felinid: 3
 
 # Звуки эмоции
 - type: emoteSounds
