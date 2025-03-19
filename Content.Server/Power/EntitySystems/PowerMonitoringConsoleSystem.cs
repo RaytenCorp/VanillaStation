@@ -14,6 +14,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Utility;
 using System.Linq;
+using Content.Server.PowerCell;
 
 namespace Content.Server.Power.EntitySystems;
 
@@ -22,6 +23,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
 {
     [Dependency] private readonly UserInterfaceSystem _userInterfaceSystem = default!;
     [Dependency] private readonly SharedMapSystem _sharedMapSystem = default!;
+    [Dependency] private readonly PowerCellSystem _cell = default!;
 
     // Note: this data does not need to be saved
     private Dictionary<EntityUid, Dictionary<Vector2i, PowerCableChunk>> _gridPowerCableChunks = new();
@@ -108,6 +110,9 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
     {
         component.Focus = null;
         component.FocusGroup = PowerMonitoringConsoleGroup.Generator;
+
+        if (!_cell.TryUseActivatableCharge(uid))
+            return;
 
         if (TryComp<PowerMonitoringCableNetworksComponent>(uid, out var cableNetworks))
         {
