@@ -8,7 +8,7 @@
     - type: ToggleCellDraw
     - type: PowerCellDraw
       useRate: 40 #ничего не делает, установлено во избежание открытия интерфейса без заряда
-      drawRate: 1.6
+      drawRate: 0.8
 
 
     #РУЧНАЯ КОНСОЛЬ РАЗГЕРМА

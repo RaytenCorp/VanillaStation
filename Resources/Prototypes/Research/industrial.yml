@@ -168,10 +168,12 @@
     - BorgModuleAdvancedTool
     - Fulton
     - FultonBeacon
+  # Rayten-start
     - HandheldAlertMonitorEmpty
     - HandheldAtmosMonitorEmpty
     - HandheldPowerMonitorEmpty
-
+  # Rayten-end
+  
 - type: technology
   id: MassExcavation
   name: research-technology-excavation
