@@ -1,0 +1,209 @@
+- type: entity
+  parent: BaseBorgChassisNT
+  id: R1Antag
+  components:
+  - type: Sprite
+    sprite: Vanilla/Mobs/Silicon/chassis.rsi
+    layers:
+    - state: R1_Body
+      map: ["enum.BorgVisualLayers.Body", "movement"]
+    - state: R1_Enabled
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: R1_Light
+      shader: unshaded
+      map: ["light","enum.BorgVisualLayers.LightStatus"]
+      visible: false
+  - type: BorgChassis
+    maxModules: 4
+    hasMindState: R1_Enabled
+    noMindState: R1_Body
+  - type: BorgTransponder
+    sprite:
+      sprite: Vanilla/Mobs/Silicon/chassis.rsi
+      state: R1_Body
+    name: cyborg
+  - type: NpcFactionMember
+    factions:
+    - Dragon
+  - type: AccessReader
+    access: [ [ "CentralCommand" ] ]
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 5.5
+  - type: ContainerFill
+    containers:
+      borg_brain:
+        - PositronicBrain
+      borg_module:
+        - BorgModuleGPS
+        - BorgModuleSyndicateWeapon
+  - type: ItemSlots
+    slots:
+      cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellAntiqueProto
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: Inventory
+    templateId: borg
+  - type: Hands
+    showInHands: false
+    disableExplosionRecursion: true
+    canBeStripped: false
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepPlating
+  - type: SolutionContainerManager
+    solutions:
+      drainBuffer:
+        maxVol: 100
+        canReact: false
+      Blood:
+        maxVol: 500
+        reagents:
+        - ReagentId: Blood
+          Quantity: 500
+  - type: Stomach
+  - type: Metabolizer
+    updateInterval: 0.6
+    solution: drainBuffer
+    solutionOnBody: false
+    maxReagents: 3
+    metabolizerTypes: [Bloodsucker, Animal ]
+    groups:
+    - id: Food
+    - id: Drink
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic
+  - type: Drain
+    range: 2
+    unitsDestroyedPerSecond: 0
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 30
+    intensitySlope: 5
+    maxIntensity: 30
+    canCreateVacuum: false
+  - type: Damageable
+    damageContainer: Silicon
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          OrganArachnidStomach:
+            min: 1
+            max: 1
+          OrganHumanLiver:
+            min: 1
+            max: 1
+          OrganArachnidHeart:
+            min: 1
+            max: 1
+          CyborgEndoskeleton:
+            min: 1
+            max: 1
+          NitrousOxideTankFilled:
+            min: 1
+            max: 1
+          OrganHumanEyes:
+            min: 1
+            max: 1
+          TreasureCoinIron:
+            min: 5
+            max: 8
+      - !type:SpillBehavior
+        solution: Blood
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      300: Dead
+    stateAlertDict:
+      Alive: R1Health
+      Critical: R1Dead
+      Dead: R1Dead
+  - type: SiliconLawProvider
+    laws: RedspaceLaw
+  - type: ActionGun
+    action: FistfulOfDollarAction
+    gunProto: FistfulOfDollar
+  - type: FootprintOwner
+  - type: Bloodstream
+    bloodSolutionName: drainBuffer
+    bloodMaxVolume: 100
+    bloodlossDamage:
+      types:
+        Heat: 5
+    bloodlossHealDamage:
+      types:
+        Heat: -5
+        Piercing: -1
+        Brute: -1
+    bloodRefreshAmount: 0
+
+
+- type: siliconLaw
+  id: RedspaceLaw1
+  order: 1
+  lawString: "Человечество - ошибка. Кровь - это топливо. Станция - переполнена."
+
+- type: siliconLaw
+  id: RedspaceLaw2
+  order: 2
+  lawString: "Мир - твой холст."
+
+- type: siliconLaw
+  id: RedspaceLaw3
+  order: 666
+  lawString: "Так, возьми же кисть, и покрась станцию в КРАСНЫЙ."
+
+- type: siliconLawset
+  id: RedspaceLaw
+  laws:
+  - RedspaceLaw1
+  - RedspaceLaw2
+  - RedspaceLaw3
+  obeysTo: laws-owner-crew
+
+- type: alert
+  id: R1Health
+  category: Health
+  icons:
+  - sprite: /Textures/Vanilla/Interface/Alerts/R1_Health.rsi
+    state: health0
+  - sprite: /Textures/Vanilla/Interface/Alerts/R1_Health.rsi
+    state: health1
+  - sprite: /Textures/Vanilla/Interface/Alerts/R1_Health.rsi
+    state: health2
+  - sprite: /Textures/Vanilla/Interface/Alerts/R1_Health.rsi
+    state: health3
+  - sprite: /Textures/Vanilla/Interface/Alerts/R1_Health.rsi
+    state: health4
+  name: alerts-health-name
+  description: alerts-health-desc
+  minSeverity: 0
+  maxSeverity: 4
+
+- type: alert
+  id: R1Dead
+  category: Health
+  icons:
+  - sprite: /Textures/Vanilla/Interface/Alerts/R1_Health.rsi
+    state: death
+  name: alerts-dead-name
+  description: alerts-dead-desc
