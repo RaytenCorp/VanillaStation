@@ -149,6 +149,8 @@
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
   - HolofanProjector
+  - HandheldAlertMonitorEmpty # Rayten
+  - HandheldAtmosMonitorEmpty # Rayten
   technologyPrerequisites:
   - AtmosphericTech
 
@@ -168,11 +170,7 @@
     - BorgModuleAdvancedTool
     - Fulton
     - FultonBeacon
-  # Rayten-start
-    - HandheldAlertMonitorEmpty
-    - HandheldAtmosMonitorEmpty
-    - HandheldPowerMonitorEmpty
-  # Rayten-end
+    - HandheldPowerMonitorEmpty # Rayten
   
 - type: technology
   id: MassExcavation
