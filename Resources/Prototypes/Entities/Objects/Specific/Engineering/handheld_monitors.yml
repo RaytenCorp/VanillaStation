@@ -3,13 +3,13 @@
   abstract: true
   parent: [BaseItem, PowerCellSlotSmallItem]
   components:
-    - type: ActivatableUIRequiresPowerCell
     - type: ItemToggle
-      onUse: false
-    - type: PowerCellDraw
-      useRate: 20
-      drawRate: 0
+    - type: ActivatableUIRequiresPowerCell
     - type: ToggleCellDraw
+    - type: PowerCellDraw
+      useRate: 40 #ничего не делает, установлено во избежание открытия интерфейса без заряда
+      drawRate: 1.6
+
 
     #РУЧНАЯ КОНСОЛЬ РАЗГЕРМА
 
@@ -179,7 +179,7 @@
     interfaces:
       enum.PowerMonitoringConsoleUiKey.Key:
         type: PowerMonitoringConsoleBoundUserInterface
-
+        
 - type: entity
   id: HandheldPowerMonitorEmpty
   parent: HandheldPowerMonitor
