@@ -229,7 +229,9 @@
   abstract: true
   components:
   # - type: MovementSpeedModifier
-  #   baseSprintSpeed: 5
+  #   baseSprintSpeed: 9
+  #   BaseSprintSpeed: 9
+  #   sprintSpeedModifier: 10
   # - type: Sprite
   #   layers:
   #   - map: [ "enum.DamageStateVisualLayers.Base" ]
@@ -403,13 +405,13 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Corvax/Effects/FelinidSound/krik.ogg #кастом крик
+      path: /Audio/voice/FelinidSound/krik.ogg #кастом крик
     Laugh:
       collection: MaleLaugh
     Purring:
-      path: /Audio/Corvax/Effects/FelinidSound/murchanie.ogg # Мурчание
+      path: /Audio/voice/FelinidSound/murchanie.ogg # Мурчание
     Meow:
-      path: /Audio/Corvax/Effects/FelinidSound/myaukan.ogg #Мяуканье
+      path: /Audio/voice/FelinidSound/myaukan.ogg #Мяуканье
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -437,13 +439,13 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Corvax/Effects/FelinidSound/krik.ogg #кастом крик
+      path: /Audio/voice/FelinidSound/krik.ogg #кастом крик
     Laugh:
       collection: FemaleLaugh
     Purring:
-      path: /Audio/Corvax/Effects/FelinidSound/murchanie.ogg # Мурчание
+      path: /Audio/voice/FelinidSound/murchanie.ogg # Мурчание
     Meow:
-      path: /Audio/Corvax/Effects/FelinidSound/myaukan.ogg #Мяуканье
+      path: /Audio/voice/FelinidSound/myaukan.ogg #Мяуканье
     Sneeze:
       collection: FemaleSneezes
     Cough:
