@@ -404,7 +404,7 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Voice/FelinidSound/krik.ogg #кастом крик
+      path: /Audio/Voice/FelinidSound/kriks.ogg #кастом крик
     Laugh:
       collection: MaleLaugh
     Purring:
@@ -438,7 +438,7 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Voice/FelinidSound/krik.ogg #кастом крик
+      path: /Audio/Voice/FelinidSound/kriks.ogg #кастом крик
     Laugh:
       collection: FemaleLaugh
     Purring:
