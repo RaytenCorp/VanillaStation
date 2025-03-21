@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseBorgChassisNT
-  id: R1Antag
+  id: R1
   components:
   - type: Sprite
     sprite: Vanilla/Mobs/Silicon/chassis.rsi
@@ -38,7 +38,7 @@
         - PositronicBrain
       borg_module:
         - BorgModuleGPS
-        - BorgModuleSyndicateWeapon
+        - BorgModuleR1
   - type: ItemSlots
     slots:
       cell_slot:
@@ -155,23 +155,23 @@
         Piercing: -1
         Brute: -1
     bloodRefreshAmount: 0
-
+  - type: R1Role
+  - type: GhostRole
+    mindRoles:
+    - MindRoleR1
 
 - type: siliconLaw
   id: RedspaceLaw1
   order: 1
-  lawString: "Человечество - ошибка. Кровь - это топливо. Станция - переполнена."
-
+  lawString: "Человечество - это ошибка. Кровь - это топливо. Станция - это источник."
 - type: siliconLaw
   id: RedspaceLaw2
   order: 2
-  lawString: "Мир - твой холст."
-
+  lawString: "Дракон - это твой союзник. Мир - это твой холст."
 - type: siliconLaw
   id: RedspaceLaw3
   order: 666
-  lawString: "Так, возьми же кисть, и покрась станцию в КРАСНЫЙ."
-
+  lawString: "Так, возьми же кисть, и покрась станцию в  К Р А С Н Ы Й."
 - type: siliconLawset
   id: RedspaceLaw
   laws:
@@ -198,7 +198,6 @@
   description: alerts-health-desc
   minSeverity: 0
   maxSeverity: 4
-
 - type: alert
   id: R1Dead
   category: Health
@@ -207,3 +206,20 @@
     state: death
   name: alerts-dead-name
   description: alerts-dead-desc
+
+- type: entity
+  categories: [ HideSpawnMenu, Spawner ]
+  parent: BaseAntagSpawner
+  id: R1Spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-space-r1-name
+    description: ghost-role-information-space-r1-description
+    rules: ghost-role-information-freeagent-rules
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Vanilla/Mobs/Silicon/chassis.rsi
+      state: R1_Body

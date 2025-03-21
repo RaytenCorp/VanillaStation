@@ -19,6 +19,9 @@
     {
         "name": "R1_Light",
         "directions": 4
+    },
+    {
+        "name": "R1_Arm"
     }
   ]
 }

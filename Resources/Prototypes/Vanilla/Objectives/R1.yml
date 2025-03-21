@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseSurviveObjective
+  id: R1SurviveObjective
+  name: Survive
+  description: Survive. Get blood. Paint the world R E D.
+  components:
+  - type: Objective
+    issuer: objective-issuer-r1
+    difficulty: 1.5
+    icon:
+      sprite: Vanilla/Actions/R1.rsi
+      state: Blood
+  - type: RoleRequirement
+    roles:
+      mindRoles:
+      - R1Role
