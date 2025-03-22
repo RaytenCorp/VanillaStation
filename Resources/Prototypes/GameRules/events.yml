@@ -336,12 +336,13 @@
       mindRoles:
       - MindRoleWizard
 
+# Vanilla Starts
 - type: entity
   parent: BaseGameRule
   id: R1Spawn
   components:
   - type: StationEvent
-    startAnnouncementColor: "#ca2222"
+    startAnnouncementColor: "#ff1d1d"
     startAnnouncement: station-event-r1-spawn
     duration: null
     weight: 6.5
@@ -354,10 +355,12 @@
         volume: 5
   - type: AntagSpawner
     prototype: R1
-  - type: AntagRandomSpawn
+  - type: SpaceSpawnRule
+    spawnDistance: 0
   - type: AntagObjectives
     objectives:
     - R1SurviveObjective
+    - R1FreeObjective
   - type: AntagSelection
     agentName: r1-round-end-agent-name
     definitions:
@@ -371,6 +374,7 @@
         sound: /Audio/Vanilla/Ambience/Antag/R1_BootUp.ogg
       mindRoles:
       - MindRoleR1
+# Vanilla Ends
 
 # disabled until event is rewritten to be more interesting
 #- type: entity

@@ -11,7 +11,13 @@
             "name": "Blood"
         },
         {
-            "name": "Spare"
+            "name": "Live"
+        },
+        {
+            "name": "Slam"
+        },
+        {
+            "name": "Dash"
         },
         {
             "name": "Fistful"

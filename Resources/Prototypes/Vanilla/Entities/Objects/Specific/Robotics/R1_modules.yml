@@ -14,8 +14,11 @@
       types:
         Piercing: 15
         Structural: 15
+    soundHit:
+      collection: MetalThud
   - type: Item
     size: Normal
+  - type: Reflect
 
 - type: entity
   name: slab revolver
@@ -105,3 +108,39 @@
     - WeaponPiercerRevolver
   - type: BorgModuleIcon
     icon: { sprite: Vanilla/Objects/Weapons/Guns/Piercer.rsi, state: module }
+
+# R2
+
+- type: entity
+  name: R2 arm module
+  parent: R1arm
+  id: R2arm
+  description: A bloody hydraulic arm which has increased power.
+  components:
+  - type: Sprite
+    state: R2_Arm
+  - type: MeleeWeapon
+    attackRate: 0.7
+    damage:
+      types:
+        Piercing: 20
+        Structural: 30
+    soundHit:
+      collection: MetalThud
+  - type: MeleeThrowOnHit
+    speed: 10
+    unanchorOnHit: true
+    stunTime: 0.1
+  - type: Reflect
+    reflectProb: 0
+
+- type: entity
+  id: BorgModuleR2
+  parent: BorgModuleR1
+  name: R2 weapon module
+  components:
+  - type: ItemBorgModule
+    items:
+    - R2arm
+    - WeaponSlabRevoler
+    - WeaponPiercerRevolver
